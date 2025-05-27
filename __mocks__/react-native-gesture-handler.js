@@ -1,0 +1,51 @@
+module.exports = {
+  // 模拟手势处理器的基本功能
+  PanGestureHandler: 'PanGestureHandler',
+  TapGestureHandler: 'TapGestureHandler',
+  LongPressGestureHandler: 'LongPressGestureHandler',
+  PinchGestureHandler: 'PinchGestureHandler',
+  RotationGestureHandler: 'RotationGestureHandler',
+  FlingGestureHandler: 'FlingGestureHandler',
+  ForceTouchGestureHandler: 'ForceTouchGestureHandler',
+  NativeViewGestureHandler: 'NativeViewGestureHandler',
+  RawButton: 'RawButton',
+  BaseButton: 'BaseButton',
+  RectButton: 'RectButton',
+  BorderlessButton: 'BorderlessButton',
+  TouchableOpacity: 'TouchableOpacity',
+  TouchableHighlight: 'TouchableHighlight',
+  TouchableWithoutFeedback: 'TouchableWithoutFeedback',
+  ScrollView: 'ScrollView',
+  FlatList: 'FlatList',
+  Switch: 'Switch',
+  TextInput: 'TextInput',
+  DrawerLayoutAndroid: 'DrawerLayoutAndroid',
+  State: {
+    UNDETERMINED: 0,
+    FAILED: 1,
+    BEGAN: 2,
+    CANCELLED: 3,
+    ACTIVE: 4,
+    END: 5,
+  },
+  Directions: {
+    RIGHT: 1,
+    LEFT: 2,
+    UP: 4,
+    DOWN: 8,
+  },
+  // 模拟手势处理器的方法
+  createNativeWrapper: (component) => component,
+  gestureHandlerRootHOC: (component) => component,
+  // 模拟手势事件
+  GestureHandlerRootView: 'GestureHandlerRootView',
+  // 模拟手势状态
+  GestureState: {
+    UNDETERMINED: 0,
+    FAILED: 1,
+    BEGAN: 2,
+    CANCELLED: 3,
+    ACTIVE: 4,
+    END: 5,
+  },
+}; 

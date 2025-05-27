@@ -1,0 +1,1690 @@
+INFO:     Will watch for changes in these directories: ['/Users/bytedance/codes/backend']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [94832] using StatReload
+INFO:     Started server process [94835]
+INFO:     Waiting for application startup.
+2025-05-25 17:07:41,124 - app - INFO - 财知道API服务正在启动...
+2025-05-25 17:07:41,124 - app - INFO - 已启动雪球新闻定期获取任务，间隔: 3600秒
+2025-05-25 17:07:41,124 - app - INFO - 已启动雪球新闻定期获取任务
+2025-05-25 17:07:41,126 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x105daf9c0>
+2025-05-25 17:07:41,126 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x105daf9c0> completed
+2025-05-25 17:07:41,132 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x105dbd3f0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x1053b7560>, deterministic=True)
+2025-05-25 17:07:41,132 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x105dbd3f0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x1053b7560>, deterministic=True) completed
+2025-05-25 17:07:41,132 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x105dbd3f0>, 'floor', 1, <built-in function floor>, deterministic=True)
+2025-05-25 17:07:41,132 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x105dbd3f0>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2025-05-25 17:07:41,132 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x105dbd3f0>)
+2025-05-25 17:07:41,132 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x105dbd3f0>) completed
+2025-05-25 17:07:41,132 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x105d8c1c0>, 'PRAGMA read_uncommitted', [])
+2025-05-25 17:07:41,132 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x105d8c1c0>, 'PRAGMA read_uncommitted', []) completed
+2025-05-25 17:07:41,132 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x105d8c1c0>)
+2025-05-25 17:07:41,132 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x105d8c1c0>) completed
+2025-05-25 17:07:41,132 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x105d8c1c0>)
+2025-05-25 17:07:41,132 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x105d8c1c0>) completed
+2025-05-25 17:07:41,133 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x105dbd3f0>)
+2025-05-25 17:07:41,133 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x105dbd3f0>) completed
+2025-05-25 17:07:41,133 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x105dbd3f0>)
+2025-05-25 17:07:41,133 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x105dbd3f0>) completed
+2025-05-25 17:07:41,133 - aiosqlite - DEBUG - executing functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x105d8ea40>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-25 17:07:41.124422', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', 'd99a167a-a45e-46a4-9947-274be8dd539d', '2025-05-25 17:07:41.124433', '2025-05-25 17:07:41.124433'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-25 17:07:41.125808', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', '3980e47d-4695-46b4-a2b9-2dcde4eaca10', '2025-05-25 17:07:41.125812', '2025-05-25 17:07:41.125812')])
+2025-05-25 17:07:41,134 - aiosqlite - DEBUG - operation functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x105d8ea40>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-25 17:07:41.124422', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', 'd99a167a-a45e-46a4-9947-274be8dd539d', '2025-05-25 17:07:41.124433', '2025-05-25 17:07:41.124433'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-25 17:07:41.125808', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', '3980e47d-4695-46b4-a2b9-2dcde4eaca10', '2025-05-25 17:07:41.125812', '2025-05-25 17:07:41.125812')]) completed
+2025-05-25 17:07:41,134 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x105d8ea40>)
+2025-05-25 17:07:41,134 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x105d8ea40>) completed
+2025-05-25 17:07:41,134 - aiosqlite - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x105dbd3f0>)
+2025-05-25 17:07:41,135 - aiosqlite - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x105dbd3f0>) completed
+2025-05-25 17:07:41,135 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x105dbd3f0>)
+2025-05-25 17:07:41,135 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x105dbd3f0>) completed
+2025-05-25 17:07:41,135 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x105dbd3f0>)
+2025-05-25 17:07:41,135 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x105dbd3f0>) completed
+2025-05-25 17:07:41,136 - app - INFO - 财知道API服务已启动完成！
+INFO:     Application startup complete.
+2025-05-25 17:07:42,041 - app - ERROR - 雪球API请求发生异常: 0, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url=URL('https://xueqiu.com/statuses/hot/listV2.json?since_id=-1&max_id=-1&size=20')
+2025-05-25 17:07:42,041 - app - INFO - 从雪球获取了 0 条[全部]分类新闻
+WARNING:  StatReload detected changes in 'app/services/sina_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-05-25 17:10:13,341 - app - INFO - 财知道API服务正在关闭...
+2025-05-25 17:10:13,341 - app - INFO - 已停止雪球新闻定期获取任务
+2025-05-25 17:10:13,341 - app - INFO - 已停止雪球新闻定期获取任务
+2025-05-25 17:10:13,341 - app - INFO - 财知道API服务已关闭！
+INFO:     Application shutdown complete.
+INFO:     Finished server process [94835]
+INFO:     Started server process [94937]
+INFO:     Waiting for application startup.
+2025-05-25 17:10:13,956 - app - INFO - 财知道API服务正在启动...
+2025-05-25 17:10:13,956 - app - INFO - 已启动雪球新闻定期获取任务，间隔: 3600秒
+2025-05-25 17:10:13,956 - app - INFO - 已启动雪球新闻定期获取任务
+2025-05-25 17:10:13,958 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x1085c3b00>
+2025-05-25 17:10:13,958 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x1085c3b00> completed
+2025-05-25 17:10:13,963 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x108c0d3f0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x107bcf560>, deterministic=True)
+2025-05-25 17:10:13,964 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x108c0d3f0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x107bcf560>, deterministic=True) completed
+2025-05-25 17:10:13,964 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x108c0d3f0>, 'floor', 1, <built-in function floor>, deterministic=True)
+2025-05-25 17:10:13,964 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x108c0d3f0>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2025-05-25 17:10:13,964 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x108c0d3f0>)
+2025-05-25 17:10:13,964 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x108c0d3f0>) completed
+2025-05-25 17:10:13,964 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x1085a81c0>, 'PRAGMA read_uncommitted', [])
+2025-05-25 17:10:13,964 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x1085a81c0>, 'PRAGMA read_uncommitted', []) completed
+2025-05-25 17:10:13,964 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x1085a81c0>)
+2025-05-25 17:10:13,964 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x1085a81c0>) completed
+2025-05-25 17:10:13,964 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x1085a81c0>)
+2025-05-25 17:10:13,964 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x1085a81c0>) completed
+2025-05-25 17:10:13,964 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x108c0d3f0>)
+2025-05-25 17:10:13,964 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x108c0d3f0>) completed
+2025-05-25 17:10:13,965 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x108c0d3f0>)
+2025-05-25 17:10:13,965 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x108c0d3f0>) completed
+2025-05-25 17:10:13,965 - aiosqlite - DEBUG - executing functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x1085aaa40>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-25 17:10:13.956479', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', 'f73c44ee-b96f-4ea0-97ef-6011cb7fd2d9', '2025-05-25 17:10:13.956489', '2025-05-25 17:10:13.956489'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-25 17:10:13.957898', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', 'c035916d-8ab0-4b67-849e-54279aba6390', '2025-05-25 17:10:13.957902', '2025-05-25 17:10:13.957903')])
+2025-05-25 17:10:13,966 - aiosqlite - DEBUG - operation functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x1085aaa40>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-25 17:10:13.956479', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', 'f73c44ee-b96f-4ea0-97ef-6011cb7fd2d9', '2025-05-25 17:10:13.956489', '2025-05-25 17:10:13.956489'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-25 17:10:13.957898', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', 'c035916d-8ab0-4b67-849e-54279aba6390', '2025-05-25 17:10:13.957902', '2025-05-25 17:10:13.957903')]) completed
+2025-05-25 17:10:13,966 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x1085aaa40>)
+2025-05-25 17:10:13,966 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x1085aaa40>) completed
+2025-05-25 17:10:13,966 - aiosqlite - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x108c0d3f0>)
+2025-05-25 17:10:13,967 - aiosqlite - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x108c0d3f0>) completed
+2025-05-25 17:10:13,967 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x108c0d3f0>)
+2025-05-25 17:10:13,967 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x108c0d3f0>) completed
+2025-05-25 17:10:13,967 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x108c0d3f0>)
+2025-05-25 17:10:13,967 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x108c0d3f0>) completed
+2025-05-25 17:10:13,967 - app - INFO - 财知道API服务已启动完成！
+INFO:     Application startup complete.
+2025-05-25 17:10:14,733 - app - ERROR - 雪球API请求发生异常: 0, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url=URL('https://xueqiu.com/statuses/hot/listV2.json?since_id=-1&max_id=-1&size=20')
+2025-05-25 17:10:14,733 - app - INFO - 从雪球获取了 0 条[全部]分类新闻
+WARNING:  StatReload detected changes in 'tests/test_sina_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-05-25 17:11:43,303 - app - INFO - 财知道API服务正在关闭...
+2025-05-25 17:11:43,304 - app - INFO - 已停止雪球新闻定期获取任务
+2025-05-25 17:11:43,304 - app - INFO - 已停止雪球新闻定期获取任务
+2025-05-25 17:11:43,304 - app - INFO - 财知道API服务已关闭！
+INFO:     Application shutdown complete.
+INFO:     Finished server process [94937]
+INFO:     Started server process [95011]
+INFO:     Waiting for application startup.
+2025-05-25 17:11:43,948 - app - INFO - 财知道API服务正在启动...
+2025-05-25 17:11:43,948 - app - INFO - 已启动雪球新闻定期获取任务，间隔: 3600秒
+2025-05-25 17:11:43,948 - app - INFO - 已启动雪球新闻定期获取任务
+2025-05-25 17:11:43,950 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x106eabb00>
+2025-05-25 17:11:43,950 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x106eabb00> completed
+2025-05-25 17:11:43,956 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10700d3f0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x106377560>, deterministic=True)
+2025-05-25 17:11:43,956 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10700d3f0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x106377560>, deterministic=True) completed
+2025-05-25 17:11:43,956 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10700d3f0>, 'floor', 1, <built-in function floor>, deterministic=True)
+2025-05-25 17:11:43,956 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10700d3f0>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2025-05-25 17:11:43,957 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x10700d3f0>)
+2025-05-25 17:11:43,957 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x10700d3f0>) completed
+2025-05-25 17:11:43,957 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x106e8d0c0>, 'PRAGMA read_uncommitted', [])
+2025-05-25 17:11:43,957 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x106e8d0c0>, 'PRAGMA read_uncommitted', []) completed
+2025-05-25 17:11:43,957 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x106e8d0c0>)
+2025-05-25 17:11:43,957 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x106e8d0c0>) completed
+2025-05-25 17:11:43,957 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x106e8d0c0>)
+2025-05-25 17:11:43,957 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x106e8d0c0>) completed
+2025-05-25 17:11:43,957 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10700d3f0>)
+2025-05-25 17:11:43,957 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10700d3f0>) completed
+2025-05-25 17:11:43,958 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x10700d3f0>)
+2025-05-25 17:11:43,958 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x10700d3f0>) completed
+2025-05-25 17:11:43,958 - aiosqlite - DEBUG - executing functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x106e8ea40>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-25 17:11:43.948325', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', '40599eec-3c83-44e1-a1ad-3efa52390a63', '2025-05-25 17:11:43.948336', '2025-05-25 17:11:43.948337'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-25 17:11:43.949866', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', 'f2df3469-4899-447f-806f-96cabbb42e26', '2025-05-25 17:11:43.949872', '2025-05-25 17:11:43.949872')])
+2025-05-25 17:11:43,959 - aiosqlite - DEBUG - operation functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x106e8ea40>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-25 17:11:43.948325', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', '40599eec-3c83-44e1-a1ad-3efa52390a63', '2025-05-25 17:11:43.948336', '2025-05-25 17:11:43.948337'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-25 17:11:43.949866', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', 'f2df3469-4899-447f-806f-96cabbb42e26', '2025-05-25 17:11:43.949872', '2025-05-25 17:11:43.949872')]) completed
+2025-05-25 17:11:43,959 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x106e8ea40>)
+2025-05-25 17:11:43,959 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x106e8ea40>) completed
+2025-05-25 17:11:43,960 - aiosqlite - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x10700d3f0>)
+2025-05-25 17:11:43,961 - aiosqlite - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x10700d3f0>) completed
+2025-05-25 17:11:43,961 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10700d3f0>)
+2025-05-25 17:11:43,961 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10700d3f0>) completed
+2025-05-25 17:11:43,961 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x10700d3f0>)
+2025-05-25 17:11:43,961 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x10700d3f0>) completed
+2025-05-25 17:11:43,961 - app - INFO - 财知道API服务已启动完成！
+INFO:     Application startup complete.
+2025-05-25 17:11:44,725 - app - ERROR - 雪球API请求发生异常: 0, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url=URL('https://xueqiu.com/statuses/hot/listV2.json?since_id=-1&max_id=-1&size=20')
+2025-05-25 17:11:44,725 - app - INFO - 从雪球获取了 0 条[全部]分类新闻
+WARNING:  StatReload detected changes in 'app/services/sina_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-05-25 17:12:11,248 - app - INFO - 财知道API服务正在关闭...
+2025-05-25 17:12:11,249 - app - INFO - 已停止雪球新闻定期获取任务
+2025-05-25 17:12:11,249 - app - INFO - 已停止雪球新闻定期获取任务
+2025-05-25 17:12:11,249 - app - INFO - 财知道API服务已关闭！
+INFO:     Application shutdown complete.
+INFO:     Finished server process [95011]
+INFO:     Started server process [95060]
+INFO:     Waiting for application startup.
+2025-05-25 17:12:12,069 - app - INFO - 财知道API服务正在启动...
+2025-05-25 17:12:12,069 - app - INFO - 已启动雪球新闻定期获取任务，间隔: 3600秒
+2025-05-25 17:12:12,069 - app - INFO - 已启动雪球新闻定期获取任务
+2025-05-25 17:12:12,071 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x10a0ffb00>
+2025-05-25 17:12:12,071 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x10a0ffb00> completed
+2025-05-25 17:12:12,077 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10a20d3f0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x109477560>, deterministic=True)
+2025-05-25 17:12:12,077 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10a20d3f0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x109477560>, deterministic=True) completed
+2025-05-25 17:12:12,077 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10a20d3f0>, 'floor', 1, <built-in function floor>, deterministic=True)
+2025-05-25 17:12:12,077 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10a20d3f0>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2025-05-25 17:12:12,077 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x10a20d3f0>)
+2025-05-25 17:12:12,077 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x10a20d3f0>) completed
+2025-05-25 17:12:12,077 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x10a0e01c0>, 'PRAGMA read_uncommitted', [])
+2025-05-25 17:12:12,077 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x10a0e01c0>, 'PRAGMA read_uncommitted', []) completed
+2025-05-25 17:12:12,077 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x10a0e01c0>)
+2025-05-25 17:12:12,077 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x10a0e01c0>) completed
+2025-05-25 17:12:12,078 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x10a0e01c0>)
+2025-05-25 17:12:12,078 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x10a0e01c0>) completed
+2025-05-25 17:12:12,078 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10a20d3f0>)
+2025-05-25 17:12:12,078 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10a20d3f0>) completed
+2025-05-25 17:12:12,078 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x10a20d3f0>)
+2025-05-25 17:12:12,079 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x10a20d3f0>) completed
+2025-05-25 17:12:12,079 - aiosqlite - DEBUG - executing functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x10a0e2a40>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-25 17:12:12.069513', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', 'c624056b-4601-4e36-b02f-98e220690623', '2025-05-25 17:12:12.069525', '2025-05-25 17:12:12.069526'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-25 17:12:12.071190', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', '916c7351-fcdf-4180-91f0-95589943af71', '2025-05-25 17:12:12.071196', '2025-05-25 17:12:12.071196')])
+2025-05-25 17:12:12,079 - aiosqlite - DEBUG - operation functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x10a0e2a40>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-25 17:12:12.069513', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', 'c624056b-4601-4e36-b02f-98e220690623', '2025-05-25 17:12:12.069525', '2025-05-25 17:12:12.069526'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-25 17:12:12.071190', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', '916c7351-fcdf-4180-91f0-95589943af71', '2025-05-25 17:12:12.071196', '2025-05-25 17:12:12.071196')]) completed
+2025-05-25 17:12:12,079 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x10a0e2a40>)
+2025-05-25 17:12:12,079 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x10a0e2a40>) completed
+2025-05-25 17:12:12,079 - aiosqlite - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x10a20d3f0>)
+2025-05-25 17:12:12,080 - aiosqlite - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x10a20d3f0>) completed
+2025-05-25 17:12:12,080 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10a20d3f0>)
+2025-05-25 17:12:12,080 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10a20d3f0>) completed
+2025-05-25 17:12:12,080 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x10a20d3f0>)
+2025-05-25 17:12:12,080 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x10a20d3f0>) completed
+2025-05-25 17:12:12,080 - app - INFO - 财知道API服务已启动完成！
+INFO:     Application startup complete.
+2025-05-25 17:12:12,983 - app - ERROR - 雪球API请求发生异常: 0, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url=URL('https://xueqiu.com/statuses/hot/listV2.json?since_id=-1&max_id=-1&size=20')
+2025-05-25 17:12:12,983 - app - INFO - 从雪球获取了 0 条[全部]分类新闻
+WARNING:  StatReload detected changes in 'app/services/sina_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-05-25 17:13:49,088 - app - INFO - 财知道API服务正在关闭...
+2025-05-25 17:13:49,088 - app - INFO - 已停止雪球新闻定期获取任务
+2025-05-25 17:13:49,088 - app - INFO - 已停止雪球新闻定期获取任务
+2025-05-25 17:13:49,088 - app - INFO - 财知道API服务已关闭！
+INFO:     Application shutdown complete.
+INFO:     Finished server process [95060]
+INFO:     Started server process [95162]
+INFO:     Waiting for application startup.
+2025-05-25 17:13:49,739 - app - INFO - 财知道API服务正在启动...
+2025-05-25 17:13:49,740 - app - INFO - 已启动雪球新闻定期获取任务，间隔: 3600秒
+2025-05-25 17:13:49,740 - app - INFO - 已启动雪球新闻定期获取任务
+2025-05-25 17:13:49,741 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x11110fb00>
+2025-05-25 17:13:49,742 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x11110fb00> completed
+2025-05-25 17:13:49,747 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x11140d3f0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x106f77560>, deterministic=True)
+2025-05-25 17:13:49,747 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x11140d3f0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x106f77560>, deterministic=True) completed
+2025-05-25 17:13:49,747 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x11140d3f0>, 'floor', 1, <built-in function floor>, deterministic=True)
+2025-05-25 17:13:49,747 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x11140d3f0>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2025-05-25 17:13:49,748 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x11140d3f0>)
+2025-05-25 17:13:49,748 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x11140d3f0>) completed
+2025-05-25 17:13:49,748 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x1110f0240>, 'PRAGMA read_uncommitted', [])
+2025-05-25 17:13:49,748 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x1110f0240>, 'PRAGMA read_uncommitted', []) completed
+2025-05-25 17:13:49,748 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x1110f0240>)
+2025-05-25 17:13:49,748 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x1110f0240>) completed
+2025-05-25 17:13:49,748 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x1110f0240>)
+2025-05-25 17:13:49,748 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x1110f0240>) completed
+2025-05-25 17:13:49,748 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x11140d3f0>)
+2025-05-25 17:13:49,748 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x11140d3f0>) completed
+2025-05-25 17:13:49,749 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x11140d3f0>)
+2025-05-25 17:13:49,749 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x11140d3f0>) completed
+2025-05-25 17:13:49,749 - aiosqlite - DEBUG - executing functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x1110f2ac0>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-25 17:13:49.740102', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', '09439737-4b2d-4508-a95c-a603b5932da3', '2025-05-25 17:13:49.740112', '2025-05-25 17:13:49.740112'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-25 17:13:49.741577', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', '207d5987-ac2d-4a7d-9c03-01a05bb442e8', '2025-05-25 17:13:49.741582', '2025-05-25 17:13:49.741582')])
+2025-05-25 17:13:49,750 - aiosqlite - DEBUG - operation functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x1110f2ac0>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-25 17:13:49.740102', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', '09439737-4b2d-4508-a95c-a603b5932da3', '2025-05-25 17:13:49.740112', '2025-05-25 17:13:49.740112'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-25 17:13:49.741577', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', '207d5987-ac2d-4a7d-9c03-01a05bb442e8', '2025-05-25 17:13:49.741582', '2025-05-25 17:13:49.741582')]) completed
+2025-05-25 17:13:49,750 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x1110f2ac0>)
+2025-05-25 17:13:49,750 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x1110f2ac0>) completed
+2025-05-25 17:13:49,750 - aiosqlite - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x11140d3f0>)
+2025-05-25 17:13:49,751 - aiosqlite - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x11140d3f0>) completed
+2025-05-25 17:13:49,751 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x11140d3f0>)
+2025-05-25 17:13:49,751 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x11140d3f0>) completed
+2025-05-25 17:13:49,751 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x11140d3f0>)
+2025-05-25 17:13:49,751 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x11140d3f0>) completed
+2025-05-25 17:13:49,751 - app - INFO - 财知道API服务已启动完成！
+INFO:     Application startup complete.
+2025-05-25 17:13:50,482 - app - ERROR - 雪球API请求发生异常: 0, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url=URL('https://xueqiu.com/statuses/hot/listV2.json?since_id=-1&max_id=-1&size=20')
+2025-05-25 17:13:50,482 - app - INFO - 从雪球获取了 0 条[全部]分类新闻
+WARNING:  StatReload detected changes in 'app/services/sina_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-05-25 17:15:42,531 - app - INFO - 财知道API服务正在关闭...
+2025-05-25 17:15:42,531 - app - INFO - 已停止雪球新闻定期获取任务
+2025-05-25 17:15:42,531 - app - INFO - 已停止雪球新闻定期获取任务
+2025-05-25 17:15:42,531 - app - INFO - 财知道API服务已关闭！
+INFO:     Application shutdown complete.
+INFO:     Finished server process [95162]
+INFO:     Started server process [95251]
+INFO:     Waiting for application startup.
+2025-05-25 17:15:43,191 - app - INFO - 财知道API服务正在启动...
+2025-05-25 17:15:43,191 - app - INFO - 已启动雪球新闻定期获取任务，间隔: 3600秒
+2025-05-25 17:15:43,191 - app - INFO - 已启动雪球新闻定期获取任务
+2025-05-25 17:15:43,193 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x105cfbb00>
+2025-05-25 17:15:43,194 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x105cfbb00> completed
+2025-05-25 17:15:43,199 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x105f0d3f0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x105277560>, deterministic=True)
+2025-05-25 17:15:43,200 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x105f0d3f0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x105277560>, deterministic=True) completed
+2025-05-25 17:15:43,200 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x105f0d3f0>, 'floor', 1, <built-in function floor>, deterministic=True)
+2025-05-25 17:15:43,200 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x105f0d3f0>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2025-05-25 17:15:43,200 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x105f0d3f0>)
+2025-05-25 17:15:43,200 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x105f0d3f0>) completed
+2025-05-25 17:15:43,200 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x105ce4240>, 'PRAGMA read_uncommitted', [])
+2025-05-25 17:15:43,200 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x105ce4240>, 'PRAGMA read_uncommitted', []) completed
+2025-05-25 17:15:43,200 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x105ce4240>)
+2025-05-25 17:15:43,200 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x105ce4240>) completed
+2025-05-25 17:15:43,200 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x105ce4240>)
+2025-05-25 17:15:43,200 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x105ce4240>) completed
+2025-05-25 17:15:43,201 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x105f0d3f0>)
+2025-05-25 17:15:43,201 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x105f0d3f0>) completed
+2025-05-25 17:15:43,201 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x105f0d3f0>)
+2025-05-25 17:15:43,201 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x105f0d3f0>) completed
+2025-05-25 17:15:43,202 - aiosqlite - DEBUG - executing functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x105ce6ac0>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-25 17:15:43.191798', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', 'f9486a76-d815-49a3-a054-ca0719ab93c9', '2025-05-25 17:15:43.191810', '2025-05-25 17:15:43.191810'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-25 17:15:43.193245', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', '799b7959-eca5-491f-a1f5-773bd839d227', '2025-05-25 17:15:43.193249', '2025-05-25 17:15:43.193250')])
+2025-05-25 17:15:43,202 - aiosqlite - DEBUG - operation functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x105ce6ac0>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-25 17:15:43.191798', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', 'f9486a76-d815-49a3-a054-ca0719ab93c9', '2025-05-25 17:15:43.191810', '2025-05-25 17:15:43.191810'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-25 17:15:43.193245', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', '799b7959-eca5-491f-a1f5-773bd839d227', '2025-05-25 17:15:43.193249', '2025-05-25 17:15:43.193250')]) completed
+2025-05-25 17:15:43,202 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x105ce6ac0>)
+2025-05-25 17:15:43,202 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x105ce6ac0>) completed
+2025-05-25 17:15:43,202 - aiosqlite - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x105f0d3f0>)
+2025-05-25 17:15:43,203 - aiosqlite - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x105f0d3f0>) completed
+2025-05-25 17:15:43,203 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x105f0d3f0>)
+2025-05-25 17:15:43,203 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x105f0d3f0>) completed
+2025-05-25 17:15:43,203 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x105f0d3f0>)
+2025-05-25 17:15:43,203 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x105f0d3f0>) completed
+2025-05-25 17:15:43,204 - app - INFO - 财知道API服务已启动完成！
+INFO:     Application startup complete.
+2025-05-25 17:15:43,960 - app - ERROR - 雪球API请求发生异常: 0, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url=URL('https://xueqiu.com/statuses/hot/listV2.json?since_id=-1&max_id=-1&size=20')
+2025-05-25 17:15:43,960 - app - INFO - 从雪球获取了 0 条[全部]分类新闻
+WARNING:  StatReload detected changes in 'app/services/sina_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-05-25 17:18:34,283 - app - INFO - 财知道API服务正在关闭...
+2025-05-25 17:18:34,283 - app - INFO - 已停止雪球新闻定期获取任务
+2025-05-25 17:18:34,283 - app - INFO - 已停止雪球新闻定期获取任务
+2025-05-25 17:18:34,283 - app - INFO - 财知道API服务已关闭！
+INFO:     Application shutdown complete.
+INFO:     Finished server process [95251]
+INFO:     Started server process [95492]
+INFO:     Waiting for application startup.
+2025-05-25 17:18:34,908 - app - INFO - 财知道API服务正在启动...
+2025-05-25 17:18:34,908 - app - INFO - 已启动雪球新闻定期获取任务，间隔: 3600秒
+2025-05-25 17:18:34,908 - app - INFO - 已启动雪球新闻定期获取任务
+2025-05-25 17:18:34,910 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x10baffb00>
+2025-05-25 17:18:34,911 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x10baffb00> completed
+2025-05-25 17:18:34,917 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10bb0d3f0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x108277560>, deterministic=True)
+2025-05-25 17:18:34,917 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10bb0d3f0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x108277560>, deterministic=True) completed
+2025-05-25 17:18:34,918 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10bb0d3f0>, 'floor', 1, <built-in function floor>, deterministic=True)
+2025-05-25 17:18:34,918 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10bb0d3f0>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2025-05-25 17:18:34,918 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x10bb0d3f0>)
+2025-05-25 17:18:34,918 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x10bb0d3f0>) completed
+2025-05-25 17:18:34,918 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x10bae1140>, 'PRAGMA read_uncommitted', [])
+2025-05-25 17:18:34,918 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x10bae1140>, 'PRAGMA read_uncommitted', []) completed
+2025-05-25 17:18:34,918 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x10bae1140>)
+2025-05-25 17:18:34,918 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x10bae1140>) completed
+2025-05-25 17:18:34,918 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x10bae1140>)
+2025-05-25 17:18:34,918 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x10bae1140>) completed
+2025-05-25 17:18:34,918 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10bb0d3f0>)
+2025-05-25 17:18:34,918 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10bb0d3f0>) completed
+2025-05-25 17:18:34,919 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x10bb0d3f0>)
+2025-05-25 17:18:34,919 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x10bb0d3f0>) completed
+2025-05-25 17:18:34,919 - aiosqlite - DEBUG - executing functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x10bae2ac0>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-25 17:18:34.908915', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', 'dabcaccc-4e06-4766-af7f-471325ce2088', '2025-05-25 17:18:34.908925', '2025-05-25 17:18:34.908926'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-25 17:18:34.910482', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', '7fb62d90-f542-4acf-9f31-99b1286909ff', '2025-05-25 17:18:34.910488', '2025-05-25 17:18:34.910489')])
+2025-05-25 17:18:34,920 - aiosqlite - DEBUG - operation functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x10bae2ac0>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-25 17:18:34.908915', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', 'dabcaccc-4e06-4766-af7f-471325ce2088', '2025-05-25 17:18:34.908925', '2025-05-25 17:18:34.908926'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-25 17:18:34.910482', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', '7fb62d90-f542-4acf-9f31-99b1286909ff', '2025-05-25 17:18:34.910488', '2025-05-25 17:18:34.910489')]) completed
+2025-05-25 17:18:34,920 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x10bae2ac0>)
+2025-05-25 17:18:34,920 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x10bae2ac0>) completed
+2025-05-25 17:18:34,920 - aiosqlite - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x10bb0d3f0>)
+2025-05-25 17:18:34,921 - aiosqlite - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x10bb0d3f0>) completed
+2025-05-25 17:18:34,921 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10bb0d3f0>)
+2025-05-25 17:18:34,921 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10bb0d3f0>) completed
+2025-05-25 17:18:34,921 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x10bb0d3f0>)
+2025-05-25 17:18:34,922 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x10bb0d3f0>) completed
+2025-05-25 17:18:34,922 - app - INFO - 财知道API服务已启动完成！
+INFO:     Application startup complete.
+2025-05-25 17:18:35,665 - app - ERROR - 雪球API请求发生异常: 0, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url=URL('https://xueqiu.com/statuses/hot/listV2.json?since_id=-1&max_id=-1&size=20')
+2025-05-25 17:18:35,665 - app - INFO - 从雪球获取了 0 条[全部]分类新闻
+WARNING:  StatReload detected changes in 'app/services/sina_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-05-25 17:20:05,360 - app - INFO - 财知道API服务正在关闭...
+2025-05-25 17:20:05,360 - app - INFO - 已停止雪球新闻定期获取任务
+2025-05-25 17:20:05,360 - app - INFO - 已停止雪球新闻定期获取任务
+2025-05-25 17:20:05,360 - app - INFO - 财知道API服务已关闭！
+INFO:     Application shutdown complete.
+INFO:     Finished server process [95492]
+INFO:     Started server process [95549]
+INFO:     Waiting for application startup.
+2025-05-25 17:20:06,011 - app - INFO - 财知道API服务正在启动...
+2025-05-25 17:20:06,011 - app - INFO - 已启动雪球新闻定期获取任务，间隔: 3600秒
+2025-05-25 17:20:06,011 - app - INFO - 已启动雪球新闻定期获取任务
+2025-05-25 17:20:06,013 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x106a4fb00>
+2025-05-25 17:20:06,013 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x106a4fb00> completed
+2025-05-25 17:20:06,018 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x106d0d3f0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x106177560>, deterministic=True)
+2025-05-25 17:20:06,018 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x106d0d3f0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x106177560>, deterministic=True) completed
+2025-05-25 17:20:06,018 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x106d0d3f0>, 'floor', 1, <built-in function floor>, deterministic=True)
+2025-05-25 17:20:06,018 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x106d0d3f0>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2025-05-25 17:20:06,018 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x106d0d3f0>)
+2025-05-25 17:20:06,018 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x106d0d3f0>) completed
+2025-05-25 17:20:06,019 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x106a2c2c0>, 'PRAGMA read_uncommitted', [])
+2025-05-25 17:20:06,019 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x106a2c2c0>, 'PRAGMA read_uncommitted', []) completed
+2025-05-25 17:20:06,019 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x106a2c2c0>)
+2025-05-25 17:20:06,019 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x106a2c2c0>) completed
+2025-05-25 17:20:06,019 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x106a2c2c0>)
+2025-05-25 17:20:06,019 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x106a2c2c0>) completed
+2025-05-25 17:20:06,019 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x106d0d3f0>)
+2025-05-25 17:20:06,019 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x106d0d3f0>) completed
+2025-05-25 17:20:06,020 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x106d0d3f0>)
+2025-05-25 17:20:06,020 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x106d0d3f0>) completed
+2025-05-25 17:20:06,020 - aiosqlite - DEBUG - executing functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x106a2eac0>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-25 17:20:06.011346', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', '9e35ac57-cf77-41f8-8d4f-d3e7bcce491f', '2025-05-25 17:20:06.011355', '2025-05-25 17:20:06.011355'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-25 17:20:06.012732', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', '2bd291ed-2e10-43fb-8b43-3ecafc631d39', '2025-05-25 17:20:06.012736', '2025-05-25 17:20:06.012736')])
+2025-05-25 17:20:06,020 - aiosqlite - DEBUG - operation functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x106a2eac0>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-25 17:20:06.011346', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', '9e35ac57-cf77-41f8-8d4f-d3e7bcce491f', '2025-05-25 17:20:06.011355', '2025-05-25 17:20:06.011355'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-25 17:20:06.012732', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', '2bd291ed-2e10-43fb-8b43-3ecafc631d39', '2025-05-25 17:20:06.012736', '2025-05-25 17:20:06.012736')]) completed
+2025-05-25 17:20:06,020 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x106a2eac0>)
+2025-05-25 17:20:06,020 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x106a2eac0>) completed
+2025-05-25 17:20:06,021 - aiosqlite - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x106d0d3f0>)
+2025-05-25 17:20:06,021 - aiosqlite - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x106d0d3f0>) completed
+2025-05-25 17:20:06,021 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x106d0d3f0>)
+2025-05-25 17:20:06,021 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x106d0d3f0>) completed
+2025-05-25 17:20:06,022 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x106d0d3f0>)
+2025-05-25 17:20:06,022 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x106d0d3f0>) completed
+2025-05-25 17:20:06,022 - app - INFO - 财知道API服务已启动完成！
+INFO:     Application startup complete.
+2025-05-25 17:20:06,760 - app - ERROR - 雪球API请求发生异常: 0, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url=URL('https://xueqiu.com/statuses/hot/listV2.json?since_id=-1&max_id=-1&size=20')
+2025-05-25 17:20:06,761 - app - INFO - 从雪球获取了 0 条[全部]分类新闻
+WARNING:  StatReload detected changes in 'tests/test_sina_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-05-25 17:40:51,757 - app - INFO - 财知道API服务正在关闭...
+2025-05-25 17:40:51,757 - app - INFO - 已停止雪球新闻定期获取任务
+2025-05-25 17:40:51,757 - app - INFO - 已停止雪球新闻定期获取任务
+2025-05-25 17:40:51,757 - app - INFO - 财知道API服务已关闭！
+INFO:     Application shutdown complete.
+INFO:     Finished server process [95549]
+INFO:     Started server process [97603]
+INFO:     Waiting for application startup.
+2025-05-25 17:40:52,432 - app - INFO - 财知道API服务正在启动...
+2025-05-25 17:40:52,432 - app - INFO - 已启动雪球新闻定期获取任务，间隔: 3600秒
+2025-05-25 17:40:52,432 - app - INFO - 已启动雪球新闻定期获取任务
+2025-05-25 17:40:52,434 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x1113abb00>
+2025-05-25 17:40:52,435 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x1113abb00> completed
+2025-05-25 17:40:52,441 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x11200d3f0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x110977560>, deterministic=True)
+2025-05-25 17:40:52,441 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x11200d3f0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x110977560>, deterministic=True) completed
+2025-05-25 17:40:52,441 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x11200d3f0>, 'floor', 1, <built-in function floor>, deterministic=True)
+2025-05-25 17:40:52,441 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x11200d3f0>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2025-05-25 17:40:52,442 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x11200d3f0>)
+2025-05-25 17:40:52,442 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x11200d3f0>) completed
+2025-05-25 17:40:52,442 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x111388240>, 'PRAGMA read_uncommitted', [])
+2025-05-25 17:40:52,442 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x111388240>, 'PRAGMA read_uncommitted', []) completed
+2025-05-25 17:40:52,442 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x111388240>)
+2025-05-25 17:40:52,442 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x111388240>) completed
+2025-05-25 17:40:52,442 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x111388240>)
+2025-05-25 17:40:52,442 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x111388240>) completed
+2025-05-25 17:40:52,442 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x11200d3f0>)
+2025-05-25 17:40:52,442 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x11200d3f0>) completed
+2025-05-25 17:40:52,443 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x11200d3f0>)
+2025-05-25 17:40:52,443 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x11200d3f0>) completed
+2025-05-25 17:40:52,443 - aiosqlite - DEBUG - executing functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x11138aa40>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-25 17:40:52.432895', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', '0fbf3e5f-8360-4f7d-8956-7b1470a32926', '2025-05-25 17:40:52.432905', '2025-05-25 17:40:52.432906'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-25 17:40:52.434323', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', '12572f85-d574-4cf4-91ba-2873847863cf', '2025-05-25 17:40:52.434327', '2025-05-25 17:40:52.434327')])
+2025-05-25 17:40:52,444 - aiosqlite - DEBUG - operation functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x11138aa40>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-25 17:40:52.432895', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', '0fbf3e5f-8360-4f7d-8956-7b1470a32926', '2025-05-25 17:40:52.432905', '2025-05-25 17:40:52.432906'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-25 17:40:52.434323', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', '12572f85-d574-4cf4-91ba-2873847863cf', '2025-05-25 17:40:52.434327', '2025-05-25 17:40:52.434327')]) completed
+2025-05-25 17:40:52,444 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x11138aa40>)
+2025-05-25 17:40:52,444 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x11138aa40>) completed
+2025-05-25 17:40:52,444 - aiosqlite - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x11200d3f0>)
+2025-05-25 17:40:52,445 - aiosqlite - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x11200d3f0>) completed
+2025-05-25 17:40:52,445 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x11200d3f0>)
+2025-05-25 17:40:52,445 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x11200d3f0>) completed
+2025-05-25 17:40:52,445 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x11200d3f0>)
+2025-05-25 17:40:52,445 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x11200d3f0>) completed
+2025-05-25 17:40:52,445 - app - INFO - 财知道API服务已启动完成！
+INFO:     Application startup complete.
+2025-05-25 17:40:53,182 - app - ERROR - 雪球API请求发生异常: 0, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url=URL('https://xueqiu.com/statuses/hot/listV2.json?since_id=-1&max_id=-1&size=20')
+2025-05-25 17:40:53,182 - app - INFO - 从雪球获取了 0 条[全部]分类新闻
+WARNING:  StatReload detected changes in 'app/services/sina_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-05-25 17:51:00,251 - app - INFO - 财知道API服务正在关闭...
+2025-05-25 17:51:00,251 - app - INFO - 已停止雪球新闻定期获取任务
+2025-05-25 17:51:00,251 - app - INFO - 已停止雪球新闻定期获取任务
+2025-05-25 17:51:00,251 - app - INFO - 财知道API服务已关闭！
+INFO:     Application shutdown complete.
+INFO:     Finished server process [97603]
+Process SpawnProcess-10:
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.11/3.11.12_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/opt/homebrew/Cellar/python@3.11/3.11.12_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/bytedance/codes/.venv-py311/lib/python3.11/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/Users/bytedance/codes/.venv-py311/lib/python3.11/site-packages/uvicorn/server.py", line 61, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.12_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.12_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.12_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/bytedance/codes/.venv-py311/lib/python3.11/site-packages/uvicorn/server.py", line 68, in serve
+    config.load()
+  File "/Users/bytedance/codes/.venv-py311/lib/python3.11/site-packages/uvicorn/config.py", line 467, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bytedance/codes/.venv-py311/lib/python3.11/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.12_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/bytedance/codes/backend/app/main.py", line 195, in <module>
+    from app.api import api_router
+  File "/Users/bytedance/codes/backend/app/api/__init__.py", line 7, in <module>
+    from app.api.news import router as news_router
+  File "/Users/bytedance/codes/backend/app/api/news.py", line 10, in <module>
+    from app.services.sina_service import sina_service
+  File "/Users/bytedance/codes/backend/app/services/sina_service.py", line 7, in <module>
+    from app.models.news import News  # 假设有一个News模型用于存储新闻
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ImportError: cannot import name 'News' from 'app.models.news' (/Users/bytedance/codes/backend/app/models/news.py)
+WARNING:  StatReload detected changes in 'app/services/sina_service.py'. Reloading...
+INFO:     Started server process [913]
+INFO:     Waiting for application startup.
+2025-05-25 18:18:15,866 - app - INFO - 财知道API服务正在启动...
+2025-05-25 18:18:15,866 - app - INFO - 已启动雪球新闻定期获取任务，间隔: 3600秒
+2025-05-25 18:18:15,866 - app - INFO - 已启动雪球新闻定期获取任务
+2025-05-25 18:18:15,868 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x104773ba0>
+2025-05-25 18:18:15,868 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x104773ba0> completed
+2025-05-25 18:18:15,869 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x1047813f0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x103d7f560>, deterministic=True)
+2025-05-25 18:18:15,869 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x1047813f0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x103d7f560>, deterministic=True) completed
+2025-05-25 18:18:15,869 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x1047813f0>, 'floor', 1, <built-in function floor>, deterministic=True)
+2025-05-25 18:18:15,869 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x1047813f0>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2025-05-25 18:18:15,869 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x1047813f0>)
+2025-05-25 18:18:15,869 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x1047813f0>) completed
+2025-05-25 18:18:15,869 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x1047589c0>, 'PRAGMA read_uncommitted', [])
+2025-05-25 18:18:15,869 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x1047589c0>, 'PRAGMA read_uncommitted', []) completed
+2025-05-25 18:18:15,870 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x1047589c0>)
+2025-05-25 18:18:15,870 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x1047589c0>) completed
+2025-05-25 18:18:15,870 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x1047589c0>)
+2025-05-25 18:18:15,870 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x1047589c0>) completed
+2025-05-25 18:18:15,870 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x1047813f0>)
+2025-05-25 18:18:15,870 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x1047813f0>) completed
+2025-05-25 18:18:15,871 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x1047813f0>)
+2025-05-25 18:18:15,871 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x1047813f0>) completed
+2025-05-25 18:18:15,871 - aiosqlite - DEBUG - executing functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x10475a340>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-25 18:18:15.866987', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', 'dadb5149-8418-4dab-9315-58624e31c348', '2025-05-25 18:18:15.866996', '2025-05-25 18:18:15.866997'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-25 18:18:15.868266', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', '6f96ee8a-e8c4-4002-9a38-613f0ccfbd1f', '2025-05-25 18:18:15.868270', '2025-05-25 18:18:15.868270')])
+2025-05-25 18:18:15,871 - aiosqlite - DEBUG - operation functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x10475a340>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-25 18:18:15.866987', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', 'dadb5149-8418-4dab-9315-58624e31c348', '2025-05-25 18:18:15.866996', '2025-05-25 18:18:15.866997'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-25 18:18:15.868266', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', '6f96ee8a-e8c4-4002-9a38-613f0ccfbd1f', '2025-05-25 18:18:15.868270', '2025-05-25 18:18:15.868270')]) completed
+2025-05-25 18:18:15,871 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x10475a340>)
+2025-05-25 18:18:15,871 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x10475a340>) completed
+2025-05-25 18:18:15,871 - aiosqlite - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x1047813f0>)
+2025-05-25 18:18:15,872 - aiosqlite - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x1047813f0>) completed
+2025-05-25 18:18:15,872 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x1047813f0>)
+2025-05-25 18:18:15,872 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x1047813f0>) completed
+2025-05-25 18:18:15,872 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x1047813f0>)
+2025-05-25 18:18:15,872 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x1047813f0>) completed
+2025-05-25 18:18:15,872 - app - INFO - 财知道API服务已启动完成！
+INFO:     Application startup complete.
+
+--- 抓取到的HTML片段 ---
+ <!DOCTYPE html>
+<!-- [ published at 2025-05-26 09:16:47 ] -->
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>股票首页_新浪财经_新浪网</title>
+<meta name="keywords" content="股票,行情,大盘,个股,上市公司,新股,数据,研究报告,股市论坛,美股,港股,B股,炒股软件" />
+<meta name="description" content="新浪股票提供最权威及时的证券资讯，7X24小时全球股票市场报价，拥有人气最旺的华人股票博客、论坛和股吧，机构研报精华汇总，主力动向一网打尽" />
+<link rel="mask-icon" sizes="any" href="//www.sina.com.cn/favicon.svg" color="red">
+<meta content="always" name="referrer">
+<meta name="viewport" content="width=1010" />
+<meta name="stencil" content="PGLS000487" />
+
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+<script type="text/javascript" src="//finance.sina.com.cn/other/src/doc/httpsjp.js"></script>
+	
+<link rel="stylesheet" href="//n1.sinaimg.cn/finance/stockhomesys/css/index_simsun.css?202311151405" />
+<!--<link rel="stylesheet" href="//n1.sinaimg.cn/tech/66ceb6d9/20180419/style20080419.css?201804191" />-->
+<link rel="stylesheet" href="//n2.sinaimg.cn/news/66ceb6d9/20200525/style20200522.css" />
+	
+<style>
+#preload_bookmark,
+#preload_bookmark #sprite{width:0;height:0;position:absolute;left:-9999px;background:url("//i2.sinaimg.cn/dy/sinatag/addfav_pop_bg.png") no-repeat 0 0;}
+#preload_bookmark #sprite{background:url("//i1.sinaimg.cn/dy/sinatag/btns_addfav_spirite.png") no-repeat 0 0;}
+.u-list-center{line-height:26px}
+.u-list-center li{padding-top: 0px;}
+.table01_tip{
+    padding: 0 5px;
+    height: 20px;
+    line-height: 20px;
+    color: #77b0dc;
+    background: #e2edf6;}
+.list01{
+	line-height:26px;
+}
+	
+.tabchange_wrap{
+  	width:361px;
+  	margin-top:24px;
+}
+.tabchange_wrap_top{
+  	border-left:1px solid #E5E5E5;
+}
+.clearfix:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.tabchange_title01, .tabchange_title02{
+    float:left;
+   	width:179px;
+   	height:36px;
+   	text-align: center;
+   	line-height:36px;
+   	font-size: 16px;
+   	color: #1F2D4A;
+   	border-bottom: 1px solid #E5E5E5;
+   	border-top:1px solid #E5E5E5;
+   	background: #F7F7F7;
+   	font-family: 'Microsoft Yahei','微软雅黑';
+}
+.tabchange_title01{
+  	border-right:1px solid #E5E5E5;
+}
+.tabchange_title02{
+   	border-right:1px solid #E5E5E5;
+}
+.none{
+  	display:none;
+}
+.hover_text{
+  	color:#1F2D4A;
+    background: #fff;
+    border-top:2px solid  #4763B2;
+    border-bottom:0;
+    line-height:35px;
+}
+.hover_class{
+    background: #fff;
+    border-top:2px solid  #4763B2;
+    border-bottom:0;
+    color:#4763B2;
+    line-height:35px; 
+}
+.show_hidden02{
+  	display:none;
+}
+	
+.m-p1-lb2_1-container dl:nth-child(4) dd img{
+	background: none;
+	width: 311px;
+}
+.fapp_dialog_close{position: absolute;z-index: 2;top: 15px;right: 15px;cursor: pointer;width: 25px;height: 25px;background-color: rgba(255,255,255,0.01);}	
+</style>
+	
+<script src="//news.sina.com.cn/js/weather/1010/jquery-1.11.1.min.js"></script>
+<script src="//finance.sina.com.cn/other/src/sff.js"></script>
+<script src="//i.sso.sina.com.cn/js/ssologin.js"></script>
+<script type="text/javascript" charset="UTF-8" src="//i.sso.sina.com.cn/js/sinaSSOManager.js"></script>
+<script>
+(function(){
+	var a = [];
+	if('indexOf' in a){return;}
+	Array.prototype.indexOf = function(t){
+		for(var i = 0, l = this.length; i < l; i++){
+			if(this[i] === t){
+				return i;
+			}
+		}
+		return null;
+	}
+})();
+</script>
+<script type="text/javascript" src="//www.sinaimg.cn/home/sinaflash.js"></script>
+<script type="text/javascript" src="//d1.sina.com.cn/litong/zhitou/sspnew.js"></script>
+<!-- 乐居 begin -->
+<script charset="utf-8" src="//d1.sina.com.cn/litong/zhitou/leju/leju.js"></script>
+<script>
+  leju.conf.url = '//adm.leju.com/get_ad_list/PG_514AC44E37FB50';
+  leju.conf.defaultUrl = '//staticadm.leju.com/get_ad_list/PG_514AC44E37FB50.js';
+  var lejuMedia = leju.getData();
+</script>
+<!-- 乐居 end -->
+<script>
+try{document.domain = 'sina.com.cn';}
+catch(e){}
+</script>
+<meta name="sudameta" content="dataid:wpcomos:43205" /></head>
+<body><!-- body code begin -->
+
+<!-- SUDA_CODE_START --> 
+<script type="text/javascript"> 
+//<!--
+(function(){var an="V=2.1.16";var ah=window,F=document,s=navigator,W=s.userAgent,ao=ah.screen,j=ah.location.href;var aD="https:"==ah.location.protocol?"https://s":"http://",ay="beacon.sina.com.cn";var N=aD+ay+"/a.gif?",z=aD+ay+"/g.gif?",R=aD+ay+"/f.gif?",ag=aD+ay+"/e.gif?",aB=aD+"beacon.sinauda.com/i.gif?";var aA=F.referrer.toLowerCase();var aa="SINAGLOBAL",Y="FSINAGLOBAL",H="Apache",P="ULV",l="SUP",aE="UOR",E="_s_acc",X="_s_tentry",n=false,az=false,B=(document.domain=="sina.com.cn")?true:false;var o=0;var aG=false,A=false;var al="";var m=16777215,Z=0,C,K=0;var r="",b="",a="";var M=[],S=[],I=[];var u=0;var v=0;var p="";var am=false;var w=false;function O(){var e=document.createElement("iframe");e.src=aD+ay+"/data.html?"+new Date().getTime();e.id="sudaDataFrame";e.style.height="0px";e.style.width="1px";e.style.overflow="hidden";e.frameborder="0";e.scrolling="no";document.getElementsByTagName("head")[0].appendChild(e)}function k(){var e=document.createElement("iframe");e.src=aD+ay+"/ckctl.html";e.id="ckctlFrame";e.style.height="0px";e.style.width="1px";e.style.overflow="hidden";e.frameborder="0";e.scrolling="no";document.getElementsByTagName("head")[0].appendChild(e)}function q(){var e=document.createElement("script");e.src=aD+ay+"/h.js";document.getElementsByTagName("head")[0].appendChild(e)}function h(aH,i){var D=F.getElementsByName(aH);var e=(i>0)?i:0;return(D.length>e)?D[e].content:""}function aF(){var aJ=F.getElementsByName("sudameta");var aR=[];for(var aO=0;aO<aJ.length;aO++){var aK=aJ[aO].content;if(aK){if(aK.indexOf(";")!=-1){var D=aK.split(";");for(var aH=0;aH<D.length;aH++){var aP=aw(D[aH]);if(!aP){continue}aR.push(aP)}}else{aR.push(aK)}}}var aM=F.getElementsByTagName("meta");for(var aO=0,aI=aM.length;aO<aI;aO++){var aN=aM[aO];if(aN.name=="tags"){aR.push("content_tags:"+encodeURI(aN.content))}}var aL=t("vjuids");aR.push("vjuids:"+aL);var e="";var aQ=j.indexOf("#");if(aQ!=-1){e=escape(j.substr(aQ+1));aR.push("hashtag:"+e)}return aR}function V(aK,D,aI,aH){if(aK==""){return""}aH=(aH=="")?"=":aH;D+=aH;var aJ=aK.indexOf(D);if(aJ<0){return""}aJ+=D.length;var i=aK.indexOf(aI,aJ);if(i<aJ){i=aK.length}return aK.substring(aJ,i)}function t(e){if(undefined==e||""==e){return""}return V(F.cookie,e,";","")}function at(aI,e,i,aH){if(e!=null){if((undefined==aH)||(null==aH)){aH="sina.com.cn"}if((undefined==i)||(null==i)||(""==i)){F.cookie=aI+"="+e+";domain="+aH+";path=/"}else{var D=new Date();var aJ=D.getTime();aJ=aJ+86400000*i;D.setTime(aJ);aJ=D.getTime();F.cookie=aI+"="+e+";domain="+aH+";expires="+D.toUTCString()+";path=/"}}}function f(D){try{var i=document.getElementById("sudaDataFrame").contentWindow.storage;return i.get(D)}catch(aH){return false}}function ar(D,aH){try{var i=document.getElementById("sudaDataFrame").contentWindow.storage;i.set(D,aH);return true}catch(aI){return false}}function L(){var aJ=15;var D=window.SUDA.etag;if(!B){return"-"}if(u==0){O();q()}if(D&&D!=undefined){w=true}ls_gid=f(aa);if(ls_gid===false||w==false){return false}else{am=true}if(ls_gid&&ls_gid.length>aJ){at(aa,ls_gid,3650);n=true;return ls_gid}else{if(D&&D.length>aJ){at(aa,D,3650);az=true}var i=0,aI=500;var aH=setInterval((function(){var e=t(aa);if(w){e=D}i+=1;if(i>3){clearInterval(aH)}if(e.length>aJ){clearInterval(aH);ar(aa,e)}}),aI);return w?D:t(aa)}}function U(e,aH,D){var i=e;if(i==null){return false}aH=aH||"click";if((typeof D).toLowerCase()!="function"){return}if(i.attachEvent){i.attachEvent("on"+aH,D)}else{if(i.addEventListener){i.addEventListener(aH,D,false)}else{i["on"+aH]=D}}return true}function af(){if(window.event!=null){return window.event}else{if(window.event){return window.event}var D=arguments.callee.caller;var i;var aH=0;while(D!=null&&aH<40){i=D.arguments[0];if(i&&(i.constructor==Event||i.constructor==MouseEvent||i.constructor==KeyboardEvent)){return i}aH++;D=D.caller}return i}}function g(i){i=i||af();if(!i.target){i.target=i.srcElement;i.pageX=i.x;i.pageY=i.y}if(typeof i.layerX=="undefined"){i.layerX=i.offsetX}if(typeof i.layerY=="undefined"){i.layerY=i.offsetY}return i}function aw(aH){if(typeof aH!=="string"){throw"trim need a string as parameter"}var e=aH.length;var D=0;var i=/(\u3000|\s|\t|\u00A0)/;while(D<e){if(!i.test(aH.charAt(D))){break}D+=1}while(e>D){if(!i.test(aH.charAt(e-1))){break}e-=1}return aH.slice(D,e)}function c(e){return Object.prototype.toString.call(e)==="[object Array]"}function J(aH,aL){var aN=aw(aH).split("&");var aM={};var D=function(i){if(aL){try{return decodeURIComponent(i)}catch(aP){return i}}else{return i}};for(var aJ=0,aK=aN.length;aJ<aK;aJ++){if(aN[aJ]){var aI=aN[aJ].split("=");var e=aI[0];var aO=aI[1];if(aI.length<2){aO=e;e="$nullName"}if(!aM[e]){aM[e]=D(aO)}else{if(c(aM[e])!=true){aM[e]=[aM[e]]}aM[e].push(D(aO))}}}return aM}function ac(D,aI){for(var aH=0,e=D.length;aH<e;aH++){aI(D[aH],aH)}}function ak(i){var e=new RegExp("^http(?:s)?://([^/]+)","im");if(i.match(e)){return i.match(e)[1].toString()}else{return""}}function aj(aO){try{var aL="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";var D="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_=";var aQ=function(e){var aR="",aS=0;for(;aS<e.length;aS++){aR+="%"+aH(e[aS])}return decodeURIComponent(aR)};var aH=function(e){var i="0"+e.toString(16);return i.length<=2?i:i.substr(1)};var aP=function(aY,aV,aR){if(typeof(aY)=="string"){aY=aY.split("")}var aX=function(a7,a9){for(var a8=0;a8<a7.length;a8++){if(a7[a8]==a9){return a8}}return -1};var aS=[];var a6,a4,a1="";var a5,a3,a0,aZ="";if(aY.length%4!=0){}var e=/[^A-Za-z0-9\+\/\=]/g;var a2=aL.split("");if(aV=="urlsafe"){e=/[^A-Za-z0-9\-_\=]/g;a2=D.split("")}var aU=0;if(aV=="binnary"){a2=[];for(aU=0;aU<=64;aU++){a2[aU]=aU+128}}if(aV!="binnary"&&e.exec(aY.join(""))){return aR=="array"?[]:""}aU=0;do{a5=aX(a2,aY[aU++]);a3=aX(a2,aY[aU++]);a0=aX(a2,aY[aU++]);aZ=aX(a2,aY[aU++]);a6=(a5<<2)|(a3>>4);a4=((a3&15)<<4)|(a0>>2);a1=((a0&3)<<6)|aZ;aS.push(a6);if(a0!=64&&a0!=-1){aS.push(a4)}if(aZ!=64&&aZ!=-1){aS.push(a1)}a6=a4=a1="";a5=a3=a0=aZ=""}while(aU<aY.length);if(aR==" 
+--- END ---
+
+2025-05-25 18:18:16,028 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-2' coro=<SinaService.schedule_news_fetch() done, defined at /Users/bytedance/codes/backend/app/services/sina_service.py:90> exception=NameError("name 'News' is not defined")>
+Traceback (most recent call last):
+  File "/Users/bytedance/codes/backend/app/services/sina_service.py", line 95, in schedule_news_fetch
+    news_record = News(
+                  ^^^^
+NameError: name 'News' is not defined
+2025-05-25 18:18:16,630 - app - ERROR - 雪球API请求发生异常: 0, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url=URL('https://xueqiu.com/statuses/hot/listV2.json?since_id=-1&max_id=-1&size=20')
+2025-05-25 18:18:16,630 - app - INFO - 从雪球获取了 0 条[全部]分类新闻
+WARNING:  StatReload detected changes in 'app/services/sina_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-05-25 18:20:12,811 - app - INFO - 财知道API服务正在关闭...
+2025-05-25 18:20:12,811 - app - INFO - 已停止雪球新闻定期获取任务
+2025-05-25 18:20:12,812 - app - INFO - 已停止雪球新闻定期获取任务
+2025-05-25 18:20:12,812 - app - INFO - 财知道API服务已关闭！
+INFO:     Application shutdown complete.
+INFO:     Finished server process [913]
+Process SpawnProcess-12:
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.11/3.11.12_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/opt/homebrew/Cellar/python@3.11/3.11.12_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/bytedance/codes/.venv-py311/lib/python3.11/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/Users/bytedance/codes/.venv-py311/lib/python3.11/site-packages/uvicorn/server.py", line 61, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.12_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.12_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.12_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/bytedance/codes/.venv-py311/lib/python3.11/site-packages/uvicorn/server.py", line 68, in serve
+    config.load()
+  File "/Users/bytedance/codes/.venv-py311/lib/python3.11/site-packages/uvicorn/config.py", line 467, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bytedance/codes/.venv-py311/lib/python3.11/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.12_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/bytedance/codes/backend/app/main.py", line 195, in <module>
+    from app.api import api_router
+  File "/Users/bytedance/codes/backend/app/api/__init__.py", line 7, in <module>
+    from app.api.news import router as news_router
+  File "/Users/bytedance/codes/backend/app/api/news.py", line 10, in <module>
+    from app.services.sina_service import sina_service
+  File "/Users/bytedance/codes/backend/app/services/sina_service.py", line 7, in <module>
+    from app.models.news import News  # 假设有一个News模型用于存储新闻
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ImportError: cannot import name 'News' from 'app.models.news' (/Users/bytedance/codes/backend/app/models/news.py)
+WARNING:  StatReload detected changes in 'app/services/sina_service.py'. Reloading...
+Process SpawnProcess-13:
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.11/3.11.12_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/opt/homebrew/Cellar/python@3.11/3.11.12_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/bytedance/codes/.venv-py311/lib/python3.11/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/Users/bytedance/codes/.venv-py311/lib/python3.11/site-packages/uvicorn/server.py", line 61, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.12_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.12_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.12_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/bytedance/codes/.venv-py311/lib/python3.11/site-packages/uvicorn/server.py", line 68, in serve
+    config.load()
+  File "/Users/bytedance/codes/.venv-py311/lib/python3.11/site-packages/uvicorn/config.py", line 467, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bytedance/codes/.venv-py311/lib/python3.11/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.12_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/bytedance/codes/backend/app/main.py", line 195, in <module>
+    from app.api import api_router
+  File "/Users/bytedance/codes/backend/app/api/__init__.py", line 7, in <module>
+    from app.api.news import router as news_router
+  File "/Users/bytedance/codes/backend/app/api/news.py", line 10, in <module>
+    from app.services.sina_service import sina_service
+  File "/Users/bytedance/codes/backend/app/services/sina_service.py", line 7, in <module>
+    from app.models.news import News  # 假设有一个News模型用于存储新闻
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ImportError: cannot import name 'News' from 'app.models.news' (/Users/bytedance/codes/backend/app/models/news.py)
+WARNING:  StatReload detected changes in 'app/services/sina_service.py'. Reloading...
+Process SpawnProcess-14:
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.11/3.11.12_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/opt/homebrew/Cellar/python@3.11/3.11.12_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/bytedance/codes/.venv-py311/lib/python3.11/site-packages/uvicorn/_subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+  File "/Users/bytedance/codes/.venv-py311/lib/python3.11/site-packages/uvicorn/server.py", line 61, in run
+    return asyncio.run(self.serve(sockets=sockets))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.12_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.12_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.12_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/bytedance/codes/.venv-py311/lib/python3.11/site-packages/uvicorn/server.py", line 68, in serve
+    config.load()
+  File "/Users/bytedance/codes/.venv-py311/lib/python3.11/site-packages/uvicorn/config.py", line 467, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bytedance/codes/.venv-py311/lib/python3.11/site-packages/uvicorn/importer.py", line 21, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.12_1/Frameworks/Python.framework/Versions/3.11/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/bytedance/codes/backend/app/main.py", line 195, in <module>
+    from app.api import api_router
+  File "/Users/bytedance/codes/backend/app/api/__init__.py", line 7, in <module>
+    from app.api.news import router as news_router
+  File "/Users/bytedance/codes/backend/app/api/news.py", line 10, in <module>
+    from app.services.sina_service import sina_service
+  File "/Users/bytedance/codes/backend/app/services/sina_service.py", line 7, in <module>
+    from app.models.news import News  # 假设有一个News模型用于存储新闻
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ImportError: cannot import name 'News' from 'app.models.news' (/Users/bytedance/codes/backend/app/models/news.py)
+WARNING:  StatReload detected changes in 'app/models/news.py'. Reloading...
+INFO:     Started server process [1409]
+INFO:     Waiting for application startup.
+2025-05-25 18:27:05,451 - app - INFO - 财知道API服务正在启动...
+2025-05-25 18:27:05,451 - app - INFO - 已启动雪球新闻定期获取任务，间隔: 3600秒
+2025-05-25 18:27:05,451 - app - INFO - 已启动雪球新闻定期获取任务
+2025-05-25 18:27:05,453 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x1049a8c20>
+2025-05-25 18:27:05,454 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x1049a8c20> completed
+2025-05-25 18:27:05,454 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x1049b1300>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x103f97560>, deterministic=True)
+2025-05-25 18:27:05,454 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x1049b1300>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x103f97560>, deterministic=True) completed
+2025-05-25 18:27:05,455 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x1049b1300>, 'floor', 1, <built-in function floor>, deterministic=True)
+2025-05-25 18:27:05,455 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x1049b1300>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2025-05-25 18:27:05,455 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x1049b1300>)
+2025-05-25 18:27:05,455 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x1049b1300>) completed
+2025-05-25 18:27:05,455 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x104980fc0>, 'PRAGMA read_uncommitted', [])
+2025-05-25 18:27:05,455 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x104980fc0>, 'PRAGMA read_uncommitted', []) completed
+2025-05-25 18:27:05,455 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x104980fc0>)
+2025-05-25 18:27:05,455 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x104980fc0>) completed
+2025-05-25 18:27:05,455 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x104980fc0>)
+2025-05-25 18:27:05,455 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x104980fc0>) completed
+2025-05-25 18:27:05,455 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x1049b1300>)
+2025-05-25 18:27:05,456 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x1049b1300>) completed
+2025-05-25 18:27:05,457 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x1049b1300>)
+2025-05-25 18:27:05,457 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x1049b1300>) completed
+2025-05-25 18:27:05,457 - aiosqlite - DEBUG - executing functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x104982940>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-25 18:27:05.451687', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', '6b6f42ad-e4c6-4c5a-961c-edbfafceb310', '2025-05-25 18:27:05.451702', '2025-05-25 18:27:05.451703'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-25 18:27:05.453390', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', '669bca51-8709-4dea-bab8-63ace45cb9eb', '2025-05-25 18:27:05.453396', '2025-05-25 18:27:05.453396')])
+2025-05-25 18:27:05,457 - aiosqlite - DEBUG - operation functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x104982940>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-25 18:27:05.451687', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', '6b6f42ad-e4c6-4c5a-961c-edbfafceb310', '2025-05-25 18:27:05.451702', '2025-05-25 18:27:05.451703'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-25 18:27:05.453390', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', '669bca51-8709-4dea-bab8-63ace45cb9eb', '2025-05-25 18:27:05.453396', '2025-05-25 18:27:05.453396')]) completed
+2025-05-25 18:27:05,457 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x104982940>)
+2025-05-25 18:27:05,457 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x104982940>) completed
+2025-05-25 18:27:05,457 - aiosqlite - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x1049b1300>)
+2025-05-25 18:27:05,458 - aiosqlite - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x1049b1300>) completed
+2025-05-25 18:27:05,458 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x1049b1300>)
+2025-05-25 18:27:05,458 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x1049b1300>) completed
+2025-05-25 18:27:05,458 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x1049b1300>)
+2025-05-25 18:27:05,458 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x1049b1300>) completed
+2025-05-25 18:27:05,459 - app - INFO - 财知道API服务已启动完成！
+INFO:     Application startup complete.
+
+--- 抓取到的HTML片段 ---
+ <!DOCTYPE html>
+<!-- [ published at 2025-05-26 09:25:55 ] -->
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>股票首页_新浪财经_新浪网</title>
+<meta name="keywords" content="股票,行情,大盘,个股,上市公司,新股,数据,研究报告,股市论坛,美股,港股,B股,炒股软件" />
+<meta name="description" content="新浪股票提供最权威及时的证券资讯，7X24小时全球股票市场报价，拥有人气最旺的华人股票博客、论坛和股吧，机构研报精华汇总，主力动向一网打尽" />
+<link rel="mask-icon" sizes="any" href="//www.sina.com.cn/favicon.svg" color="red">
+<meta content="always" name="referrer">
+<meta name="viewport" content="width=1010" />
+<meta name="stencil" content="PGLS000487" />
+
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+<script type="text/javascript" src="//finance.sina.com.cn/other/src/doc/httpsjp.js"></script>
+	
+<link rel="stylesheet" href="//n1.sinaimg.cn/finance/stockhomesys/css/index_simsun.css?202311151405" />
+<!--<link rel="stylesheet" href="//n1.sinaimg.cn/tech/66ceb6d9/20180419/style20080419.css?201804191" />-->
+<link rel="stylesheet" href="//n2.sinaimg.cn/news/66ceb6d9/20200525/style20200522.css" />
+	
+<style>
+#preload_bookmark,
+#preload_bookmark #sprite{width:0;height:0;position:absolute;left:-9999px;background:url("//i2.sinaimg.cn/dy/sinatag/addfav_pop_bg.png") no-repeat 0 0;}
+#preload_bookmark #sprite{background:url("//i1.sinaimg.cn/dy/sinatag/btns_addfav_spirite.png") no-repeat 0 0;}
+.u-list-center{line-height:26px}
+.u-list-center li{padding-top: 0px;}
+.table01_tip{
+    padding: 0 5px;
+    height: 20px;
+    line-height: 20px;
+    color: #77b0dc;
+    background: #e2edf6;}
+.list01{
+	line-height:26px;
+}
+	
+.tabchange_wrap{
+  	width:361px;
+  	margin-top:24px;
+}
+.tabchange_wrap_top{
+  	border-left:1px solid #E5E5E5;
+}
+.clearfix:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.tabchange_title01, .tabchange_title02{
+    float:left;
+   	width:179px;
+   	height:36px;
+   	text-align: center;
+   	line-height:36px;
+   	font-size: 16px;
+   	color: #1F2D4A;
+   	border-bottom: 1px solid #E5E5E5;
+   	border-top:1px solid #E5E5E5;
+   	background: #F7F7F7;
+   	font-family: 'Microsoft Yahei','微软雅黑';
+}
+.tabchange_title01{
+  	border-right:1px solid #E5E5E5;
+}
+.tabchange_title02{
+   	border-right:1px solid #E5E5E5;
+}
+.none{
+  	display:none;
+}
+.hover_text{
+  	color:#1F2D4A;
+    background: #fff;
+    border-top:2px solid  #4763B2;
+    border-bottom:0;
+    line-height:35px;
+}
+.hover_class{
+    background: #fff;
+    border-top:2px solid  #4763B2;
+    border-bottom:0;
+    color:#4763B2;
+    line-height:35px; 
+}
+.show_hidden02{
+  	display:none;
+}
+	
+.m-p1-lb2_1-container dl:nth-child(4) dd img{
+	background: none;
+	width: 311px;
+}
+.fapp_dialog_close{position: absolute;z-index: 2;top: 15px;right: 15px;cursor: pointer;width: 25px;height: 25px;background-color: rgba(255,255,255,0.01);}	
+</style>
+	
+<script src="//news.sina.com.cn/js/weather/1010/jquery-1.11.1.min.js"></script>
+<script src="//finance.sina.com.cn/other/src/sff.js"></script>
+<script src="//i.sso.sina.com.cn/js/ssologin.js"></script>
+<script type="text/javascript" charset="UTF-8" src="//i.sso.sina.com.cn/js/sinaSSOManager.js"></script>
+<script>
+(function(){
+	var a = [];
+	if('indexOf' in a){return;}
+	Array.prototype.indexOf = function(t){
+		for(var i = 0, l = this.length; i < l; i++){
+			if(this[i] === t){
+				return i;
+			}
+		}
+		return null;
+	}
+})();
+</script>
+<script type="text/javascript" src="//www.sinaimg.cn/home/sinaflash.js"></script>
+<script type="text/javascript" src="//d1.sina.com.cn/litong/zhitou/sspnew.js"></script>
+<!-- 乐居 begin -->
+<script charset="utf-8" src="//d1.sina.com.cn/litong/zhitou/leju/leju.js"></script>
+<script>
+  leju.conf.url = '//adm.leju.com/get_ad_list/PG_514AC44E37FB50';
+  leju.conf.defaultUrl = '//staticadm.leju.com/get_ad_list/PG_514AC44E37FB50.js';
+  var lejuMedia = leju.getData();
+</script>
+<!-- 乐居 end -->
+<script>
+try{document.domain = 'sina.com.cn';}
+catch(e){}
+</script>
+<meta name="sudameta" content="dataid:wpcomos:43205" /></head>
+<body><!-- body code begin -->
+
+<!-- SUDA_CODE_START --> 
+<script type="text/javascript"> 
+//<!--
+(function(){var an="V=2.1.16";var ah=window,F=document,s=navigator,W=s.userAgent,ao=ah.screen,j=ah.location.href;var aD="https:"==ah.location.protocol?"https://s":"http://",ay="beacon.sina.com.cn";var N=aD+ay+"/a.gif?",z=aD+ay+"/g.gif?",R=aD+ay+"/f.gif?",ag=aD+ay+"/e.gif?",aB=aD+"beacon.sinauda.com/i.gif?";var aA=F.referrer.toLowerCase();var aa="SINAGLOBAL",Y="FSINAGLOBAL",H="Apache",P="ULV",l="SUP",aE="UOR",E="_s_acc",X="_s_tentry",n=false,az=false,B=(document.domain=="sina.com.cn")?true:false;var o=0;var aG=false,A=false;var al="";var m=16777215,Z=0,C,K=0;var r="",b="",a="";var M=[],S=[],I=[];var u=0;var v=0;var p="";var am=false;var w=false;function O(){var e=document.createElement("iframe");e.src=aD+ay+"/data.html?"+new Date().getTime();e.id="sudaDataFrame";e.style.height="0px";e.style.width="1px";e.style.overflow="hidden";e.frameborder="0";e.scrolling="no";document.getElementsByTagName("head")[0].appendChild(e)}function k(){var e=document.createElement("iframe");e.src=aD+ay+"/ckctl.html";e.id="ckctlFrame";e.style.height="0px";e.style.width="1px";e.style.overflow="hidden";e.frameborder="0";e.scrolling="no";document.getElementsByTagName("head")[0].appendChild(e)}function q(){var e=document.createElement("script");e.src=aD+ay+"/h.js";document.getElementsByTagName("head")[0].appendChild(e)}function h(aH,i){var D=F.getElementsByName(aH);var e=(i>0)?i:0;return(D.length>e)?D[e].content:""}function aF(){var aJ=F.getElementsByName("sudameta");var aR=[];for(var aO=0;aO<aJ.length;aO++){var aK=aJ[aO].content;if(aK){if(aK.indexOf(";")!=-1){var D=aK.split(";");for(var aH=0;aH<D.length;aH++){var aP=aw(D[aH]);if(!aP){continue}aR.push(aP)}}else{aR.push(aK)}}}var aM=F.getElementsByTagName("meta");for(var aO=0,aI=aM.length;aO<aI;aO++){var aN=aM[aO];if(aN.name=="tags"){aR.push("content_tags:"+encodeURI(aN.content))}}var aL=t("vjuids");aR.push("vjuids:"+aL);var e="";var aQ=j.indexOf("#");if(aQ!=-1){e=escape(j.substr(aQ+1));aR.push("hashtag:"+e)}return aR}function V(aK,D,aI,aH){if(aK==""){return""}aH=(aH=="")?"=":aH;D+=aH;var aJ=aK.indexOf(D);if(aJ<0){return""}aJ+=D.length;var i=aK.indexOf(aI,aJ);if(i<aJ){i=aK.length}return aK.substring(aJ,i)}function t(e){if(undefined==e||""==e){return""}return V(F.cookie,e,";","")}function at(aI,e,i,aH){if(e!=null){if((undefined==aH)||(null==aH)){aH="sina.com.cn"}if((undefined==i)||(null==i)||(""==i)){F.cookie=aI+"="+e+";domain="+aH+";path=/"}else{var D=new Date();var aJ=D.getTime();aJ=aJ+86400000*i;D.setTime(aJ);aJ=D.getTime();F.cookie=aI+"="+e+";domain="+aH+";expires="+D.toUTCString()+";path=/"}}}function f(D){try{var i=document.getElementById("sudaDataFrame").contentWindow.storage;return i.get(D)}catch(aH){return false}}function ar(D,aH){try{var i=document.getElementById("sudaDataFrame").contentWindow.storage;i.set(D,aH);return true}catch(aI){return false}}function L(){var aJ=15;var D=window.SUDA.etag;if(!B){return"-"}if(u==0){O();q()}if(D&&D!=undefined){w=true}ls_gid=f(aa);if(ls_gid===false||w==false){return false}else{am=true}if(ls_gid&&ls_gid.length>aJ){at(aa,ls_gid,3650);n=true;return ls_gid}else{if(D&&D.length>aJ){at(aa,D,3650);az=true}var i=0,aI=500;var aH=setInterval((function(){var e=t(aa);if(w){e=D}i+=1;if(i>3){clearInterval(aH)}if(e.length>aJ){clearInterval(aH);ar(aa,e)}}),aI);return w?D:t(aa)}}function U(e,aH,D){var i=e;if(i==null){return false}aH=aH||"click";if((typeof D).toLowerCase()!="function"){return}if(i.attachEvent){i.attachEvent("on"+aH,D)}else{if(i.addEventListener){i.addEventListener(aH,D,false)}else{i["on"+aH]=D}}return true}function af(){if(window.event!=null){return window.event}else{if(window.event){return window.event}var D=arguments.callee.caller;var i;var aH=0;while(D!=null&&aH<40){i=D.arguments[0];if(i&&(i.constructor==Event||i.constructor==MouseEvent||i.constructor==KeyboardEvent)){return i}aH++;D=D.caller}return i}}function g(i){i=i||af();if(!i.target){i.target=i.srcElement;i.pageX=i.x;i.pageY=i.y}if(typeof i.layerX=="undefined"){i.layerX=i.offsetX}if(typeof i.layerY=="undefined"){i.layerY=i.offsetY}return i}function aw(aH){if(typeof aH!=="string"){throw"trim need a string as parameter"}var e=aH.length;var D=0;var i=/(\u3000|\s|\t|\u00A0)/;while(D<e){if(!i.test(aH.charAt(D))){break}D+=1}while(e>D){if(!i.test(aH.charAt(e-1))){break}e-=1}return aH.slice(D,e)}function c(e){return Object.prototype.toString.call(e)==="[object Array]"}function J(aH,aL){var aN=aw(aH).split("&");var aM={};var D=function(i){if(aL){try{return decodeURIComponent(i)}catch(aP){return i}}else{return i}};for(var aJ=0,aK=aN.length;aJ<aK;aJ++){if(aN[aJ]){var aI=aN[aJ].split("=");var e=aI[0];var aO=aI[1];if(aI.length<2){aO=e;e="$nullName"}if(!aM[e]){aM[e]=D(aO)}else{if(c(aM[e])!=true){aM[e]=[aM[e]]}aM[e].push(D(aO))}}}return aM}function ac(D,aI){for(var aH=0,e=D.length;aH<e;aH++){aI(D[aH],aH)}}function ak(i){var e=new RegExp("^http(?:s)?://([^/]+)","im");if(i.match(e)){return i.match(e)[1].toString()}else{return""}}function aj(aO){try{var aL="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";var D="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_=";var aQ=function(e){var aR="",aS=0;for(;aS<e.length;aS++){aR+="%"+aH(e[aS])}return decodeURIComponent(aR)};var aH=function(e){var i="0"+e.toString(16);return i.length<=2?i:i.substr(1)};var aP=function(aY,aV,aR){if(typeof(aY)=="string"){aY=aY.split("")}var aX=function(a7,a9){for(var a8=0;a8<a7.length;a8++){if(a7[a8]==a9){return a8}}return -1};var aS=[];var a6,a4,a1="";var a5,a3,a0,aZ="";if(aY.length%4!=0){}var e=/[^A-Za-z0-9\+\/\=]/g;var a2=aL.split("");if(aV=="urlsafe"){e=/[^A-Za-z0-9\-_\=]/g;a2=D.split("")}var aU=0;if(aV=="binnary"){a2=[];for(aU=0;aU<=64;aU++){a2[aU]=aU+128}}if(aV!="binnary"&&e.exec(aY.join(""))){return aR=="array"?[]:""}aU=0;do{a5=aX(a2,aY[aU++]);a3=aX(a2,aY[aU++]);a0=aX(a2,aY[aU++]);aZ=aX(a2,aY[aU++]);a6=(a5<<2)|(a3>>4);a4=((a3&15)<<4)|(a0>>2);a1=((a0&3)<<6)|aZ;aS.push(a6);if(a0!=64&&a0!=-1){aS.push(a4)}if(aZ!=64&&aZ!=-1){aS.push(a1)}a6=a4=a1="";a5=a3=a0=aZ=""}while(aU<aY.length);if(aR==" 
+--- END ---
+
+2025-05-25 18:27:06,492 - app - ERROR - 雪球API请求发生异常: 0, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url=URL('https://xueqiu.com/statuses/hot/listV2.json?since_id=-1&max_id=-1&size=20')
+2025-05-25 18:27:06,492 - app - INFO - 从雪球获取了 0 条[全部]分类新闻
+WARNING:  StatReload detected changes in 'tests/test_sina_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-05-25 18:29:16,255 - app - INFO - 财知道API服务正在关闭...
+2025-05-25 18:29:16,256 - app - INFO - 已停止雪球新闻定期获取任务
+2025-05-25 18:29:16,256 - app - INFO - 已停止雪球新闻定期获取任务
+2025-05-25 18:29:16,256 - app - INFO - 财知道API服务已关闭！
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1409]
+2025-05-25 18:29:16,326 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-2' coro=<SinaService.schedule_news_fetch() done, defined at /Users/bytedance/codes/backend/app/services/sina_service.py:94> exception=AttributeError("'News' object has no attribute 'save'")>
+Traceback (most recent call last):
+  File "/Users/bytedance/codes/backend/app/services/sina_service.py", line 111, in schedule_news_fetch
+    await news_record.save()
+          ^^^^^^^^^^^^^^^^
+AttributeError: 'News' object has no attribute 'save'
+INFO:     Started server process [1585]
+INFO:     Waiting for application startup.
+2025-05-25 18:29:17,019 - app - INFO - 财知道API服务正在启动...
+2025-05-25 18:29:17,019 - app - INFO - 已启动雪球新闻定期获取任务，间隔: 3600秒
+2025-05-25 18:29:17,019 - app - INFO - 已启动雪球新闻定期获取任务
+2025-05-25 18:29:17,021 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x108218c20>
+2025-05-25 18:29:17,022 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x108218c20> completed
+2025-05-25 18:29:17,022 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10821d300>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x107803560>, deterministic=True)
+2025-05-25 18:29:17,022 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10821d300>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x107803560>, deterministic=True) completed
+2025-05-25 18:29:17,022 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10821d300>, 'floor', 1, <built-in function floor>, deterministic=True)
+2025-05-25 18:29:17,022 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10821d300>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2025-05-25 18:29:17,022 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x10821d300>)
+2025-05-25 18:29:17,022 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x10821d300>) completed
+2025-05-25 18:29:17,023 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x1081ec0c0>, 'PRAGMA read_uncommitted', [])
+2025-05-25 18:29:17,023 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x1081ec0c0>, 'PRAGMA read_uncommitted', []) completed
+2025-05-25 18:29:17,023 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x1081ec0c0>)
+2025-05-25 18:29:17,023 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x1081ec0c0>) completed
+2025-05-25 18:29:17,023 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x1081ec0c0>)
+2025-05-25 18:29:17,023 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x1081ec0c0>) completed
+2025-05-25 18:29:17,023 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10821d300>)
+2025-05-25 18:29:17,023 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10821d300>) completed
+2025-05-25 18:29:17,024 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x10821d300>)
+2025-05-25 18:29:17,024 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x10821d300>) completed
+2025-05-25 18:29:17,024 - aiosqlite - DEBUG - executing functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x1081ee940>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-25 18:29:17.019840', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', '24ba4fca-e846-4a76-8691-37f6152752c2', '2025-05-25 18:29:17.019850', '2025-05-25 18:29:17.019851'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-25 18:29:17.021209', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', '29258ab7-7dc2-4150-ac0f-259a9bcc3abf', '2025-05-25 18:29:17.021213', '2025-05-25 18:29:17.021213')])
+2025-05-25 18:29:17,024 - aiosqlite - DEBUG - operation functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x1081ee940>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-25 18:29:17.019840', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', '24ba4fca-e846-4a76-8691-37f6152752c2', '2025-05-25 18:29:17.019850', '2025-05-25 18:29:17.019851'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-25 18:29:17.021209', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', '29258ab7-7dc2-4150-ac0f-259a9bcc3abf', '2025-05-25 18:29:17.021213', '2025-05-25 18:29:17.021213')]) completed
+2025-05-25 18:29:17,024 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x1081ee940>)
+2025-05-25 18:29:17,024 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x1081ee940>) completed
+2025-05-25 18:29:17,024 - aiosqlite - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x10821d300>)
+2025-05-25 18:29:17,025 - aiosqlite - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x10821d300>) completed
+2025-05-25 18:29:17,025 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10821d300>)
+2025-05-25 18:29:17,025 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10821d300>) completed
+2025-05-25 18:29:17,025 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x10821d300>)
+2025-05-25 18:29:17,025 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x10821d300>) completed
+2025-05-25 18:29:17,026 - app - INFO - 财知道API服务已启动完成！
+INFO:     Application startup complete.
+
+--- 抓取到的HTML片段 ---
+ <!DOCTYPE html>
+<!-- [ published at 2025-05-26 09:28:55 ] -->
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>股票首页_新浪财经_新浪网</title>
+<meta name="keywords" content="股票,行情,大盘,个股,上市公司,新股,数据,研究报告,股市论坛,美股,港股,B股,炒股软件" />
+<meta name="description" content="新浪股票提供最权威及时的证券资讯，7X24小时全球股票市场报价，拥有人气最旺的华人股票博客、论坛和股吧，机构研报精华汇总，主力动向一网打尽" />
+<link rel="mask-icon" sizes="any" href="//www.sina.com.cn/favicon.svg" color="red">
+<meta content="always" name="referrer">
+<meta name="viewport" content="width=1010" />
+<meta name="stencil" content="PGLS000487" />
+
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+<script type="text/javascript" src="//finance.sina.com.cn/other/src/doc/httpsjp.js"></script>
+	
+<link rel="stylesheet" href="//n1.sinaimg.cn/finance/stockhomesys/css/index_simsun.css?202311151405" />
+<!--<link rel="stylesheet" href="//n1.sinaimg.cn/tech/66ceb6d9/20180419/style20080419.css?201804191" />-->
+<link rel="stylesheet" href="//n2.sinaimg.cn/news/66ceb6d9/20200525/style20200522.css" />
+	
+<style>
+#preload_bookmark,
+#preload_bookmark #sprite{width:0;height:0;position:absolute;left:-9999px;background:url("//i2.sinaimg.cn/dy/sinatag/addfav_pop_bg.png") no-repeat 0 0;}
+#preload_bookmark #sprite{background:url("//i1.sinaimg.cn/dy/sinatag/btns_addfav_spirite.png") no-repeat 0 0;}
+.u-list-center{line-height:26px}
+.u-list-center li{padding-top: 0px;}
+.table01_tip{
+    padding: 0 5px;
+    height: 20px;
+    line-height: 20px;
+    color: #77b0dc;
+    background: #e2edf6;}
+.list01{
+	line-height:26px;
+}
+	
+.tabchange_wrap{
+  	width:361px;
+  	margin-top:24px;
+}
+.tabchange_wrap_top{
+  	border-left:1px solid #E5E5E5;
+}
+.clearfix:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.tabchange_title01, .tabchange_title02{
+    float:left;
+   	width:179px;
+   	height:36px;
+   	text-align: center;
+   	line-height:36px;
+   	font-size: 16px;
+   	color: #1F2D4A;
+   	border-bottom: 1px solid #E5E5E5;
+   	border-top:1px solid #E5E5E5;
+   	background: #F7F7F7;
+   	font-family: 'Microsoft Yahei','微软雅黑';
+}
+.tabchange_title01{
+  	border-right:1px solid #E5E5E5;
+}
+.tabchange_title02{
+   	border-right:1px solid #E5E5E5;
+}
+.none{
+  	display:none;
+}
+.hover_text{
+  	color:#1F2D4A;
+    background: #fff;
+    border-top:2px solid  #4763B2;
+    border-bottom:0;
+    line-height:35px;
+}
+.hover_class{
+    background: #fff;
+    border-top:2px solid  #4763B2;
+    border-bottom:0;
+    color:#4763B2;
+    line-height:35px; 
+}
+.show_hidden02{
+  	display:none;
+}
+	
+.m-p1-lb2_1-container dl:nth-child(4) dd img{
+	background: none;
+	width: 311px;
+}
+.fapp_dialog_close{position: absolute;z-index: 2;top: 15px;right: 15px;cursor: pointer;width: 25px;height: 25px;background-color: rgba(255,255,255,0.01);}	
+</style>
+	
+<script src="//news.sina.com.cn/js/weather/1010/jquery-1.11.1.min.js"></script>
+<script src="//finance.sina.com.cn/other/src/sff.js"></script>
+<script src="//i.sso.sina.com.cn/js/ssologin.js"></script>
+<script type="text/javascript" charset="UTF-8" src="//i.sso.sina.com.cn/js/sinaSSOManager.js"></script>
+<script>
+(function(){
+	var a = [];
+	if('indexOf' in a){return;}
+	Array.prototype.indexOf = function(t){
+		for(var i = 0, l = this.length; i < l; i++){
+			if(this[i] === t){
+				return i;
+			}
+		}
+		return null;
+	}
+})();
+</script>
+<script type="text/javascript" src="//www.sinaimg.cn/home/sinaflash.js"></script>
+<script type="text/javascript" src="//d1.sina.com.cn/litong/zhitou/sspnew.js"></script>
+<!-- 乐居 begin -->
+<script charset="utf-8" src="//d1.sina.com.cn/litong/zhitou/leju/leju.js"></script>
+<script>
+  leju.conf.url = '//adm.leju.com/get_ad_list/PG_514AC44E37FB50';
+  leju.conf.defaultUrl = '//staticadm.leju.com/get_ad_list/PG_514AC44E37FB50.js';
+  var lejuMedia = leju.getData();
+</script>
+<!-- 乐居 end -->
+<script>
+try{document.domain = 'sina.com.cn';}
+catch(e){}
+</script>
+<meta name="sudameta" content="dataid:wpcomos:43205" /></head>
+<body><!-- body code begin -->
+
+<!-- SUDA_CODE_START --> 
+<script type="text/javascript"> 
+//<!--
+(function(){var an="V=2.1.16";var ah=window,F=document,s=navigator,W=s.userAgent,ao=ah.screen,j=ah.location.href;var aD="https:"==ah.location.protocol?"https://s":"http://",ay="beacon.sina.com.cn";var N=aD+ay+"/a.gif?",z=aD+ay+"/g.gif?",R=aD+ay+"/f.gif?",ag=aD+ay+"/e.gif?",aB=aD+"beacon.sinauda.com/i.gif?";var aA=F.referrer.toLowerCase();var aa="SINAGLOBAL",Y="FSINAGLOBAL",H="Apache",P="ULV",l="SUP",aE="UOR",E="_s_acc",X="_s_tentry",n=false,az=false,B=(document.domain=="sina.com.cn")?true:false;var o=0;var aG=false,A=false;var al="";var m=16777215,Z=0,C,K=0;var r="",b="",a="";var M=[],S=[],I=[];var u=0;var v=0;var p="";var am=false;var w=false;function O(){var e=document.createElement("iframe");e.src=aD+ay+"/data.html?"+new Date().getTime();e.id="sudaDataFrame";e.style.height="0px";e.style.width="1px";e.style.overflow="hidden";e.frameborder="0";e.scrolling="no";document.getElementsByTagName("head")[0].appendChild(e)}function k(){var e=document.createElement("iframe");e.src=aD+ay+"/ckctl.html";e.id="ckctlFrame";e.style.height="0px";e.style.width="1px";e.style.overflow="hidden";e.frameborder="0";e.scrolling="no";document.getElementsByTagName("head")[0].appendChild(e)}function q(){var e=document.createElement("script");e.src=aD+ay+"/h.js";document.getElementsByTagName("head")[0].appendChild(e)}function h(aH,i){var D=F.getElementsByName(aH);var e=(i>0)?i:0;return(D.length>e)?D[e].content:""}function aF(){var aJ=F.getElementsByName("sudameta");var aR=[];for(var aO=0;aO<aJ.length;aO++){var aK=aJ[aO].content;if(aK){if(aK.indexOf(";")!=-1){var D=aK.split(";");for(var aH=0;aH<D.length;aH++){var aP=aw(D[aH]);if(!aP){continue}aR.push(aP)}}else{aR.push(aK)}}}var aM=F.getElementsByTagName("meta");for(var aO=0,aI=aM.length;aO<aI;aO++){var aN=aM[aO];if(aN.name=="tags"){aR.push("content_tags:"+encodeURI(aN.content))}}var aL=t("vjuids");aR.push("vjuids:"+aL);var e="";var aQ=j.indexOf("#");if(aQ!=-1){e=escape(j.substr(aQ+1));aR.push("hashtag:"+e)}return aR}function V(aK,D,aI,aH){if(aK==""){return""}aH=(aH=="")?"=":aH;D+=aH;var aJ=aK.indexOf(D);if(aJ<0){return""}aJ+=D.length;var i=aK.indexOf(aI,aJ);if(i<aJ){i=aK.length}return aK.substring(aJ,i)}function t(e){if(undefined==e||""==e){return""}return V(F.cookie,e,";","")}function at(aI,e,i,aH){if(e!=null){if((undefined==aH)||(null==aH)){aH="sina.com.cn"}if((undefined==i)||(null==i)||(""==i)){F.cookie=aI+"="+e+";domain="+aH+";path=/"}else{var D=new Date();var aJ=D.getTime();aJ=aJ+86400000*i;D.setTime(aJ);aJ=D.getTime();F.cookie=aI+"="+e+";domain="+aH+";expires="+D.toUTCString()+";path=/"}}}function f(D){try{var i=document.getElementById("sudaDataFrame").contentWindow.storage;return i.get(D)}catch(aH){return false}}function ar(D,aH){try{var i=document.getElementById("sudaDataFrame").contentWindow.storage;i.set(D,aH);return true}catch(aI){return false}}function L(){var aJ=15;var D=window.SUDA.etag;if(!B){return"-"}if(u==0){O();q()}if(D&&D!=undefined){w=true}ls_gid=f(aa);if(ls_gid===false||w==false){return false}else{am=true}if(ls_gid&&ls_gid.length>aJ){at(aa,ls_gid,3650);n=true;return ls_gid}else{if(D&&D.length>aJ){at(aa,D,3650);az=true}var i=0,aI=500;var aH=setInterval((function(){var e=t(aa);if(w){e=D}i+=1;if(i>3){clearInterval(aH)}if(e.length>aJ){clearInterval(aH);ar(aa,e)}}),aI);return w?D:t(aa)}}function U(e,aH,D){var i=e;if(i==null){return false}aH=aH||"click";if((typeof D).toLowerCase()!="function"){return}if(i.attachEvent){i.attachEvent("on"+aH,D)}else{if(i.addEventListener){i.addEventListener(aH,D,false)}else{i["on"+aH]=D}}return true}function af(){if(window.event!=null){return window.event}else{if(window.event){return window.event}var D=arguments.callee.caller;var i;var aH=0;while(D!=null&&aH<40){i=D.arguments[0];if(i&&(i.constructor==Event||i.constructor==MouseEvent||i.constructor==KeyboardEvent)){return i}aH++;D=D.caller}return i}}function g(i){i=i||af();if(!i.target){i.target=i.srcElement;i.pageX=i.x;i.pageY=i.y}if(typeof i.layerX=="undefined"){i.layerX=i.offsetX}if(typeof i.layerY=="undefined"){i.layerY=i.offsetY}return i}function aw(aH){if(typeof aH!=="string"){throw"trim need a string as parameter"}var e=aH.length;var D=0;var i=/(\u3000|\s|\t|\u00A0)/;while(D<e){if(!i.test(aH.charAt(D))){break}D+=1}while(e>D){if(!i.test(aH.charAt(e-1))){break}e-=1}return aH.slice(D,e)}function c(e){return Object.prototype.toString.call(e)==="[object Array]"}function J(aH,aL){var aN=aw(aH).split("&");var aM={};var D=function(i){if(aL){try{return decodeURIComponent(i)}catch(aP){return i}}else{return i}};for(var aJ=0,aK=aN.length;aJ<aK;aJ++){if(aN[aJ]){var aI=aN[aJ].split("=");var e=aI[0];var aO=aI[1];if(aI.length<2){aO=e;e="$nullName"}if(!aM[e]){aM[e]=D(aO)}else{if(c(aM[e])!=true){aM[e]=[aM[e]]}aM[e].push(D(aO))}}}return aM}function ac(D,aI){for(var aH=0,e=D.length;aH<e;aH++){aI(D[aH],aH)}}function ak(i){var e=new RegExp("^http(?:s)?://([^/]+)","im");if(i.match(e)){return i.match(e)[1].toString()}else{return""}}function aj(aO){try{var aL="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";var D="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_=";var aQ=function(e){var aR="",aS=0;for(;aS<e.length;aS++){aR+="%"+aH(e[aS])}return decodeURIComponent(aR)};var aH=function(e){var i="0"+e.toString(16);return i.length<=2?i:i.substr(1)};var aP=function(aY,aV,aR){if(typeof(aY)=="string"){aY=aY.split("")}var aX=function(a7,a9){for(var a8=0;a8<a7.length;a8++){if(a7[a8]==a9){return a8}}return -1};var aS=[];var a6,a4,a1="";var a5,a3,a0,aZ="";if(aY.length%4!=0){}var e=/[^A-Za-z0-9\+\/\=]/g;var a2=aL.split("");if(aV=="urlsafe"){e=/[^A-Za-z0-9\-_\=]/g;a2=D.split("")}var aU=0;if(aV=="binnary"){a2=[];for(aU=0;aU<=64;aU++){a2[aU]=aU+128}}if(aV!="binnary"&&e.exec(aY.join(""))){return aR=="array"?[]:""}aU=0;do{a5=aX(a2,aY[aU++]);a3=aX(a2,aY[aU++]);a0=aX(a2,aY[aU++]);aZ=aX(a2,aY[aU++]);a6=(a5<<2)|(a3>>4);a4=((a3&15)<<4)|(a0>>2);a1=((a0&3)<<6)|aZ;aS.push(a6);if(a0!=64&&a0!=-1){aS.push(a4)}if(aZ!=64&&aZ!=-1){aS.push(a1)}a6=a4=a1="";a5=a3=a0=aZ=""}while(aU<aY.length);if(aR==" 
+--- END ---
+
+2025-05-25 18:29:17,794 - app - ERROR - 雪球API请求发生异常: 0, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url=URL('https://xueqiu.com/statuses/hot/listV2.json?since_id=-1&max_id=-1&size=20')
+2025-05-25 18:29:17,794 - app - INFO - 从雪球获取了 0 条[全部]分类新闻
+WARNING:  StatReload detected changes in 'app/services/sina_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-05-25 18:31:08,928 - app - INFO - 财知道API服务正在关闭...
+2025-05-25 18:31:08,928 - app - INFO - 已停止雪球新闻定期获取任务
+2025-05-25 18:31:08,928 - app - INFO - 已停止雪球新闻定期获取任务
+2025-05-25 18:31:08,928 - app - INFO - 财知道API服务已关闭！
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1585]
+2025-05-25 18:31:08,988 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-2' coro=<SinaService.schedule_news_fetch() done, defined at /Users/bytedance/codes/backend/app/services/sina_service.py:94> exception=AttributeError("'News' object has no attribute 'save'")>
+Traceback (most recent call last):
+  File "/Users/bytedance/codes/backend/app/services/sina_service.py", line 111, in schedule_news_fetch
+    await news_record.save()
+          ^^^^^^^^^^^^^^^^
+AttributeError: 'News' object has no attribute 'save'
+INFO:     Started server process [1691]
+INFO:     Waiting for application startup.
+2025-05-25 18:31:09,598 - app - INFO - 财知道API服务正在启动...
+2025-05-25 18:31:09,598 - app - INFO - 已启动雪球新闻定期获取任务，间隔: 3600秒
+2025-05-25 18:31:09,598 - app - INFO - 已启动雪球新闻定期获取任务
+2025-05-25 18:31:09,600 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x104070c20>
+2025-05-25 18:31:09,600 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x104070c20> completed
+2025-05-25 18:31:09,601 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x104075300>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x103663560>, deterministic=True)
+2025-05-25 18:31:09,601 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x104075300>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x103663560>, deterministic=True) completed
+2025-05-25 18:31:09,601 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x104075300>, 'floor', 1, <built-in function floor>, deterministic=True)
+2025-05-25 18:31:09,601 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x104075300>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2025-05-25 18:31:09,601 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x104075300>)
+2025-05-25 18:31:09,601 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x104075300>) completed
+2025-05-25 18:31:09,601 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x10404d040>, 'PRAGMA read_uncommitted', [])
+2025-05-25 18:31:09,602 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x10404d040>, 'PRAGMA read_uncommitted', []) completed
+2025-05-25 18:31:09,602 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x10404d040>)
+2025-05-25 18:31:09,602 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x10404d040>) completed
+2025-05-25 18:31:09,602 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x10404d040>)
+2025-05-25 18:31:09,602 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x10404d040>) completed
+2025-05-25 18:31:09,602 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x104075300>)
+2025-05-25 18:31:09,602 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x104075300>) completed
+2025-05-25 18:31:09,603 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x104075300>)
+2025-05-25 18:31:09,603 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x104075300>) completed
+2025-05-25 18:31:09,603 - aiosqlite - DEBUG - executing functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x10404e9c0>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-25 18:31:09.598611', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', '07f885a2-915f-4d71-a653-6d2dfc668d6d', '2025-05-25 18:31:09.598620', '2025-05-25 18:31:09.598621'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-25 18:31:09.600024', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', '7307f1f1-15e0-4fc0-96cb-9425583b0a1e', '2025-05-25 18:31:09.600031', '2025-05-25 18:31:09.600032')])
+2025-05-25 18:31:09,603 - aiosqlite - DEBUG - operation functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x10404e9c0>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-25 18:31:09.598611', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', '07f885a2-915f-4d71-a653-6d2dfc668d6d', '2025-05-25 18:31:09.598620', '2025-05-25 18:31:09.598621'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-25 18:31:09.600024', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', '7307f1f1-15e0-4fc0-96cb-9425583b0a1e', '2025-05-25 18:31:09.600031', '2025-05-25 18:31:09.600032')]) completed
+2025-05-25 18:31:09,603 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x10404e9c0>)
+2025-05-25 18:31:09,603 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x10404e9c0>) completed
+2025-05-25 18:31:09,604 - aiosqlite - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x104075300>)
+2025-05-25 18:31:09,604 - aiosqlite - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x104075300>) completed
+2025-05-25 18:31:09,604 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x104075300>)
+2025-05-25 18:31:09,604 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x104075300>) completed
+2025-05-25 18:31:09,604 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x104075300>)
+2025-05-25 18:31:09,604 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x104075300>) completed
+2025-05-25 18:31:09,605 - app - INFO - 财知道API服务已启动完成！
+INFO:     Application startup complete.
+
+--- 抓取到的HTML片段 ---
+ <!DOCTYPE html>
+<!-- [ published at 2025-05-26 09:30:06 ] -->
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>股票首页_新浪财经_新浪网</title>
+<meta name="keywords" content="股票,行情,大盘,个股,上市公司,新股,数据,研究报告,股市论坛,美股,港股,B股,炒股软件" />
+<meta name="description" content="新浪股票提供最权威及时的证券资讯，7X24小时全球股票市场报价，拥有人气最旺的华人股票博客、论坛和股吧，机构研报精华汇总，主力动向一网打尽" />
+<link rel="mask-icon" sizes="any" href="//www.sina.com.cn/favicon.svg" color="red">
+<meta content="always" name="referrer">
+<meta name="viewport" content="width=1010" />
+<meta name="stencil" content="PGLS000487" />
+
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+<script type="text/javascript" src="//finance.sina.com.cn/other/src/doc/httpsjp.js"></script>
+	
+<link rel="stylesheet" href="//n1.sinaimg.cn/finance/stockhomesys/css/index_simsun.css?202311151405" />
+<!--<link rel="stylesheet" href="//n1.sinaimg.cn/tech/66ceb6d9/20180419/style20080419.css?201804191" />-->
+<link rel="stylesheet" href="//n2.sinaimg.cn/news/66ceb6d9/20200525/style20200522.css" />
+	
+<style>
+#preload_bookmark,
+#preload_bookmark #sprite{width:0;height:0;position:absolute;left:-9999px;background:url("//i2.sinaimg.cn/dy/sinatag/addfav_pop_bg.png") no-repeat 0 0;}
+#preload_bookmark #sprite{background:url("//i1.sinaimg.cn/dy/sinatag/btns_addfav_spirite.png") no-repeat 0 0;}
+.u-list-center{line-height:26px}
+.u-list-center li{padding-top: 0px;}
+.table01_tip{
+    padding: 0 5px;
+    height: 20px;
+    line-height: 20px;
+    color: #77b0dc;
+    background: #e2edf6;}
+.list01{
+	line-height:26px;
+}
+	
+.tabchange_wrap{
+  	width:361px;
+  	margin-top:24px;
+}
+.tabchange_wrap_top{
+  	border-left:1px solid #E5E5E5;
+}
+.clearfix:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.tabchange_title01, .tabchange_title02{
+    float:left;
+   	width:179px;
+   	height:36px;
+   	text-align: center;
+   	line-height:36px;
+   	font-size: 16px;
+   	color: #1F2D4A;
+   	border-bottom: 1px solid #E5E5E5;
+   	border-top:1px solid #E5E5E5;
+   	background: #F7F7F7;
+   	font-family: 'Microsoft Yahei','微软雅黑';
+}
+.tabchange_title01{
+  	border-right:1px solid #E5E5E5;
+}
+.tabchange_title02{
+   	border-right:1px solid #E5E5E5;
+}
+.none{
+  	display:none;
+}
+.hover_text{
+  	color:#1F2D4A;
+    background: #fff;
+    border-top:2px solid  #4763B2;
+    border-bottom:0;
+    line-height:35px;
+}
+.hover_class{
+    background: #fff;
+    border-top:2px solid  #4763B2;
+    border-bottom:0;
+    color:#4763B2;
+    line-height:35px; 
+}
+.show_hidden02{
+  	display:none;
+}
+	
+.m-p1-lb2_1-container dl:nth-child(4) dd img{
+	background: none;
+	width: 311px;
+}
+.fapp_dialog_close{position: absolute;z-index: 2;top: 15px;right: 15px;cursor: pointer;width: 25px;height: 25px;background-color: rgba(255,255,255,0.01);}	
+</style>
+	
+<script src="//news.sina.com.cn/js/weather/1010/jquery-1.11.1.min.js"></script>
+<script src="//finance.sina.com.cn/other/src/sff.js"></script>
+<script src="//i.sso.sina.com.cn/js/ssologin.js"></script>
+<script type="text/javascript" charset="UTF-8" src="//i.sso.sina.com.cn/js/sinaSSOManager.js"></script>
+<script>
+(function(){
+	var a = [];
+	if('indexOf' in a){return;}
+	Array.prototype.indexOf = function(t){
+		for(var i = 0, l = this.length; i < l; i++){
+			if(this[i] === t){
+				return i;
+			}
+		}
+		return null;
+	}
+})();
+</script>
+<script type="text/javascript" src="//www.sinaimg.cn/home/sinaflash.js"></script>
+<script type="text/javascript" src="//d1.sina.com.cn/litong/zhitou/sspnew.js"></script>
+<!-- 乐居 begin -->
+<script charset="utf-8" src="//d1.sina.com.cn/litong/zhitou/leju/leju.js"></script>
+<script>
+  leju.conf.url = '//adm.leju.com/get_ad_list/PG_514AC44E37FB50';
+  leju.conf.defaultUrl = '//staticadm.leju.com/get_ad_list/PG_514AC44E37FB50.js';
+  var lejuMedia = leju.getData();
+</script>
+<!-- 乐居 end -->
+<script>
+try{document.domain = 'sina.com.cn';}
+catch(e){}
+</script>
+<meta name="sudameta" content="dataid:wpcomos:43205" /></head>
+<body><!-- body code begin -->
+
+<!-- SUDA_CODE_START --> 
+<script type="text/javascript"> 
+//<!--
+(function(){var an="V=2.1.16";var ah=window,F=document,s=navigator,W=s.userAgent,ao=ah.screen,j=ah.location.href;var aD="https:"==ah.location.protocol?"https://s":"http://",ay="beacon.sina.com.cn";var N=aD+ay+"/a.gif?",z=aD+ay+"/g.gif?",R=aD+ay+"/f.gif?",ag=aD+ay+"/e.gif?",aB=aD+"beacon.sinauda.com/i.gif?";var aA=F.referrer.toLowerCase();var aa="SINAGLOBAL",Y="FSINAGLOBAL",H="Apache",P="ULV",l="SUP",aE="UOR",E="_s_acc",X="_s_tentry",n=false,az=false,B=(document.domain=="sina.com.cn")?true:false;var o=0;var aG=false,A=false;var al="";var m=16777215,Z=0,C,K=0;var r="",b="",a="";var M=[],S=[],I=[];var u=0;var v=0;var p="";var am=false;var w=false;function O(){var e=document.createElement("iframe");e.src=aD+ay+"/data.html?"+new Date().getTime();e.id="sudaDataFrame";e.style.height="0px";e.style.width="1px";e.style.overflow="hidden";e.frameborder="0";e.scrolling="no";document.getElementsByTagName("head")[0].appendChild(e)}function k(){var e=document.createElement("iframe");e.src=aD+ay+"/ckctl.html";e.id="ckctlFrame";e.style.height="0px";e.style.width="1px";e.style.overflow="hidden";e.frameborder="0";e.scrolling="no";document.getElementsByTagName("head")[0].appendChild(e)}function q(){var e=document.createElement("script");e.src=aD+ay+"/h.js";document.getElementsByTagName("head")[0].appendChild(e)}function h(aH,i){var D=F.getElementsByName(aH);var e=(i>0)?i:0;return(D.length>e)?D[e].content:""}function aF(){var aJ=F.getElementsByName("sudameta");var aR=[];for(var aO=0;aO<aJ.length;aO++){var aK=aJ[aO].content;if(aK){if(aK.indexOf(";")!=-1){var D=aK.split(";");for(var aH=0;aH<D.length;aH++){var aP=aw(D[aH]);if(!aP){continue}aR.push(aP)}}else{aR.push(aK)}}}var aM=F.getElementsByTagName("meta");for(var aO=0,aI=aM.length;aO<aI;aO++){var aN=aM[aO];if(aN.name=="tags"){aR.push("content_tags:"+encodeURI(aN.content))}}var aL=t("vjuids");aR.push("vjuids:"+aL);var e="";var aQ=j.indexOf("#");if(aQ!=-1){e=escape(j.substr(aQ+1));aR.push("hashtag:"+e)}return aR}function V(aK,D,aI,aH){if(aK==""){return""}aH=(aH=="")?"=":aH;D+=aH;var aJ=aK.indexOf(D);if(aJ<0){return""}aJ+=D.length;var i=aK.indexOf(aI,aJ);if(i<aJ){i=aK.length}return aK.substring(aJ,i)}function t(e){if(undefined==e||""==e){return""}return V(F.cookie,e,";","")}function at(aI,e,i,aH){if(e!=null){if((undefined==aH)||(null==aH)){aH="sina.com.cn"}if((undefined==i)||(null==i)||(""==i)){F.cookie=aI+"="+e+";domain="+aH+";path=/"}else{var D=new Date();var aJ=D.getTime();aJ=aJ+86400000*i;D.setTime(aJ);aJ=D.getTime();F.cookie=aI+"="+e+";domain="+aH+";expires="+D.toUTCString()+";path=/"}}}function f(D){try{var i=document.getElementById("sudaDataFrame").contentWindow.storage;return i.get(D)}catch(aH){return false}}function ar(D,aH){try{var i=document.getElementById("sudaDataFrame").contentWindow.storage;i.set(D,aH);return true}catch(aI){return false}}function L(){var aJ=15;var D=window.SUDA.etag;if(!B){return"-"}if(u==0){O();q()}if(D&&D!=undefined){w=true}ls_gid=f(aa);if(ls_gid===false||w==false){return false}else{am=true}if(ls_gid&&ls_gid.length>aJ){at(aa,ls_gid,3650);n=true;return ls_gid}else{if(D&&D.length>aJ){at(aa,D,3650);az=true}var i=0,aI=500;var aH=setInterval((function(){var e=t(aa);if(w){e=D}i+=1;if(i>3){clearInterval(aH)}if(e.length>aJ){clearInterval(aH);ar(aa,e)}}),aI);return w?D:t(aa)}}function U(e,aH,D){var i=e;if(i==null){return false}aH=aH||"click";if((typeof D).toLowerCase()!="function"){return}if(i.attachEvent){i.attachEvent("on"+aH,D)}else{if(i.addEventListener){i.addEventListener(aH,D,false)}else{i["on"+aH]=D}}return true}function af(){if(window.event!=null){return window.event}else{if(window.event){return window.event}var D=arguments.callee.caller;var i;var aH=0;while(D!=null&&aH<40){i=D.arguments[0];if(i&&(i.constructor==Event||i.constructor==MouseEvent||i.constructor==KeyboardEvent)){return i}aH++;D=D.caller}return i}}function g(i){i=i||af();if(!i.target){i.target=i.srcElement;i.pageX=i.x;i.pageY=i.y}if(typeof i.layerX=="undefined"){i.layerX=i.offsetX}if(typeof i.layerY=="undefined"){i.layerY=i.offsetY}return i}function aw(aH){if(typeof aH!=="string"){throw"trim need a string as parameter"}var e=aH.length;var D=0;var i=/(\u3000|\s|\t|\u00A0)/;while(D<e){if(!i.test(aH.charAt(D))){break}D+=1}while(e>D){if(!i.test(aH.charAt(e-1))){break}e-=1}return aH.slice(D,e)}function c(e){return Object.prototype.toString.call(e)==="[object Array]"}function J(aH,aL){var aN=aw(aH).split("&");var aM={};var D=function(i){if(aL){try{return decodeURIComponent(i)}catch(aP){return i}}else{return i}};for(var aJ=0,aK=aN.length;aJ<aK;aJ++){if(aN[aJ]){var aI=aN[aJ].split("=");var e=aI[0];var aO=aI[1];if(aI.length<2){aO=e;e="$nullName"}if(!aM[e]){aM[e]=D(aO)}else{if(c(aM[e])!=true){aM[e]=[aM[e]]}aM[e].push(D(aO))}}}return aM}function ac(D,aI){for(var aH=0,e=D.length;aH<e;aH++){aI(D[aH],aH)}}function ak(i){var e=new RegExp("^http(?:s)?://([^/]+)","im");if(i.match(e)){return i.match(e)[1].toString()}else{return""}}function aj(aO){try{var aL="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";var D="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_=";var aQ=function(e){var aR="",aS=0;for(;aS<e.length;aS++){aR+="%"+aH(e[aS])}return decodeURIComponent(aR)};var aH=function(e){var i="0"+e.toString(16);return i.length<=2?i:i.substr(1)};var aP=function(aY,aV,aR){if(typeof(aY)=="string"){aY=aY.split("")}var aX=function(a7,a9){for(var a8=0;a8<a7.length;a8++){if(a7[a8]==a9){return a8}}return -1};var aS=[];var a6,a4,a1="";var a5,a3,a0,aZ="";if(aY.length%4!=0){}var e=/[^A-Za-z0-9\+\/\=]/g;var a2=aL.split("");if(aV=="urlsafe"){e=/[^A-Za-z0-9\-_\=]/g;a2=D.split("")}var aU=0;if(aV=="binnary"){a2=[];for(aU=0;aU<=64;aU++){a2[aU]=aU+128}}if(aV!="binnary"&&e.exec(aY.join(""))){return aR=="array"?[]:""}aU=0;do{a5=aX(a2,aY[aU++]);a3=aX(a2,aY[aU++]);a0=aX(a2,aY[aU++]);aZ=aX(a2,aY[aU++]);a6=(a5<<2)|(a3>>4);a4=((a3&15)<<4)|(a0>>2);a1=((a0&3)<<6)|aZ;aS.push(a6);if(a0!=64&&a0!=-1){aS.push(a4)}if(aZ!=64&&aZ!=-1){aS.push(a1)}a6=a4=a1="";a5=a3=a0=aZ=""}while(aU<aY.length);if(aR==" 
+--- END ---
+
+2025-05-25 18:31:10,387 - app - ERROR - 雪球API请求发生异常: 0, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url=URL('https://xueqiu.com/statuses/hot/listV2.json?since_id=-1&max_id=-1&size=20')
+2025-05-25 18:31:10,387 - app - INFO - 从雪球获取了 0 条[全部]分类新闻
+WARNING:  StatReload detected changes in 'tests/test_sina_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-05-25 18:33:49,867 - app - INFO - 财知道API服务正在关闭...
+2025-05-25 18:33:49,867 - app - INFO - 已停止雪球新闻定期获取任务
+2025-05-25 18:33:49,867 - app - INFO - 已停止雪球新闻定期获取任务
+2025-05-25 18:33:49,867 - app - INFO - 财知道API服务已关闭！
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1691]
+2025-05-25 18:33:49,899 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-2' coro=<SinaService.schedule_news_fetch() done, defined at /Users/bytedance/codes/backend/app/services/sina_service.py:94> exception=AttributeError("'News' object has no attribute 'save'")>
+Traceback (most recent call last):
+  File "/Users/bytedance/codes/backend/app/services/sina_service.py", line 111, in schedule_news_fetch
+    await news_record.save()
+          ^^^^^^^^^^^^^^^^
+AttributeError: 'News' object has no attribute 'save'
+INFO:     Started server process [2793]
+INFO:     Waiting for application startup.
+2025-05-25 18:33:50,631 - app - INFO - 财知道API服务正在启动...
+2025-05-25 18:33:50,631 - app - INFO - 已启动雪球新闻定期获取任务，间隔: 3600秒
+2025-05-25 18:33:50,631 - app - INFO - 已启动雪球新闻定期获取任务
+2025-05-25 18:33:50,633 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x10aa14c20>
+2025-05-25 18:33:50,633 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x10aa14c20> completed
+2025-05-25 18:33:50,633 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10aa19300>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x109d77560>, deterministic=True)
+2025-05-25 18:33:50,633 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10aa19300>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x109d77560>, deterministic=True) completed
+2025-05-25 18:33:50,634 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10aa19300>, 'floor', 1, <built-in function floor>, deterministic=True)
+2025-05-25 18:33:50,634 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10aa19300>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2025-05-25 18:33:50,634 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x10aa19300>)
+2025-05-25 18:33:50,634 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x10aa19300>) completed
+2025-05-25 18:33:50,634 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x10a79c0c0>, 'PRAGMA read_uncommitted', [])
+2025-05-25 18:33:50,634 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x10a79c0c0>, 'PRAGMA read_uncommitted', []) completed
+2025-05-25 18:33:50,634 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x10a79c0c0>)
+2025-05-25 18:33:50,634 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x10a79c0c0>) completed
+2025-05-25 18:33:50,634 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x10a79c0c0>)
+2025-05-25 18:33:50,634 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x10a79c0c0>) completed
+2025-05-25 18:33:50,635 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10aa19300>)
+2025-05-25 18:33:50,635 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10aa19300>) completed
+2025-05-25 18:33:50,635 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x10aa19300>)
+2025-05-25 18:33:50,635 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x10aa19300>) completed
+2025-05-25 18:33:50,635 - aiosqlite - DEBUG - executing functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x10a79e940>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-25 18:33:50.631452', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', '2b66c63f-a0ce-4ab2-81ec-8ca4cd48ac63', '2025-05-25 18:33:50.631461', '2025-05-25 18:33:50.631461'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-25 18:33:50.632881', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', '54b58898-bb43-43a7-86ec-9d6f6aae7bf7', '2025-05-25 18:33:50.632885', '2025-05-25 18:33:50.632886')])
+2025-05-25 18:33:50,636 - aiosqlite - DEBUG - operation functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x10a79e940>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-25 18:33:50.631452', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', '2b66c63f-a0ce-4ab2-81ec-8ca4cd48ac63', '2025-05-25 18:33:50.631461', '2025-05-25 18:33:50.631461'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-25 18:33:50.632881', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', '54b58898-bb43-43a7-86ec-9d6f6aae7bf7', '2025-05-25 18:33:50.632885', '2025-05-25 18:33:50.632886')]) completed
+2025-05-25 18:33:50,636 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x10a79e940>)
+2025-05-25 18:33:50,636 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x10a79e940>) completed
+2025-05-25 18:33:50,636 - aiosqlite - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x10aa19300>)
+2025-05-25 18:33:50,637 - aiosqlite - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x10aa19300>) completed
+2025-05-25 18:33:50,637 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10aa19300>)
+2025-05-25 18:33:50,637 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10aa19300>) completed
+2025-05-25 18:33:50,637 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x10aa19300>)
+2025-05-25 18:33:50,637 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x10aa19300>) completed
+2025-05-25 18:33:50,638 - app - INFO - 财知道API服务已启动完成！
+INFO:     Application startup complete.
+
+--- 抓取到的HTML片段 ---
+ <!DOCTYPE html>
+<!-- [ published at 2025-05-26 09:33:07 ] -->
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>股票首页_新浪财经_新浪网</title>
+<meta name="keywords" content="股票,行情,大盘,个股,上市公司,新股,数据,研究报告,股市论坛,美股,港股,B股,炒股软件" />
+<meta name="description" content="新浪股票提供最权威及时的证券资讯，7X24小时全球股票市场报价，拥有人气最旺的华人股票博客、论坛和股吧，机构研报精华汇总，主力动向一网打尽" />
+<link rel="mask-icon" sizes="any" href="//www.sina.com.cn/favicon.svg" color="red">
+<meta content="always" name="referrer">
+<meta name="viewport" content="width=1010" />
+<meta name="stencil" content="PGLS000487" />
+
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+<script type="text/javascript" src="//finance.sina.com.cn/other/src/doc/httpsjp.js"></script>
+	
+<link rel="stylesheet" href="//n1.sinaimg.cn/finance/stockhomesys/css/index_simsun.css?202311151405" />
+<!--<link rel="stylesheet" href="//n1.sinaimg.cn/tech/66ceb6d9/20180419/style20080419.css?201804191" />-->
+<link rel="stylesheet" href="//n2.sinaimg.cn/news/66ceb6d9/20200525/style20200522.css" />
+	
+<style>
+#preload_bookmark,
+#preload_bookmark #sprite{width:0;height:0;position:absolute;left:-9999px;background:url("//i2.sinaimg.cn/dy/sinatag/addfav_pop_bg.png") no-repeat 0 0;}
+#preload_bookmark #sprite{background:url("//i1.sinaimg.cn/dy/sinatag/btns_addfav_spirite.png") no-repeat 0 0;}
+.u-list-center{line-height:26px}
+.u-list-center li{padding-top: 0px;}
+.table01_tip{
+    padding: 0 5px;
+    height: 20px;
+    line-height: 20px;
+    color: #77b0dc;
+    background: #e2edf6;}
+.list01{
+	line-height:26px;
+}
+	
+.tabchange_wrap{
+  	width:361px;
+  	margin-top:24px;
+}
+.tabchange_wrap_top{
+  	border-left:1px solid #E5E5E5;
+}
+.clearfix:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.tabchange_title01, .tabchange_title02{
+    float:left;
+   	width:179px;
+   	height:36px;
+   	text-align: center;
+   	line-height:36px;
+   	font-size: 16px;
+   	color: #1F2D4A;
+   	border-bottom: 1px solid #E5E5E5;
+   	border-top:1px solid #E5E5E5;
+   	background: #F7F7F7;
+   	font-family: 'Microsoft Yahei','微软雅黑';
+}
+.tabchange_title01{
+  	border-right:1px solid #E5E5E5;
+}
+.tabchange_title02{
+   	border-right:1px solid #E5E5E5;
+}
+.none{
+  	display:none;
+}
+.hover_text{
+  	color:#1F2D4A;
+    background: #fff;
+    border-top:2px solid  #4763B2;
+    border-bottom:0;
+    line-height:35px;
+}
+.hover_class{
+    background: #fff;
+    border-top:2px solid  #4763B2;
+    border-bottom:0;
+    color:#4763B2;
+    line-height:35px; 
+}
+.show_hidden02{
+  	display:none;
+}
+	
+.m-p1-lb2_1-container dl:nth-child(4) dd img{
+	background: none;
+	width: 311px;
+}
+.fapp_dialog_close{position: absolute;z-index: 2;top: 15px;right: 15px;cursor: pointer;width: 25px;height: 25px;background-color: rgba(255,255,255,0.01);}	
+</style>
+	
+<script src="//news.sina.com.cn/js/weather/1010/jquery-1.11.1.min.js"></script>
+<script src="//finance.sina.com.cn/other/src/sff.js"></script>
+<script src="//i.sso.sina.com.cn/js/ssologin.js"></script>
+<script type="text/javascript" charset="UTF-8" src="//i.sso.sina.com.cn/js/sinaSSOManager.js"></script>
+<script>
+(function(){
+	var a = [];
+	if('indexOf' in a){return;}
+	Array.prototype.indexOf = function(t){
+		for(var i = 0, l = this.length; i < l; i++){
+			if(this[i] === t){
+				return i;
+			}
+		}
+		return null;
+	}
+})();
+</script>
+<script type="text/javascript" src="//www.sinaimg.cn/home/sinaflash.js"></script>
+<script type="text/javascript" src="//d1.sina.com.cn/litong/zhitou/sspnew.js"></script>
+<!-- 乐居 begin -->
+<script charset="utf-8" src="//d1.sina.com.cn/litong/zhitou/leju/leju.js"></script>
+<script>
+  leju.conf.url = '//adm.leju.com/get_ad_list/PG_514AC44E37FB50';
+  leju.conf.defaultUrl = '//staticadm.leju.com/get_ad_list/PG_514AC44E37FB50.js';
+  var lejuMedia = leju.getData();
+</script>
+<!-- 乐居 end -->
+<script>
+try{document.domain = 'sina.com.cn';}
+catch(e){}
+</script>
+<meta name="sudameta" content="dataid:wpcomos:43205" /></head>
+<body><!-- body code begin -->
+
+<!-- SUDA_CODE_START --> 
+<script type="text/javascript"> 
+//<!--
+(function(){var an="V=2.1.16";var ah=window,F=document,s=navigator,W=s.userAgent,ao=ah.screen,j=ah.location.href;var aD="https:"==ah.location.protocol?"https://s":"http://",ay="beacon.sina.com.cn";var N=aD+ay+"/a.gif?",z=aD+ay+"/g.gif?",R=aD+ay+"/f.gif?",ag=aD+ay+"/e.gif?",aB=aD+"beacon.sinauda.com/i.gif?";var aA=F.referrer.toLowerCase();var aa="SINAGLOBAL",Y="FSINAGLOBAL",H="Apache",P="ULV",l="SUP",aE="UOR",E="_s_acc",X="_s_tentry",n=false,az=false,B=(document.domain=="sina.com.cn")?true:false;var o=0;var aG=false,A=false;var al="";var m=16777215,Z=0,C,K=0;var r="",b="",a="";var M=[],S=[],I=[];var u=0;var v=0;var p="";var am=false;var w=false;function O(){var e=document.createElement("iframe");e.src=aD+ay+"/data.html?"+new Date().getTime();e.id="sudaDataFrame";e.style.height="0px";e.style.width="1px";e.style.overflow="hidden";e.frameborder="0";e.scrolling="no";document.getElementsByTagName("head")[0].appendChild(e)}function k(){var e=document.createElement("iframe");e.src=aD+ay+"/ckctl.html";e.id="ckctlFrame";e.style.height="0px";e.style.width="1px";e.style.overflow="hidden";e.frameborder="0";e.scrolling="no";document.getElementsByTagName("head")[0].appendChild(e)}function q(){var e=document.createElement("script");e.src=aD+ay+"/h.js";document.getElementsByTagName("head")[0].appendChild(e)}function h(aH,i){var D=F.getElementsByName(aH);var e=(i>0)?i:0;return(D.length>e)?D[e].content:""}function aF(){var aJ=F.getElementsByName("sudameta");var aR=[];for(var aO=0;aO<aJ.length;aO++){var aK=aJ[aO].content;if(aK){if(aK.indexOf(";")!=-1){var D=aK.split(";");for(var aH=0;aH<D.length;aH++){var aP=aw(D[aH]);if(!aP){continue}aR.push(aP)}}else{aR.push(aK)}}}var aM=F.getElementsByTagName("meta");for(var aO=0,aI=aM.length;aO<aI;aO++){var aN=aM[aO];if(aN.name=="tags"){aR.push("content_tags:"+encodeURI(aN.content))}}var aL=t("vjuids");aR.push("vjuids:"+aL);var e="";var aQ=j.indexOf("#");if(aQ!=-1){e=escape(j.substr(aQ+1));aR.push("hashtag:"+e)}return aR}function V(aK,D,aI,aH){if(aK==""){return""}aH=(aH=="")?"=":aH;D+=aH;var aJ=aK.indexOf(D);if(aJ<0){return""}aJ+=D.length;var i=aK.indexOf(aI,aJ);if(i<aJ){i=aK.length}return aK.substring(aJ,i)}function t(e){if(undefined==e||""==e){return""}return V(F.cookie,e,";","")}function at(aI,e,i,aH){if(e!=null){if((undefined==aH)||(null==aH)){aH="sina.com.cn"}if((undefined==i)||(null==i)||(""==i)){F.cookie=aI+"="+e+";domain="+aH+";path=/"}else{var D=new Date();var aJ=D.getTime();aJ=aJ+86400000*i;D.setTime(aJ);aJ=D.getTime();F.cookie=aI+"="+e+";domain="+aH+";expires="+D.toUTCString()+";path=/"}}}function f(D){try{var i=document.getElementById("sudaDataFrame").contentWindow.storage;return i.get(D)}catch(aH){return false}}function ar(D,aH){try{var i=document.getElementById("sudaDataFrame").contentWindow.storage;i.set(D,aH);return true}catch(aI){return false}}function L(){var aJ=15;var D=window.SUDA.etag;if(!B){return"-"}if(u==0){O();q()}if(D&&D!=undefined){w=true}ls_gid=f(aa);if(ls_gid===false||w==false){return false}else{am=true}if(ls_gid&&ls_gid.length>aJ){at(aa,ls_gid,3650);n=true;return ls_gid}else{if(D&&D.length>aJ){at(aa,D,3650);az=true}var i=0,aI=500;var aH=setInterval((function(){var e=t(aa);if(w){e=D}i+=1;if(i>3){clearInterval(aH)}if(e.length>aJ){clearInterval(aH);ar(aa,e)}}),aI);return w?D:t(aa)}}function U(e,aH,D){var i=e;if(i==null){return false}aH=aH||"click";if((typeof D).toLowerCase()!="function"){return}if(i.attachEvent){i.attachEvent("on"+aH,D)}else{if(i.addEventListener){i.addEventListener(aH,D,false)}else{i["on"+aH]=D}}return true}function af(){if(window.event!=null){return window.event}else{if(window.event){return window.event}var D=arguments.callee.caller;var i;var aH=0;while(D!=null&&aH<40){i=D.arguments[0];if(i&&(i.constructor==Event||i.constructor==MouseEvent||i.constructor==KeyboardEvent)){return i}aH++;D=D.caller}return i}}function g(i){i=i||af();if(!i.target){i.target=i.srcElement;i.pageX=i.x;i.pageY=i.y}if(typeof i.layerX=="undefined"){i.layerX=i.offsetX}if(typeof i.layerY=="undefined"){i.layerY=i.offsetY}return i}function aw(aH){if(typeof aH!=="string"){throw"trim need a string as parameter"}var e=aH.length;var D=0;var i=/(\u3000|\s|\t|\u00A0)/;while(D<e){if(!i.test(aH.charAt(D))){break}D+=1}while(e>D){if(!i.test(aH.charAt(e-1))){break}e-=1}return aH.slice(D,e)}function c(e){return Object.prototype.toString.call(e)==="[object Array]"}function J(aH,aL){var aN=aw(aH).split("&");var aM={};var D=function(i){if(aL){try{return decodeURIComponent(i)}catch(aP){return i}}else{return i}};for(var aJ=0,aK=aN.length;aJ<aK;aJ++){if(aN[aJ]){var aI=aN[aJ].split("=");var e=aI[0];var aO=aI[1];if(aI.length<2){aO=e;e="$nullName"}if(!aM[e]){aM[e]=D(aO)}else{if(c(aM[e])!=true){aM[e]=[aM[e]]}aM[e].push(D(aO))}}}return aM}function ac(D,aI){for(var aH=0,e=D.length;aH<e;aH++){aI(D[aH],aH)}}function ak(i){var e=new RegExp("^http(?:s)?://([^/]+)","im");if(i.match(e)){return i.match(e)[1].toString()}else{return""}}function aj(aO){try{var aL="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";var D="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_=";var aQ=function(e){var aR="",aS=0;for(;aS<e.length;aS++){aR+="%"+aH(e[aS])}return decodeURIComponent(aR)};var aH=function(e){var i="0"+e.toString(16);return i.length<=2?i:i.substr(1)};var aP=function(aY,aV,aR){if(typeof(aY)=="string"){aY=aY.split("")}var aX=function(a7,a9){for(var a8=0;a8<a7.length;a8++){if(a7[a8]==a9){return a8}}return -1};var aS=[];var a6,a4,a1="";var a5,a3,a0,aZ="";if(aY.length%4!=0){}var e=/[^A-Za-z0-9\+\/\=]/g;var a2=aL.split("");if(aV=="urlsafe"){e=/[^A-Za-z0-9\-_\=]/g;a2=D.split("")}var aU=0;if(aV=="binnary"){a2=[];for(aU=0;aU<=64;aU++){a2[aU]=aU+128}}if(aV!="binnary"&&e.exec(aY.join(""))){return aR=="array"?[]:""}aU=0;do{a5=aX(a2,aY[aU++]);a3=aX(a2,aY[aU++]);a0=aX(a2,aY[aU++]);aZ=aX(a2,aY[aU++]);a6=(a5<<2)|(a3>>4);a4=((a3&15)<<4)|(a0>>2);a1=((a0&3)<<6)|aZ;aS.push(a6);if(a0!=64&&a0!=-1){aS.push(a4)}if(aZ!=64&&aZ!=-1){aS.push(a1)}a6=a4=a1="";a5=a3=a0=aZ=""}while(aU<aY.length);if(aR==" 
+--- END ---
+
+2025-05-25 18:33:51,395 - app - ERROR - 雪球API请求发生异常: 0, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url=URL('https://xueqiu.com/statuses/hot/listV2.json?since_id=-1&max_id=-1&size=20')
+2025-05-25 18:33:51,396 - app - INFO - 从雪球获取了 0 条[全部]分类新闻
+2025-05-25 20:20:55,204 - app - ERROR - 雪球API请求发生异常: 0, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url=URL('https://xueqiu.com/statuses/hot/listV2.json?since_id=-1&max_id=-1&size=20')
+2025-05-25 20:20:55,204 - app - INFO - 从雪球获取了 0 条[全部]分类新闻
+2025-05-25 21:32:26,445 - app - ERROR - 雪球API请求发生异常: 0, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url=URL('https://xueqiu.com/statuses/hot/listV2.json?since_id=-1&max_id=-1&size=20')
+2025-05-25 21:32:26,447 - app - INFO - 从雪球获取了 0 条[全部]分类新闻
+2025-05-25 23:11:23,644 - app - ERROR - 雪球API请求发生异常: 0, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url=URL('https://xueqiu.com/statuses/hot/listV2.json?since_id=-1&max_id=-1&size=20')
+2025-05-25 23:11:23,645 - app - INFO - 从雪球获取了 0 条[全部]分类新闻
+2025-05-26 07:14:40,569 - app - ERROR - 雪球API请求发生异常: 0, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url=URL('https://xueqiu.com/statuses/hot/listV2.json?since_id=-1&max_id=-1&size=20')
+2025-05-26 07:14:40,570 - app - INFO - 从雪球获取了 0 条[全部]分类新闻
+2025-05-26 13:24:43,488 - app - ERROR - 雪球API请求发生异常: 0, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url=URL('https://xueqiu.com/statuses/hot/listV2.json?since_id=-1&max_id=-1&size=20')
+2025-05-26 13:24:43,489 - app - INFO - 从雪球获取了 0 条[全部]分类新闻
+2025-05-26 15:14:33,845 - app - ERROR - 雪球API请求发生异常: 0, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url=URL('https://xueqiu.com/statuses/hot/listV2.json?since_id=-1&max_id=-1&size=20')
+2025-05-26 15:14:33,845 - app - INFO - 从雪球获取了 0 条[全部]分类新闻
+2025-05-26 16:38:45,133 - app - ERROR - 雪球API请求发生异常: 0, message='Attempt to decode JSON with unexpected mimetype: text/html; charset=utf-8', url=URL('https://xueqiu.com/statuses/hot/listV2.json?since_id=-1&max_id=-1&size=20')
+2025-05-26 16:38:45,133 - app - INFO - 从雪球获取了 0 条[全部]分类新闻
+2025-05-26 16:56:02,312 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x10adfb740>
+2025-05-26 16:56:02,313 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x10adfb740> completed
+2025-05-26 16:56:02,313 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10addce50>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x109d77560>, deterministic=True)
+2025-05-26 16:56:02,313 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10addce50>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x109d77560>, deterministic=True) completed
+2025-05-26 16:56:02,313 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10addce50>, 'floor', 1, <built-in function floor>, deterministic=True)
+2025-05-26 16:56:02,313 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10addce50>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2025-05-26 16:56:02,315 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x10addce50>)
+2025-05-26 16:56:02,315 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x10addce50>) completed
+2025-05-26 16:56:02,315 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x10add2040>, 'SELECT learning.title, learning.short_description, learning.content, learning.difficulty, learning.tags, learning.related_items, learning.id, learning.created_at, learning.updated_at \nFROM learning', ())
+2025-05-26 16:56:02,316 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x10add2040>, 'SELECT learning.title, learning.short_description, learning.content, learning.difficulty, learning.tags, learning.related_items, learning.id, learning.created_at, learning.updated_at \nFROM learning', ()) completed
+2025-05-26 16:56:02,316 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x10add2040>)
+2025-05-26 16:56:02,316 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x10add2040>) completed
+2025-05-26 16:56:02,316 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x10add2040>)
+2025-05-26 16:56:02,316 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x10add2040>) completed
+2025-05-26 16:56:02,317 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10addce50>)
+2025-05-26 16:56:02,317 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10addce50>) completed
+2025-05-26 16:56:02,317 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10addce50>)
+2025-05-26 16:56:02,317 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10addce50>) completed
+2025-05-26 16:56:02,317 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x10addce50>)
+2025-05-26 16:56:02,317 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x10addce50>) completed
+2025-05-26 16:56:02,319 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x10adfbec0>
+2025-05-26 16:56:02,319 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x10adfbec0> completed
+2025-05-26 16:56:02,319 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10addd990>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x109d77560>, deterministic=True)
+2025-05-26 16:56:02,319 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10addd990>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x109d77560>, deterministic=True) completed
+2025-05-26 16:56:02,319 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10addd990>, 'floor', 1, <built-in function floor>, deterministic=True)
+2025-05-26 16:56:02,319 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10addd990>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2025-05-26 16:56:02,320 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x10addd990>)
+2025-05-26 16:56:02,320 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x10addd990>) completed
+2025-05-26 16:56:02,320 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x10add3840>, 'SELECT news.title, news.summary, news.content, news.source, news.url, news.publish_date, news.category, news.image_url, news.tags, news.id, news.created_at, news.updated_at \nFROM news ORDER BY news.publish_date DESC', ())
+2025-05-26 16:56:02,320 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x10add3840>, 'SELECT news.title, news.summary, news.content, news.source, news.url, news.publish_date, news.category, news.image_url, news.tags, news.id, news.created_at, news.updated_at \nFROM news ORDER BY news.publish_date DESC', ()) completed
+2025-05-26 16:56:02,320 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x10add3840>)
+2025-05-26 16:56:02,321 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x10add3840>) completed
+2025-05-26 16:56:02,321 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x10add3840>)
+2025-05-26 16:56:02,321 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x10add3840>) completed
+2025-05-26 16:56:02,324 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10addd990>)
+2025-05-26 16:56:02,324 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10addd990>) completed
+2025-05-26 16:56:02,324 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10addd990>)
+2025-05-26 16:56:02,324 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10addd990>) completed
+2025-05-26 16:56:02,324 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x10addd990>)
+2025-05-26 16:56:02,325 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x10addd990>) completed
+2025-05-26 16:56:02,331 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x10ae04860>
+2025-05-26 16:56:02,332 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x10ae04860> completed
+2025-05-26 16:56:02,332 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10adde3e0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x109d77560>, deterministic=True)
+2025-05-26 16:56:02,332 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10adde3e0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x109d77560>, deterministic=True) completed
+2025-05-26 16:56:02,332 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10adde3e0>, 'floor', 1, <built-in function floor>, deterministic=True)
+2025-05-26 16:56:02,332 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x10adde3e0>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2025-05-26 16:56:02,333 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x10adde3e0>)
+2025-05-26 16:56:02,333 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x10adde3e0>) completed
+2025-05-26 16:56:02,333 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x10ae0d5c0>, 'SELECT questions.title, questions.content, questions.answer, questions.category, questions.view_count, questions.answer_count, questions.tags, questions.related_questions, questions.id, questions.created_at, questions.updated_at \nFROM questions', ())
+2025-05-26 16:56:02,333 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x10ae0d5c0>, 'SELECT questions.title, questions.content, questions.answer, questions.category, questions.view_count, questions.answer_count, questions.tags, questions.related_questions, questions.id, questions.created_at, questions.updated_at \nFROM questions', ()) completed
+2025-05-26 16:56:02,333 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x10ae0d5c0>)
+2025-05-26 16:56:02,333 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x10ae0d5c0>) completed
+2025-05-26 16:56:02,334 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x10ae0d5c0>)
+2025-05-26 16:56:02,334 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x10ae0d5c0>) completed
+2025-05-26 16:56:02,334 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10adde3e0>)
+2025-05-26 16:56:02,334 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10adde3e0>) completed
+2025-05-26 16:56:02,334 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10adde3e0>)
+2025-05-26 16:56:02,334 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x10adde3e0>) completed
+2025-05-26 16:56:02,334 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x10adde3e0>)
+2025-05-26 16:56:02,334 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x10adde3e0>) completed
+WARNING:  StatReload detected changes in 'app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-05-26 17:34:12,871 - app - INFO - 财知道API服务正在关闭...
+2025-05-26 17:34:12,872 - app - INFO - 已停止雪球新闻定期获取任务
+2025-05-26 17:34:12,872 - app - INFO - 已停止雪球新闻定期获取任务
+2025-05-26 17:34:12,872 - app - INFO - 财知道API服务已关闭！
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2793]
+2025-05-26 17:34:12,945 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-2' coro=<SinaService.schedule_news_fetch() done, defined at /Users/bytedance/codes/backend/app/services/sina_service.py:94> exception=AttributeError("'News' object has no attribute 'save'")>
+Traceback (most recent call last):
+  File "/Users/bytedance/codes/backend/app/services/sina_service.py", line 111, in schedule_news_fetch
+    await news_record.save()
+          ^^^^^^^^^^^^^^^^
+AttributeError: 'News' object has no attribute 'save'
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x00000001d72d5c40 (most recent call first):
+  <no Python frame>
+WARNING:  StatReload detected changes in 'app/core/config.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x00000001d72d5c40 (most recent call first):
+  <no Python frame>
+WARNING:  StatReload detected changes in 'app/core/database.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x00000001d72d5c40 (most recent call first):
+  <no Python frame>
+WARNING:  StatReload detected changes in 'venv/lib/python3.13/site-packages/pip/__init__.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x00000001d72d5c40 (most recent call first):
+  <no Python frame>
+WARNING:  StatReload detected changes in 'app/core/database.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x00000001d72d5c40 (most recent call first):
+  <no Python frame>
+WARNING:  StatReload detected changes in 'app/main.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x00000001d72d5c40 (most recent call first):
+  <no Python frame>
+INFO:     Stopping reloader process [94832]

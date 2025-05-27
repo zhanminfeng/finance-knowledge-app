@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>财知道 API 测试</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1 {
+      text-align: center;
+      color: #3498db;
+    }
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 10px 0;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+    .log-container {
+      background-color: #f8f9fa;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 15px;
+      margin: 20px 0;
+      height: 400px;
+      overflow-y: auto;
+      font-family: monospace;
+      white-space: pre-wrap;
+    }
+    .endpoint-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px 0;
+    }
+    .success {
+      color: #2ecc71;
+    }
+    .error {
+      color: #e74c3c;
+    }
+  </style>
+</head>
+<body>
+  <h1>财知道 API 测试</h1>
+  
+  <p>本页面用于测试财知道后端API的连接和响应。请确保后端服务已启动并在端口8001上运行。</p>
+  
+  <div class="endpoint-buttons">
+    <button onclick="testEndpoint('/questions')">测试问题列表</button>
+    <button onclick="testEndpoint('/news')">测试新闻列表</button>
+    <button onclick="testEndpoint('/learning')">测试学习内容</button>
+    <button onclick="testChat()">测试AI聊天</button>
+    <button onclick="clearLog()">清空日志</button>
+  </div>
+  
+  <div class="log-container" id="log"></div>
+  
+  <script>
+    const API_BASE_URL = 'http://localhost:8001/api';
+    const logElement = document.getElementById('log');
+    
+    function log(message, type = 'normal') {
+      const timestamp = new Date().toLocaleTimeString();
+      const className = type === 'error' ? 'error' : type === 'success' ? 'success' : '';
+      logElement.innerHTML += `<div class="${className}">[${timestamp}] ${message}</div>`;
+      logElement.scrollTop = logElement.scrollHeight;
+    }
+    
+    function clearLog() {
+      logElement.innerHTML = '';
+    }
+    
+    async function get(endpoint) {
+      try {
+        const url = `${API_BASE_URL}${endpoint}`;
+        log(`发起GET请求: ${url}`);
+        
+        const response = await fetch(url);
+        
+        if (!response.ok) {
+          throw new Error(`API错误: ${response.status}`);
+        }
+        
+        const data = await response.json();
+        log(`请求成功: ${endpoint}`, 'success');
+        log(JSON.stringify(data, null, 2));
+        return data;
+      } catch (error) {
+        log(`请求失败: ${error}`, 'error');
+        throw error;
+      }
+    }
+    
+    async function post(endpoint, data) {
+      try {
+        const url = `${API_BASE_URL}${endpoint}`;
+        log(`发起POST请求: ${url}`);
+        log(`数据: ${JSON.stringify(data)}`);
+        
+        const response = await fetch(url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        
+        if (!response.ok) {
+          throw new Error(`API错误: ${response.status}`);
+        }
+        
+        const responseData = await response.json();
+        log(`请求成功: ${endpoint}`, 'success');
+        log(JSON.stringify(responseData, null, 2));
+        return responseData;
+      } catch (error) {
+        log(`请求失败: ${error}`, 'error');
+        throw error;
+      }
+    }
+    
+    async function testEndpoint(endpoint) {
+      try {
+        await get(endpoint);
+      } catch (error) {
+        // 错误已在get函数中处理
+      }
+    }
+    
+    async function testChat() {
+      try {
+        await post('/chat', { message: '请介绍一下什么是股票?' });
+      } catch (error) {
+        // 错误已在post函数中处理
+      }
+    }
+    
+    // 页面加载完成后显示就绪消息
+    window.onload = () => {
+      log('API测试页面已就绪，请点击上方按钮测试各API端点');
+    };
+  </script>
+</body>
+</html> 

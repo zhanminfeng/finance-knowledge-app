@@ -1,0 +1,491 @@
+[0;32m[INFO][0m 检查必要的命令...
+[0;32m[INFO][0m 设置后端环境...
+[0;32m[INFO][0m 创建 Python 虚拟环境...
+[0;32m[INFO][0m 升级 pip...
+Requirement already satisfied: pip in ./venv/lib/python3.11/site-packages (25.1.1)
+[0;32m[INFO][0m 安装后端依赖...
+Collecting aiofiles==24.1.0 (from -r requirements.txt (line 1))
+  Using cached aiofiles-24.1.0-py3-none-any.whl.metadata (10 kB)
+Collecting aiohttp==3.9.0 (from -r requirements.txt (line 2))
+  Using cached aiohttp-3.9.0-cp311-cp311-macosx_11_0_arm64.whl.metadata (7.4 kB)
+Collecting aiosignal==1.3.2 (from -r requirements.txt (line 3))
+  Using cached aiosignal-1.3.2-py2.py3-none-any.whl.metadata (3.8 kB)
+Collecting aiosqlite==0.19.0 (from -r requirements.txt (line 4))
+  Using cached aiosqlite-0.19.0-py3-none-any.whl.metadata (4.3 kB)
+Collecting alembic==1.12.1 (from -r requirements.txt (line 5))
+  Using cached alembic-1.12.1-py3-none-any.whl.metadata (7.3 kB)
+Collecting annotated-types==0.7.0 (from -r requirements.txt (line 6))
+  Using cached annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+Collecting anyio==3.7.1 (from -r requirements.txt (line 7))
+  Using cached anyio-3.7.1-py3-none-any.whl.metadata (4.7 kB)
+Collecting async-timeout==5.0.1 (from -r requirements.txt (line 8))
+  Using cached async_timeout-5.0.1-py3-none-any.whl.metadata (5.1 kB)
+Collecting asyncpg==0.29.0 (from -r requirements.txt (line 9))
+  Using cached asyncpg-0.29.0-cp311-cp311-macosx_11_0_arm64.whl.metadata (4.4 kB)
+Collecting attrs==25.3.0 (from -r requirements.txt (line 10))
+  Using cached attrs-25.3.0-py3-none-any.whl.metadata (10 kB)
+Collecting beautifulsoup4==4.13.4 (from -r requirements.txt (line 11))
+  Using cached beautifulsoup4-4.13.4-py3-none-any.whl.metadata (3.8 kB)
+Collecting certifi==2025.4.26 (from -r requirements.txt (line 12))
+  Using cached certifi-2025.4.26-py3-none-any.whl.metadata (2.5 kB)
+Collecting charset-normalizer==3.4.2 (from -r requirements.txt (line 13))
+  Using cached charset_normalizer-3.4.2-cp311-cp311-macosx_10_9_universal2.whl.metadata (35 kB)
+Collecting click==8.2.1 (from -r requirements.txt (line 14))
+  Using cached click-8.2.1-py3-none-any.whl.metadata (2.5 kB)
+Collecting dnspython==2.7.0 (from -r requirements.txt (line 15))
+  Using cached dnspython-2.7.0-py3-none-any.whl.metadata (5.8 kB)
+Collecting email_validator==2.2.0 (from -r requirements.txt (line 16))
+  Using cached email_validator-2.2.0-py3-none-any.whl.metadata (25 kB)
+Collecting fastapi==0.104.1 (from -r requirements.txt (line 17))
+  Using cached fastapi-0.104.1-py3-none-any.whl.metadata (24 kB)
+Collecting frozenlist==1.6.0 (from -r requirements.txt (line 18))
+  Using cached frozenlist-1.6.0-cp311-cp311-macosx_11_0_arm64.whl.metadata (16 kB)
+Collecting greenlet==2.0.2 (from -r requirements.txt (line 19))
+  Using cached greenlet-2.0.2-cp311-cp311-macosx_11_0_arm64.whl.metadata (4.1 kB)
+Collecting h11==0.16.0 (from -r requirements.txt (line 20))
+  Using cached h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting httpcore==1.0.9 (from -r requirements.txt (line 21))
+  Using cached httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+Collecting httpx==0.25.1 (from -r requirements.txt (line 22))
+  Using cached httpx-0.25.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting idna==3.10 (from -r requirements.txt (line 23))
+  Using cached idna-3.10-py3-none-any.whl.metadata (10 kB)
+Collecting iniconfig==2.1.0 (from -r requirements.txt (line 24))
+  Using cached iniconfig-2.1.0-py3-none-any.whl.metadata (2.7 kB)
+Collecting Jinja2==3.1.6 (from -r requirements.txt (line 25))
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting loguru==0.7.3 (from -r requirements.txt (line 26))
+  Using cached loguru-0.7.3-py3-none-any.whl.metadata (22 kB)
+Collecting Mako==1.3.10 (from -r requirements.txt (line 27))
+  Using cached mako-1.3.10-py3-none-any.whl.metadata (2.9 kB)
+Collecting MarkupSafe==3.0.2 (from -r requirements.txt (line 28))
+  Using cached MarkupSafe-3.0.2-cp311-cp311-macosx_11_0_arm64.whl.metadata (4.0 kB)
+Collecting multidict==6.4.4 (from -r requirements.txt (line 29))
+  Using cached multidict-6.4.4-cp311-cp311-macosx_11_0_arm64.whl.metadata (5.3 kB)
+Collecting packaging==25.0 (from -r requirements.txt (line 30))
+  Using cached packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting pluggy==1.6.0 (from -r requirements.txt (line 31))
+  Using cached pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+Collecting propcache==0.3.1 (from -r requirements.txt (line 32))
+  Using cached propcache-0.3.1-cp311-cp311-macosx_11_0_arm64.whl.metadata (10 kB)
+Collecting psycopg2-binary==2.9.10 (from -r requirements.txt (line 33))
+  Using cached psycopg2_binary-2.9.10-cp311-cp311-macosx_14_0_arm64.whl.metadata (4.9 kB)
+Collecting pydantic==2.5.1 (from -r requirements.txt (line 34))
+  Using cached pydantic-2.5.1-py3-none-any.whl.metadata (64 kB)
+Collecting pydantic-settings==2.1.0 (from -r requirements.txt (line 35))
+  Using cached pydantic_settings-2.1.0-py3-none-any.whl.metadata (2.9 kB)
+Collecting pydantic_core==2.14.3 (from -r requirements.txt (line 36))
+  Using cached pydantic_core-2.14.3-cp311-cp311-macosx_11_0_arm64.whl.metadata (6.5 kB)
+Collecting pytest==7.4.3 (from -r requirements.txt (line 37))
+  Using cached pytest-7.4.3-py3-none-any.whl.metadata (7.9 kB)
+Collecting pytest-asyncio==0.21.1 (from -r requirements.txt (line 38))
+  Using cached pytest_asyncio-0.21.1-py3-none-any.whl.metadata (4.0 kB)
+Collecting python-dotenv==1.0.0 (from -r requirements.txt (line 39))
+  Using cached python_dotenv-1.0.0-py3-none-any.whl.metadata (21 kB)
+Collecting python-multipart==0.0.20 (from -r requirements.txt (line 40))
+  Using cached python_multipart-0.0.20-py3-none-any.whl.metadata (1.8 kB)
+Collecting requests==2.31.0 (from -r requirements.txt (line 41))
+  Using cached requests-2.31.0-py3-none-any.whl.metadata (4.6 kB)
+Collecting sniffio==1.3.1 (from -r requirements.txt (line 42))
+  Using cached sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting soupsieve==2.7 (from -r requirements.txt (line 43))
+  Using cached soupsieve-2.7-py3-none-any.whl.metadata (4.6 kB)
+Collecting SQLAlchemy==2.0.23 (from -r requirements.txt (line 44))
+  Using cached SQLAlchemy-2.0.23-cp311-cp311-macosx_11_0_arm64.whl.metadata (9.6 kB)
+Collecting starlette==0.27.0 (from -r requirements.txt (line 45))
+  Using cached starlette-0.27.0-py3-none-any.whl.metadata (5.8 kB)
+Collecting typing_extensions==4.13.2 (from -r requirements.txt (line 46))
+  Using cached typing_extensions-4.13.2-py3-none-any.whl.metadata (3.0 kB)
+Collecting ujson==5.10.0 (from -r requirements.txt (line 47))
+  Using cached ujson-5.10.0-cp311-cp311-macosx_11_0_arm64.whl.metadata (9.3 kB)
+Collecting urllib3==2.4.0 (from -r requirements.txt (line 48))
+  Using cached urllib3-2.4.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting uvicorn==0.24.0 (from -r requirements.txt (line 49))
+  Using cached uvicorn-0.24.0-py3-none-any.whl.metadata (6.4 kB)
+Collecting yarl==1.20.0 (from -r requirements.txt (line 50))
+  Using cached yarl-1.20.0-cp311-cp311-macosx_11_0_arm64.whl.metadata (72 kB)
+Using cached aiofiles-24.1.0-py3-none-any.whl (15 kB)
+Using cached aiohttp-3.9.0-cp311-cp311-macosx_11_0_arm64.whl (386 kB)
+Using cached multidict-6.4.4-cp311-cp311-macosx_11_0_arm64.whl (37 kB)
+Using cached yarl-1.20.0-cp311-cp311-macosx_11_0_arm64.whl (94 kB)
+Using cached aiosignal-1.3.2-py2.py3-none-any.whl (7.6 kB)
+Using cached aiosqlite-0.19.0-py3-none-any.whl (15 kB)
+Using cached alembic-1.12.1-py3-none-any.whl (226 kB)
+Using cached annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Using cached anyio-3.7.1-py3-none-any.whl (80 kB)
+Using cached async_timeout-5.0.1-py3-none-any.whl (6.2 kB)
+Using cached asyncpg-0.29.0-cp311-cp311-macosx_11_0_arm64.whl (638 kB)
+Using cached attrs-25.3.0-py3-none-any.whl (63 kB)
+Using cached beautifulsoup4-4.13.4-py3-none-any.whl (187 kB)
+Using cached certifi-2025.4.26-py3-none-any.whl (159 kB)
+Using cached charset_normalizer-3.4.2-cp311-cp311-macosx_10_9_universal2.whl (198 kB)
+Using cached click-8.2.1-py3-none-any.whl (102 kB)
+Using cached dnspython-2.7.0-py3-none-any.whl (313 kB)
+Using cached email_validator-2.2.0-py3-none-any.whl (33 kB)
+Using cached fastapi-0.104.1-py3-none-any.whl (92 kB)
+Using cached pydantic-2.5.1-py3-none-any.whl (381 kB)
+Using cached starlette-0.27.0-py3-none-any.whl (66 kB)
+Using cached frozenlist-1.6.0-cp311-cp311-macosx_11_0_arm64.whl (122 kB)
+Using cached greenlet-2.0.2-cp311-cp311-macosx_11_0_arm64.whl (197 kB)
+Using cached h11-0.16.0-py3-none-any.whl (37 kB)
+Using cached httpcore-1.0.9-py3-none-any.whl (78 kB)
+Using cached httpx-0.25.1-py3-none-any.whl (75 kB)
+Using cached idna-3.10-py3-none-any.whl (70 kB)
+Using cached iniconfig-2.1.0-py3-none-any.whl (6.0 kB)
+Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+Using cached loguru-0.7.3-py3-none-any.whl (61 kB)
+Using cached mako-1.3.10-py3-none-any.whl (78 kB)
+Using cached MarkupSafe-3.0.2-cp311-cp311-macosx_11_0_arm64.whl (12 kB)
+Using cached packaging-25.0-py3-none-any.whl (66 kB)
+Using cached pluggy-1.6.0-py3-none-any.whl (20 kB)
+Using cached propcache-0.3.1-cp311-cp311-macosx_11_0_arm64.whl (45 kB)
+Using cached psycopg2_binary-2.9.10-cp311-cp311-macosx_14_0_arm64.whl (3.3 MB)
+Using cached pydantic_settings-2.1.0-py3-none-any.whl (11 kB)
+Using cached pydantic_core-2.14.3-cp311-cp311-macosx_11_0_arm64.whl (1.7 MB)
+Using cached pytest-7.4.3-py3-none-any.whl (325 kB)
+Using cached pytest_asyncio-0.21.1-py3-none-any.whl (13 kB)
+Using cached python_dotenv-1.0.0-py3-none-any.whl (19 kB)
+Using cached python_multipart-0.0.20-py3-none-any.whl (24 kB)
+Using cached requests-2.31.0-py3-none-any.whl (62 kB)
+Using cached urllib3-2.4.0-py3-none-any.whl (128 kB)
+Using cached sniffio-1.3.1-py3-none-any.whl (10 kB)
+Using cached soupsieve-2.7-py3-none-any.whl (36 kB)
+Using cached SQLAlchemy-2.0.23-cp311-cp311-macosx_11_0_arm64.whl (2.1 MB)
+Using cached typing_extensions-4.13.2-py3-none-any.whl (45 kB)
+Using cached ujson-5.10.0-cp311-cp311-macosx_11_0_arm64.whl (51 kB)
+Using cached uvicorn-0.24.0-py3-none-any.whl (59 kB)
+Installing collected packages: urllib3, ujson, typing_extensions, soupsieve, sniffio, python-multipart, python-dotenv, psycopg2-binary, propcache, pluggy, packaging, multidict, MarkupSafe, loguru, iniconfig, idna, h11, greenlet, frozenlist, dnspython, click, charset-normalizer, certifi, attrs, async-timeout, annotated-types, aiosqlite, aiofiles, yarl, uvicorn, SQLAlchemy, requests, pytest, pydantic_core, Mako, Jinja2, httpcore, email_validator, beautifulsoup4, asyncpg, anyio, aiosignal, starlette, pytest-asyncio, pydantic, httpx, alembic, aiohttp, pydantic-settings, fastapi
+
+Successfully installed Jinja2-3.1.6 Mako-1.3.10 MarkupSafe-3.0.2 SQLAlchemy-2.0.23 aiofiles-24.1.0 aiohttp-3.9.0 aiosignal-1.3.2 aiosqlite-0.19.0 alembic-1.12.1 annotated-types-0.7.0 anyio-3.7.1 async-timeout-5.0.1 asyncpg-0.29.0 attrs-25.3.0 beautifulsoup4-4.13.4 certifi-2025.4.26 charset-normalizer-3.4.2 click-8.2.1 dnspython-2.7.0 email_validator-2.2.0 fastapi-0.104.1 frozenlist-1.6.0 greenlet-2.0.2 h11-0.16.0 httpcore-1.0.9 httpx-0.25.1 idna-3.10 iniconfig-2.1.0 loguru-0.7.3 multidict-6.4.4 packaging-25.0 pluggy-1.6.0 propcache-0.3.1 psycopg2-binary-2.9.10 pydantic-2.5.1 pydantic-settings-2.1.0 pydantic_core-2.14.3 pytest-7.4.3 pytest-asyncio-0.21.1 python-dotenv-1.0.0 python-multipart-0.0.20 requests-2.31.0 sniffio-1.3.1 soupsieve-2.7 starlette-0.27.0 typing_extensions-4.13.2 ujson-5.10.0 urllib3-2.4.0 uvicorn-0.24.0 yarl-1.20.0
+[0;32m[INFO][0m 设置前端环境...
+[0;32m[INFO][0m 安装前端依赖...
+npm warn deprecated @types/react-native@0.73.0: This is a stub types definition. react-native provides its own type definitions, so you do not need this installed.
+npm warn deprecated osenv@0.1.5: This package is no longer supported.
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+npm warn deprecated @babel/plugin-proposal-numeric-separator@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-numeric-separator instead.
+npm warn deprecated @babel/plugin-proposal-optional-catch-binding@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-optional-catch-binding instead.
+npm warn deprecated @babel/plugin-proposal-class-properties@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-class-properties instead.
+npm warn deprecated @babel/plugin-proposal-nullish-coalescing-operator@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-nullish-coalescing-operator instead.
+npm warn deprecated rimraf@2.6.3: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
+npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated @babel/plugin-proposal-optional-chaining@7.21.0: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-optional-chaining instead.
+npm warn deprecated @babel/plugin-proposal-async-generator-functions@7.20.7: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-async-generator-functions instead.
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+npm warn deprecated sudo-prompt@9.2.1: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+npm warn deprecated @babel/plugin-proposal-object-rest-spread@7.20.7: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-object-rest-spread instead.
+npm warn deprecated glob@7.1.6: Glob versions prior to v9 are no longer supported
+npm warn deprecated glob@7.1.6: Glob versions prior to v9 are no longer supported
+npm warn deprecated glob@7.1.6: Glob versions prior to v9 are no longer supported
+npm warn deprecated @xmldom/xmldom@0.7.13: this version is no longer supported, please update to at least 0.8.*
+npm warn deprecated @testing-library/jest-native@5.4.3: DEPRECATED: This package is no longer maintained.
+npm warn deprecated Please use the built-in Jest matchers available in @testing-library/react-native v12.4+.
+npm warn deprecated
+npm warn deprecated See migration guide: https://callstack.github.io/react-native-testing-library/docs/migration/jest-matchers
+npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+
+added 1309 packages, and audited 1310 packages in 7s
+
+184 packages are looking for funding
+  run `npm fund` for details
+
+11 vulnerabilities (2 low, 9 high)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+[0;32m[INFO][0m 检查依赖安全漏洞...
+# npm audit report
+
+ip  *
+Severity: high
+ip SSRF improper categorization in isPublic - https://github.com/advisories/GHSA-2p57-rm9w-gvfp
+fix available via `npm audit fix --force`
+Will install react-native@0.73.11, which is outside the stated dependency range
+node_modules/ip
+  @react-native-community/cli-doctor  <=10.2.5 || 11.0.0-alpha.0 - 11.4.0 || 12.0.0-alpha.0 - 12.3.5 || 13.0.0 - 13.5.2
+  Depends on vulnerable versions of ip
+  node_modules/@react-native-community/cli-doctor
+    @react-native-community/cli  4.13.0 - 9.3.5 || 11.0.2 - 11.4.0 || 12.0.0-alpha.0 - 12.3.5 || 13.0.0 - 13.5.2
+    Depends on vulnerable versions of @react-native-community/cli-doctor
+    Depends on vulnerable versions of @react-native-community/cli-hermes
+    node_modules/@react-native-community/cli
+      react-native  <=0.0.0-20221027-2059-ba5454c42 || 0.69.0-rc.0 - 0.70.15 || 0.72.0-rc.0 - 0.72.10 || 0.73.0-nightly-20230506-1af868c52 - 0.73.4 || 0.74.0-nightly-20231003-5dedf277c - 0.74.0-rc.9 || >=0.80.0-nightly-20250305-f5feb7302
+      Depends on vulnerable versions of @react-native-community/cli
+      node_modules/react-native
+  @react-native-community/cli-hermes  <=10.2.0 || 11.0.0-alpha.0 - 11.4.0 || 12.0.0-alpha.0 - 12.3.5 || 13.0.0 - 13.5.2
+  Depends on vulnerable versions of ip
+  node_modules/@react-native-community/cli-hermes
+
+semver  7.0.0 - 7.5.1
+Severity: high
+semver vulnerable to Regular Expression Denial of Service - https://github.com/advisories/GHSA-c2qf-rxjj-qqgw
+fix available via `npm audit fix --force`
+Will install expo@53.0.9, which is a breaking change
+node_modules/@expo/image-utils/node_modules/semver
+  @expo/image-utils  <=0.0.1-canary-20240109-93608d8 || 0.3.10-alpha.0 - 0.4.2
+  Depends on vulnerable versions of semver
+  node_modules/@expo/image-utils
+    @expo/cli  <=0.0.0-canary-20231123-1b19f96-4 || 0.0.1-canary-20231125-d600e44 - 0.21.1 || 1.0.0-canary-20240927-ab8a962 - 1.0.0-canary-20241021-c4b5a93
+    Depends on vulnerable versions of @expo/image-utils
+    Depends on vulnerable versions of @expo/prebuild-config
+    Depends on vulnerable versions of send
+    node_modules/@expo/cli
+      expo  46.0.0-alpha.0 - 52.0.4
+      Depends on vulnerable versions of @expo/cli
+      node_modules/expo
+    @expo/prebuild-config  <=7.0.0-beta.0
+    Depends on vulnerable versions of @expo/image-utils
+    node_modules/@expo/prebuild-config
+
+send  <0.19.0
+send vulnerable to template injection that can lead to XSS - https://github.com/advisories/GHSA-m6fv-jmcg-4jfg
+fix available via `npm audit fix --force`
+Will install expo@53.0.9, which is a breaking change
+node_modules/send
+
+11 vulnerabilities (2 low, 9 high)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+[0;32m[INFO][0m 启动后端服务...
+[0;32m[INFO][0m 启动前端服务...
+INFO:     Will watch for changes in these directories: ['/Users/bytedance/codes/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [91986] using StatReload
+Starting project at /Users/bytedance/codes/frontend
+Starting Metro Bundler
+2025-05-26 18:59:37,525 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-05-26 18:59:37,525 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-26 18:59:37,525 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("news")
+2025-05-26 18:59:37,525 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("news")
+2025-05-26 18:59:37,526 INFO sqlalchemy.engine.Engine [raw sql] ()
+2025-05-26 18:59:37,526 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-26 18:59:37,526 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("learning")
+2025-05-26 18:59:37,526 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("learning")
+2025-05-26 18:59:37,527 INFO sqlalchemy.engine.Engine [raw sql] ()
+2025-05-26 18:59:37,527 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-26 18:59:37,527 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("questions")
+2025-05-26 18:59:37,527 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("questions")
+2025-05-26 18:59:37,527 INFO sqlalchemy.engine.Engine [raw sql] ()
+2025-05-26 18:59:37,527 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-26 18:59:37,527 INFO sqlalchemy.engine.Engine COMMIT
+2025-05-26 18:59:37,527 - sqlalchemy.engine.Engine - INFO - COMMIT
+The following packages should be updated for best compatibility with the installed expo version:
+  react-native@0.73.2 - expected version: 0.73.6
+Your project may not work correctly until you install the correct versions of the packages.
+Waiting on http://localhost:8081
+Logs for your project will appear below.
+INFO:     Started server process [91990]
+INFO:     Waiting for application startup.
+2025-05-26 18:59:38,926 - app - INFO - 财知道API服务正在启动...
+2025-05-26 18:59:38,928 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x1219cf060>
+2025-05-26 18:59:38,929 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x1219cf060> completed
+2025-05-26 18:59:38,929 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x1219ddd50>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x1210c9c60>, deterministic=True)
+2025-05-26 18:59:38,929 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x1219ddd50>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x1210c9c60>, deterministic=True) completed
+2025-05-26 18:59:38,930 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x1219ddd50>, 'floor', 1, <built-in function floor>, deterministic=True)
+2025-05-26 18:59:38,930 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x1219ddd50>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2025-05-26 18:59:38,930 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x1219ddd50>)
+2025-05-26 18:59:38,930 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x1219ddd50>) completed
+2025-05-26 18:59:38,930 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x1219bbb40>, 'PRAGMA read_uncommitted', [])
+2025-05-26 18:59:38,931 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x1219bbb40>, 'PRAGMA read_uncommitted', []) completed
+2025-05-26 18:59:38,931 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x1219bbb40>)
+2025-05-26 18:59:38,931 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x1219bbb40>) completed
+2025-05-26 18:59:38,931 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x1219bbb40>)
+2025-05-26 18:59:38,931 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x1219bbb40>) completed
+2025-05-26 18:59:38,931 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x1219ddd50>)
+2025-05-26 18:59:38,931 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x1219ddd50>) completed
+2025-05-26 18:59:38,932 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-05-26 18:59:38,932 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-26 18:59:38,933 INFO sqlalchemy.engine.Engine INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-05-26 18:59:38,933 - sqlalchemy.engine.Engine - INFO - INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-05-26 18:59:38,933 INFO sqlalchemy.engine.Engine [generated in 0.00015s] [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-26 18:59:38.926190', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', 'a4b78ff7-378a-4831-9cbd-d89451e7d72e', '2025-05-26 18:59:38.926201', '2025-05-26 18:59:38.926202'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-26 18:59:38.928545', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', '40cef817-110b-46fb-9d87-f8433609e086', '2025-05-26 18:59:38.928554', '2025-05-26 18:59:38.928554')]
+2025-05-26 18:59:38,933 - sqlalchemy.engine.Engine - INFO - [generated in 0.00015s] [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-26 18:59:38.926190', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', 'a4b78ff7-378a-4831-9cbd-d89451e7d72e', '2025-05-26 18:59:38.926201', '2025-05-26 18:59:38.926202'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-26 18:59:38.928545', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', '40cef817-110b-46fb-9d87-f8433609e086', '2025-05-26 18:59:38.928554', '2025-05-26 18:59:38.928554')]
+2025-05-26 18:59:38,933 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x1219ddd50>)
+2025-05-26 18:59:38,933 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x1219ddd50>) completed
+2025-05-26 18:59:38,933 - aiosqlite - DEBUG - executing functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x121a05f40>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-26 18:59:38.926190', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', 'a4b78ff7-378a-4831-9cbd-d89451e7d72e', '2025-05-26 18:59:38.926201', '2025-05-26 18:59:38.926202'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-26 18:59:38.928545', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', '40cef817-110b-46fb-9d87-f8433609e086', '2025-05-26 18:59:38.928554', '2025-05-26 18:59:38.928554')])
+2025-05-26 18:59:38,934 - aiosqlite - DEBUG - operation functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x121a05f40>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-26 18:59:38.926190', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', 'a4b78ff7-378a-4831-9cbd-d89451e7d72e', '2025-05-26 18:59:38.926201', '2025-05-26 18:59:38.926202'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-26 18:59:38.928545', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', '40cef817-110b-46fb-9d87-f8433609e086', '2025-05-26 18:59:38.928554', '2025-05-26 18:59:38.928554')]) completed
+2025-05-26 18:59:38,934 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x121a05f40>)
+2025-05-26 18:59:38,935 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x121a05f40>) completed
+2025-05-26 18:59:38,935 INFO sqlalchemy.engine.Engine COMMIT
+2025-05-26 18:59:38,935 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-26 18:59:38,935 - aiosqlite - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x1219ddd50>)
+2025-05-26 18:59:38,936 - aiosqlite - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x1219ddd50>) completed
+2025-05-26 18:59:38,936 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x1219ddd50>)
+2025-05-26 18:59:38,936 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x1219ddd50>) completed
+2025-05-26 18:59:38,937 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x1219ddd50>)
+2025-05-26 18:59:38,937 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x1219ddd50>) completed
+2025-05-26 18:59:38,937 - app - INFO - 财知道API服务已启动完成！
+INFO:     Application startup complete.
+
+--- 抓取到的HTML片段 ---
+ <!DOCTYPE html>
+<!-- [ published at 2025-05-27 09:58:58 ] -->
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>股票首页_新浪财经_新浪网</title>
+<meta name="keywords" content="股票,行情,大盘,个股,上市公司,新股,数据,研究报告,股市论坛,美股,港股,B股,炒股软件" />
+<meta name="description" content="新浪股票提供最权威及时的证券资讯，7X24小时全球股票市场报价，拥有人气最旺的华人股票博客、论坛和股吧，机构研报精华汇总，主力动向一网打尽" />
+<link rel="mask-icon" sizes="any" href="//www.sina.com.cn/favicon.svg" color="red">
+<meta content="always" name="referrer">
+<meta name="viewport" content="width=1010" />
+<meta name="stencil" content="PGLS000487" />
+
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+<script type="text/javascript" src="//finance.sina.com.cn/other/src/doc/httpsjp.js"></script>
+	
+<link rel="stylesheet" href="//n1.sinaimg.cn/finance/stockhomesys/css/index_simsun.css?202311151405" />
+<!--<link rel="stylesheet" href="//n1.sinaimg.cn/tech/66ceb6d9/20180419/style20080419.css?201804191" />-->
+<link rel="stylesheet" href="//n2.sinaimg.cn/news/66ceb6d9/20200525/style20200522.css" />
+	
+<style>
+#preload_bookmark,
+#preload_bookmark #sprite{width:0;height:0;position:absolute;left:-9999px;background:url("//i2.sinaimg.cn/dy/sinatag/addfav_pop_bg.png") no-repeat 0 0;}
+#preload_bookmark #sprite{background:url("//i1.sinaimg.cn/dy/sinatag/btns_addfav_spirite.png") no-repeat 0 0;}
+.u-list-center{line-height:26px}
+.u-list-center li{padding-top: 0px;}
+.table01_tip{
+    padding: 0 5px;
+    height: 20px;
+    line-height: 20px;
+    color: #77b0dc;
+    background: #e2edf6;}
+.list01{
+	line-height:26px;
+}
+	
+.tabchange_wrap{
+  	width:361px;
+  	margin-top:24px;
+}
+.tabchange_wrap_top{
+  	border-left:1px solid #E5E5E5;
+}
+.clearfix:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.tabchange_title01, .tabchange_title02{
+    float:left;
+   	width:179px;
+   	height:36px;
+   	text-align: center;
+   	line-height:36px;
+   	font-size: 16px;
+   	color: #1F2D4A;
+   	border-bottom: 1px solid #E5E5E5;
+   	border-top:1px solid #E5E5E5;
+   	background: #F7F7F7;
+   	font-family: 'Microsoft Yahei','微软雅黑';
+}
+.tabchange_title01{
+  	border-right:1px solid #E5E5E5;
+}
+.tabchange_title02{
+   	border-right:1px solid #E5E5E5;
+}
+.none{
+  	display:none;
+}
+.hover_text{
+  	color:#1F2D4A;
+    background: #fff;
+    border-top:2px solid  #4763B2;
+    border-bottom:0;
+    line-height:35px;
+}
+.hover_class{
+    background: #fff;
+    border-top:2px solid  #4763B2;
+    border-bottom:0;
+    color:#4763B2;
+    line-height:35px; 
+}
+.show_hidden02{
+  	display:none;
+}
+	
+.m-p1-lb2_1-container dl:nth-child(4) dd img{
+	background: none;
+	width: 311px;
+}
+.fapp_dialog_close{position: absolute;z-index: 2;top: 15px;right: 15px;cursor: pointer;width: 25px;height: 25px;background-color: rgba(255,255,255,0.01);}	
+</style>
+	
+<script src="//news.sina.com.cn/js/weather/1010/jquery-1.11.1.min.js"></script>
+<script src="//finance.sina.com.cn/other/src/sff.js"></script>
+<script src="//i.sso.sina.com.cn/js/ssologin.js"></script>
+<script type="text/javascript" charset="UTF-8" src="//i.sso.sina.com.cn/js/sinaSSOManager.js"></script>
+<script>
+(function(){
+	var a = [];
+	if('indexOf' in a){return;}
+	Array.prototype.indexOf = function(t){
+		for(var i = 0, l = this.length; i < l; i++){
+			if(this[i] === t){
+				return i;
+			}
+		}
+		return null;
+	}
+})();
+</script>
+<script type="text/javascript" src="//www.sinaimg.cn/home/sinaflash.js"></script>
+<script type="text/javascript" src="//d1.sina.com.cn/litong/zhitou/sspnew.js"></script>
+<!-- 乐居 begin -->
+<script charset="utf-8" src="//d1.sina.com.cn/litong/zhitou/leju/leju.js"></script>
+<script>
+  leju.conf.url = '//adm.leju.com/get_ad_list/PG_514AC44E37FB50';
+  leju.conf.defaultUrl = '//staticadm.leju.com/get_ad_list/PG_514AC44E37FB50.js';
+  var lejuMedia = leju.getData();
+</script>
+<!-- 乐居 end -->
+<script>
+try{document.domain = 'sina.com.cn';}
+catch(e){}
+</script>
+<meta name="sudameta" content="dataid:wpcomos:43205" /></head>
+<body><!-- body code begin -->
+
+<!-- SUDA_CODE_START --> 
+<script type="text/javascript"> 
+//<!--
+(function(){var an="V=2.1.16";var ah=window,F=document,s=navigator,W=s.userAgent,ao=ah.screen,j=ah.location.href;var aD="https:"==ah.location.protocol?"https://s":"http://",ay="beacon.sina.com.cn";var N=aD+ay+"/a.gif?",z=aD+ay+"/g.gif?",R=aD+ay+"/f.gif?",ag=aD+ay+"/e.gif?",aB=aD+"beacon.sinauda.com/i.gif?";var aA=F.referrer.toLowerCase();var aa="SINAGLOBAL",Y="FSINAGLOBAL",H="Apache",P="ULV",l="SUP",aE="UOR",E="_s_acc",X="_s_tentry",n=false,az=false,B=(document.domain=="sina.com.cn")?true:false;var o=0;var aG=false,A=false;var al="";var m=16777215,Z=0,C,K=0;var r="",b="",a="";var M=[],S=[],I=[];var u=0;var v=0;var p="";var am=false;var w=false;function O(){var e=document.createElement("iframe");e.src=aD+ay+"/data.html?"+new Date().getTime();e.id="sudaDataFrame";e.style.height="0px";e.style.width="1px";e.style.overflow="hidden";e.frameborder="0";e.scrolling="no";document.getElementsByTagName("head")[0].appendChild(e)}function k(){var e=document.createElement("iframe");e.src=aD+ay+"/ckctl.html";e.id="ckctlFrame";e.style.height="0px";e.style.width="1px";e.style.overflow="hidden";e.frameborder="0";e.scrolling="no";document.getElementsByTagName("head")[0].appendChild(e)}function q(){var e=document.createElement("script");e.src=aD+ay+"/h.js";document.getElementsByTagName("head")[0].appendChild(e)}function h(aH,i){var D=F.getElementsByName(aH);var e=(i>0)?i:0;return(D.length>e)?D[e].content:""}function aF(){var aJ=F.getElementsByName("sudameta");var aR=[];for(var aO=0;aO<aJ.length;aO++){var aK=aJ[aO].content;if(aK){if(aK.indexOf(";")!=-1){var D=aK.split(";");for(var aH=0;aH<D.length;aH++){var aP=aw(D[aH]);if(!aP){continue}aR.push(aP)}}else{aR.push(aK)}}}var aM=F.getElementsByTagName("meta");for(var aO=0,aI=aM.length;aO<aI;aO++){var aN=aM[aO];if(aN.name=="tags"){aR.push("content_tags:"+encodeURI(aN.content))}}var aL=t("vjuids");aR.push("vjuids:"+aL);var e="";var aQ=j.indexOf("#");if(aQ!=-1){e=escape(j.substr(aQ+1));aR.push("hashtag:"+e)}return aR}function V(aK,D,aI,aH){if(aK==""){return""}aH=(aH=="")?"=":aH;D+=aH;var aJ=aK.indexOf(D);if(aJ<0){return""}aJ+=D.length;var i=aK.indexOf(aI,aJ);if(i<aJ){i=aK.length}return aK.substring(aJ,i)}function t(e){if(undefined==e||""==e){return""}return V(F.cookie,e,";","")}function at(aI,e,i,aH){if(e!=null){if((undefined==aH)||(null==aH)){aH="sina.com.cn"}if((undefined==i)||(null==i)||(""==i)){F.cookie=aI+"="+e+";domain="+aH+";path=/"}else{var D=new Date();var aJ=D.getTime();aJ=aJ+86400000*i;D.setTime(aJ);aJ=D.getTime();F.cookie=aI+"="+e+";domain="+aH+";expires="+D.toUTCString()+";path=/"}}}function f(D){try{var i=document.getElementById("sudaDataFrame").contentWindow.storage;return i.get(D)}catch(aH){return false}}function ar(D,aH){try{var i=document.getElementById("sudaDataFrame").contentWindow.storage;i.set(D,aH);return true}catch(aI){return false}}function L(){var aJ=15;var D=window.SUDA.etag;if(!B){return"-"}if(u==0){O();q()}if(D&&D!=undefined){w=true}ls_gid=f(aa);if(ls_gid===false||w==false){return false}else{am=true}if(ls_gid&&ls_gid.length>aJ){at(aa,ls_gid,3650);n=true;return ls_gid}else{if(D&&D.length>aJ){at(aa,D,3650);az=true}var i=0,aI=500;var aH=setInterval((function(){var e=t(aa);if(w){e=D}i+=1;if(i>3){clearInterval(aH)}if(e.length>aJ){clearInterval(aH);ar(aa,e)}}),aI);return w?D:t(aa)}}function U(e,aH,D){var i=e;if(i==null){return false}aH=aH||"click";if((typeof D).toLowerCase()!="function"){return}if(i.attachEvent){i.attachEvent("on"+aH,D)}else{if(i.addEventListener){i.addEventListener(aH,D,false)}else{i["on"+aH]=D}}return true}function af(){if(window.event!=null){return window.event}else{if(window.event){return window.event}var D=arguments.callee.caller;var i;var aH=0;while(D!=null&&aH<40){i=D.arguments[0];if(i&&(i.constructor==Event||i.constructor==MouseEvent||i.constructor==KeyboardEvent)){return i}aH++;D=D.caller}return i}}function g(i){i=i||af();if(!i.target){i.target=i.srcElement;i.pageX=i.x;i.pageY=i.y}if(typeof i.layerX=="undefined"){i.layerX=i.offsetX}if(typeof i.layerY=="undefined"){i.layerY=i.offsetY}return i}function aw(aH){if(typeof aH!=="string"){throw"trim need a string as parameter"}var e=aH.length;var D=0;var i=/(\u3000|\s|\t|\u00A0)/;while(D<e){if(!i.test(aH.charAt(D))){break}D+=1}while(e>D){if(!i.test(aH.charAt(e-1))){break}e-=1}return aH.slice(D,e)}function c(e){return Object.prototype.toString.call(e)==="[object Array]"}function J(aH,aL){var aN=aw(aH).split("&");var aM={};var D=function(i){if(aL){try{return decodeURIComponent(i)}catch(aP){return i}}else{return i}};for(var aJ=0,aK=aN.length;aJ<aK;aJ++){if(aN[aJ]){var aI=aN[aJ].split("=");var e=aI[0];var aO=aI[1];if(aI.length<2){aO=e;e="$nullName"}if(!aM[e]){aM[e]=D(aO)}else{if(c(aM[e])!=true){aM[e]=[aM[e]]}aM[e].push(D(aO))}}}return aM}function ac(D,aI){for(var aH=0,e=D.length;aH<e;aH++){aI(D[aH],aH)}}function ak(i){var e=new RegExp("^http(?:s)?://([^/]+)","im");if(i.match(e)){return i.match(e)[1].toString()}else{return""}}function aj(aO){try{var aL="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";var D="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_=";var aQ=function(e){var aR="",aS=0;for(;aS<e.length;aS++){aR+="%"+aH(e[aS])}return decodeURIComponent(aR)};var aH=function(e){var i="0"+e.toString(16);return i.length<=2?i:i.substr(1)};var aP=function(aY,aV,aR){if(typeof(aY)=="string"){aY=aY.split("")}var aX=function(a7,a9){for(var a8=0;a8<a7.length;a8++){if(a7[a8]==a9){return a8}}return -1};var aS=[];var a6,a4,a1="";var a5,a3,a0,aZ="";if(aY.length%4!=0){}var e=/[^A-Za-z0-9\+\/\=]/g;var a2=aL.split("");if(aV=="urlsafe"){e=/[^A-Za-z0-9\-_\=]/g;a2=D.split("")}var aU=0;if(aV=="binnary"){a2=[];for(aU=0;aU<=64;aU++){a2[aU]=aU+128}}if(aV!="binnary"&&e.exec(aY.join(""))){return aR=="array"?[]:""}aU=0;do{a5=aX(a2,aY[aU++]);a3=aX(a2,aY[aU++]);a0=aX(a2,aY[aU++]);aZ=aX(a2,aY[aU++]);a6=(a5<<2)|(a3>>4);a4=((a3&15)<<4)|(a0>>2);a1=((a0&3)<<6)|aZ;aS.push(a6);if(a0!=64&&a0!=-1){aS.push(a4)}if(aZ!=64&&aZ!=-1){aS.push(a1)}a6=a4=a1="";a5=a3=a0=aZ=""}while(aU<aY.length);if(aR=="[0;32m[INFO][0m 服务启动成功！
+[0;32m[INFO][0m 后端 API 文档: http://localhost:8000/docs
+[0;32m[INFO][0m 前端开发服务器: 请确保手机和电脑在同一网络下
+[0;32m[INFO][0m 在 iOS 设备上：
+[0;32m[INFO][0m 1. 打开 Expo Go 应用
+[0;32m[INFO][0m 2. 点击 'Scan QR Code' 扫描终端中显示的二维码
+[0;32m[INFO][0m 3. 如果扫描失败，请确保：
+[0;32m[INFO][0m    - 手机和电脑连接到同一个 WiFi 网络
+[0;32m[INFO][0m    - 允许相机权限
+[0;32m[INFO][0m    - 检查电脑防火墙设置
+[0;32m[INFO][0m 按 Ctrl+C 停止所有服务
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+ 
+--- END ---
+
+2025-05-26 19:06:22,166 - app - INFO - 财知道API服务正在关闭...
+2025-05-26 19:06:22,166 - app - INFO - 财知道API服务已关闭！
+INFO:     Application shutdown complete.
+INFO:     Finished server process [91990]
+2025-05-26 19:06:22,206 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-2' coro=<SinaService.schedule_news_fetch() done, defined at /Users/bytedance/codes/backend/app/services/sina_service.py:94> exception=AttributeError("'News' object has no attribute 'save'")>
+Traceback (most recent call last):
+  File "/Users/bytedance/codes/backend/app/services/sina_service.py", line 111, in schedule_news_fetch
+    await news_record.save()
+          ^^^^^^^^^^^^^^^^
+AttributeError: 'News' object has no attribute 'save'
+INFO:     Stopping reloader process [91986]
+[0;32m[INFO][0m 正在清理...
+[0;32m[INFO][0m 清理后端虚拟环境...
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required

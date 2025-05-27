@@ -1,0 +1,211 @@
+2025-05-26 18:06:08,819 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-05-26 18:06:08,819 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-26 18:06:08,819 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("news")
+2025-05-26 18:06:08,819 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("news")
+2025-05-26 18:06:08,819 INFO sqlalchemy.engine.Engine [raw sql] ()
+2025-05-26 18:06:08,819 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-26 18:06:08,819 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("learning")
+2025-05-26 18:06:08,819 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("learning")
+2025-05-26 18:06:08,819 INFO sqlalchemy.engine.Engine [raw sql] ()
+2025-05-26 18:06:08,819 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-26 18:06:08,820 INFO sqlalchemy.engine.Engine PRAGMA main.table_info("questions")
+2025-05-26 18:06:08,820 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("questions")
+2025-05-26 18:06:08,820 INFO sqlalchemy.engine.Engine [raw sql] ()
+2025-05-26 18:06:08,820 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-05-26 18:06:08,820 INFO sqlalchemy.engine.Engine COMMIT
+2025-05-26 18:06:08,820 - sqlalchemy.engine.Engine - INFO - COMMIT
+INFO:     Started server process [79342]
+INFO:     Waiting for application startup.
+2025-05-26 18:06:08,978 - app - INFO - 财知道API服务正在启动...
+2025-05-26 18:06:08,981 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x1080aeca0>
+2025-05-26 18:06:08,981 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x1080aeca0> completed
+2025-05-26 18:06:08,981 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x1080b95d0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x107671760>, deterministic=True)
+2025-05-26 18:06:08,981 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x1080b95d0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x107671760>, deterministic=True) completed
+2025-05-26 18:06:08,982 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x1080b95d0>, 'floor', 1, <built-in function floor>, deterministic=True)
+2025-05-26 18:06:08,982 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x1080b95d0>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2025-05-26 18:06:08,982 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x1080b95d0>)
+2025-05-26 18:06:08,982 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x1080b95d0>) completed
+2025-05-26 18:06:08,982 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x108096740>, 'PRAGMA read_uncommitted', [])
+2025-05-26 18:06:08,982 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x108096740>, 'PRAGMA read_uncommitted', []) completed
+2025-05-26 18:06:08,982 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x108096740>)
+2025-05-26 18:06:08,982 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x108096740>) completed
+2025-05-26 18:06:08,982 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x108096740>)
+2025-05-26 18:06:08,982 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x108096740>) completed
+2025-05-26 18:06:08,982 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x1080b95d0>)
+2025-05-26 18:06:08,982 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x1080b95d0>) completed
+2025-05-26 18:06:08,982 INFO sqlalchemy.engine.Engine BEGIN (implicit)
+2025-05-26 18:06:08,982 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-05-26 18:06:08,983 INFO sqlalchemy.engine.Engine INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-05-26 18:06:08,983 - sqlalchemy.engine.Engine - INFO - INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-05-26 18:06:08,983 INFO sqlalchemy.engine.Engine [generated in 0.00012s] [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-26 18:06:08.978827', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', 'd39b7a96-795f-4545-b06e-99429b360133', '2025-05-26 18:06:08.978837', '2025-05-26 18:06:08.978837'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-26 18:06:08.980683', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', 'b7e286ba-3895-43e9-aadf-279cf97fa52b', '2025-05-26 18:06:08.980688', '2025-05-26 18:06:08.980689')]
+2025-05-26 18:06:08,983 - sqlalchemy.engine.Engine - INFO - [generated in 0.00012s] [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-26 18:06:08.978827', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', 'd39b7a96-795f-4545-b06e-99429b360133', '2025-05-26 18:06:08.978837', '2025-05-26 18:06:08.978837'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-26 18:06:08.980683', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', 'b7e286ba-3895-43e9-aadf-279cf97fa52b', '2025-05-26 18:06:08.980688', '2025-05-26 18:06:08.980689')]
+2025-05-26 18:06:08,983 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x1080b95d0>)
+2025-05-26 18:06:08,983 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x1080b95d0>) completed
+2025-05-26 18:06:08,983 - aiosqlite - DEBUG - executing functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x108096fc0>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-26 18:06:08.978827', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', 'd39b7a96-795f-4545-b06e-99429b360133', '2025-05-26 18:06:08.978837', '2025-05-26 18:06:08.978837'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-26 18:06:08.980683', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', 'b7e286ba-3895-43e9-aadf-279cf97fa52b', '2025-05-26 18:06:08.980688', '2025-05-26 18:06:08.980689')])
+2025-05-26 18:06:08,985 - aiosqlite - DEBUG - operation functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x108096fc0>, 'INSERT INTO news (title, summary, content, source, url, publish_date, category, image_url, tags, id, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', [('测试新闻1', '这是一条测试新闻摘要', '这是一条测试新闻内容', '测试来源', 'http://example.com/test1', '2025-05-26 18:06:08.978827', '财经', 'http://example.com/test1.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u8d22\\\\u7ecf\\"]"', 'd39b7a96-795f-4545-b06e-99429b360133', '2025-05-26 18:06:08.978837', '2025-05-26 18:06:08.978837'), ('测试新闻2', '这是另一条测试新闻摘要', '这是另一条测试新闻内容', '测试来源', 'http://example.com/test2', '2025-05-26 18:06:08.980683', '科技', 'http://example.com/test2.jpg', '"[\\"\\\\u6d4b\\\\u8bd5\\", \\"\\\\u79d1\\\\u6280\\"]"', 'b7e286ba-3895-43e9-aadf-279cf97fa52b', '2025-05-26 18:06:08.980688', '2025-05-26 18:06:08.980689')]) completed
+2025-05-26 18:06:08,985 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x108096fc0>)
+2025-05-26 18:06:08,985 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x108096fc0>) completed
+2025-05-26 18:06:08,986 INFO sqlalchemy.engine.Engine COMMIT
+2025-05-26 18:06:08,986 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-05-26 18:06:08,986 - aiosqlite - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x1080b95d0>)
+2025-05-26 18:06:08,986 - aiosqlite - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x1080b95d0>) completed
+2025-05-26 18:06:08,986 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x1080b95d0>)
+2025-05-26 18:06:08,986 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x1080b95d0>) completed
+2025-05-26 18:06:08,986 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x1080b95d0>)
+2025-05-26 18:06:08,986 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x1080b95d0>) completed
+2025-05-26 18:06:08,987 - app - INFO - 财知道API服务已启动完成！
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+
+--- 抓取到的HTML片段 ---
+ <!DOCTYPE html>
+<!-- [ published at 2025-05-27 09:05:02 ] -->
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>股票首页_新浪财经_新浪网</title>
+<meta name="keywords" content="股票,行情,大盘,个股,上市公司,新股,数据,研究报告,股市论坛,美股,港股,B股,炒股软件" />
+<meta name="description" content="新浪股票提供最权威及时的证券资讯，7X24小时全球股票市场报价，拥有人气最旺的华人股票博客、论坛和股吧，机构研报精华汇总，主力动向一网打尽" />
+<link rel="mask-icon" sizes="any" href="//www.sina.com.cn/favicon.svg" color="red">
+<meta content="always" name="referrer">
+<meta name="viewport" content="width=1010" />
+<meta name="stencil" content="PGLS000487" />
+
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+<script type="text/javascript" src="//finance.sina.com.cn/other/src/doc/httpsjp.js"></script>
+	
+<link rel="stylesheet" href="//n1.sinaimg.cn/finance/stockhomesys/css/index_simsun.css?202311151405" />
+<!--<link rel="stylesheet" href="//n1.sinaimg.cn/tech/66ceb6d9/20180419/style20080419.css?201804191" />-->
+<link rel="stylesheet" href="//n2.sinaimg.cn/news/66ceb6d9/20200525/style20200522.css" />
+	
+<style>
+#preload_bookmark,
+#preload_bookmark #sprite{width:0;height:0;position:absolute;left:-9999px;background:url("//i2.sinaimg.cn/dy/sinatag/addfav_pop_bg.png") no-repeat 0 0;}
+#preload_bookmark #sprite{background:url("//i1.sinaimg.cn/dy/sinatag/btns_addfav_spirite.png") no-repeat 0 0;}
+.u-list-center{line-height:26px}
+.u-list-center li{padding-top: 0px;}
+.table01_tip{
+    padding: 0 5px;
+    height: 20px;
+    line-height: 20px;
+    color: #77b0dc;
+    background: #e2edf6;}
+.list01{
+	line-height:26px;
+}
+	
+.tabchange_wrap{
+  	width:361px;
+  	margin-top:24px;
+}
+.tabchange_wrap_top{
+  	border-left:1px solid #E5E5E5;
+}
+.clearfix:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.tabchange_title01, .tabchange_title02{
+    float:left;
+   	width:179px;
+   	height:36px;
+   	text-align: center;
+   	line-height:36px;
+   	font-size: 16px;
+   	color: #1F2D4A;
+   	border-bottom: 1px solid #E5E5E5;
+   	border-top:1px solid #E5E5E5;
+   	background: #F7F7F7;
+   	font-family: 'Microsoft Yahei','微软雅黑';
+}
+.tabchange_title01{
+  	border-right:1px solid #E5E5E5;
+}
+.tabchange_title02{
+   	border-right:1px solid #E5E5E5;
+}
+.none{
+  	display:none;
+}
+.hover_text{
+  	color:#1F2D4A;
+    background: #fff;
+    border-top:2px solid  #4763B2;
+    border-bottom:0;
+    line-height:35px;
+}
+.hover_class{
+    background: #fff;
+    border-top:2px solid  #4763B2;
+    border-bottom:0;
+    color:#4763B2;
+    line-height:35px; 
+}
+.show_hidden02{
+  	display:none;
+}
+	
+.m-p1-lb2_1-container dl:nth-child(4) dd img{
+	background: none;
+	width: 311px;
+}
+.fapp_dialog_close{position: absolute;z-index: 2;top: 15px;right: 15px;cursor: pointer;width: 25px;height: 25px;background-color: rgba(255,255,255,0.01);}	
+</style>
+	
+<script src="//news.sina.com.cn/js/weather/1010/jquery-1.11.1.min.js"></script>
+<script src="//finance.sina.com.cn/other/src/sff.js"></script>
+<script src="//i.sso.sina.com.cn/js/ssologin.js"></script>
+<script type="text/javascript" charset="UTF-8" src="//i.sso.sina.com.cn/js/sinaSSOManager.js"></script>
+<script>
+(function(){
+	var a = [];
+	if('indexOf' in a){return;}
+	Array.prototype.indexOf = function(t){
+		for(var i = 0, l = this.length; i < l; i++){
+			if(this[i] === t){
+				return i;
+			}
+		}
+		return null;
+	}
+})();
+</script>
+<script type="text/javascript" src="//www.sinaimg.cn/home/sinaflash.js"></script>
+<script type="text/javascript" src="//d1.sina.com.cn/litong/zhitou/sspnew.js"></script>
+<!-- 乐居 begin -->
+<script charset="utf-8" src="//d1.sina.com.cn/litong/zhitou/leju/leju.js"></script>
+<script>
+  leju.conf.url = '//adm.leju.com/get_ad_list/PG_514AC44E37FB50';
+  leju.conf.defaultUrl = '//staticadm.leju.com/get_ad_list/PG_514AC44E37FB50.js';
+  var lejuMedia = leju.getData();
+</script>
+<!-- 乐居 end -->
+<script>
+try{document.domain = 'sina.com.cn';}
+catch(e){}
+</script>
+<meta name="sudameta" content="dataid:wpcomos:43205" /></head>
+<body><!-- body code begin -->
+
+<!-- SUDA_CODE_START --> 
+<script type="text/javascript"> 
+//<!--
+(function(){var an="V=2.1.16";var ah=window,F=document,s=navigator,W=s.userAgent,ao=ah.screen,j=ah.location.href;var aD="https:"==ah.location.protocol?"https://s":"http://",ay="beacon.sina.com.cn";var N=aD+ay+"/a.gif?",z=aD+ay+"/g.gif?",R=aD+ay+"/f.gif?",ag=aD+ay+"/e.gif?",aB=aD+"beacon.sinauda.com/i.gif?";var aA=F.referrer.toLowerCase();var aa="SINAGLOBAL",Y="FSINAGLOBAL",H="Apache",P="ULV",l="SUP",aE="UOR",E="_s_acc",X="_s_tentry",n=false,az=false,B=(document.domain=="sina.com.cn")?true:false;var o=0;var aG=false,A=false;var al="";var m=16777215,Z=0,C,K=0;var r="",b="",a="";var M=[],S=[],I=[];var u=0;var v=0;var p="";var am=false;var w=false;function O(){var e=document.createElement("iframe");e.src=aD+ay+"/data.html?"+new Date().getTime();e.id="sudaDataFrame";e.style.height="0px";e.style.width="1px";e.style.overflow="hidden";e.frameborder="0";e.scrolling="no";document.getElementsByTagName("head")[0].appendChild(e)}function k(){var e=document.createElement("iframe");e.src=aD+ay+"/ckctl.html";e.id="ckctlFrame";e.style.height="0px";e.style.width="1px";e.style.overflow="hidden";e.frameborder="0";e.scrolling="no";document.getElementsByTagName("head")[0].appendChild(e)}function q(){var e=document.createElement("script");e.src=aD+ay+"/h.js";document.getElementsByTagName("head")[0].appendChild(e)}function h(aH,i){var D=F.getElementsByName(aH);var e=(i>0)?i:0;return(D.length>e)?D[e].content:""}function aF(){var aJ=F.getElementsByName("sudameta");var aR=[];for(var aO=0;aO<aJ.length;aO++){var aK=aJ[aO].content;if(aK){if(aK.indexOf(";")!=-1){var D=aK.split(";");for(var aH=0;aH<D.length;aH++){var aP=aw(D[aH]);if(!aP){continue}aR.push(aP)}}else{aR.push(aK)}}}var aM=F.getElementsByTagName("meta");for(var aO=0,aI=aM.length;aO<aI;aO++){var aN=aM[aO];if(aN.name=="tags"){aR.push("content_tags:"+encodeURI(aN.content))}}var aL=t("vjuids");aR.push("vjuids:"+aL);var e="";var aQ=j.indexOf("#");if(aQ!=-1){e=escape(j.substr(aQ+1));aR.push("hashtag:"+e)}return aR}function V(aK,D,aI,aH){if(aK==""){return""}aH=(aH=="")?"=":aH;D+=aH;var aJ=aK.indexOf(D);if(aJ<0){return""}aJ+=D.length;var i=aK.indexOf(aI,aJ);if(i<aJ){i=aK.length}return aK.substring(aJ,i)}function t(e){if(undefined==e||""==e){return""}return V(F.cookie,e,";","")}function at(aI,e,i,aH){if(e!=null){if((undefined==aH)||(null==aH)){aH="sina.com.cn"}if((undefined==i)||(null==i)||(""==i)){F.cookie=aI+"="+e+";domain="+aH+";path=/"}else{var D=new Date();var aJ=D.getTime();aJ=aJ+86400000*i;D.setTime(aJ);aJ=D.getTime();F.cookie=aI+"="+e+";domain="+aH+";expires="+D.toUTCString()+";path=/"}}}function f(D){try{var i=document.getElementById("sudaDataFrame").contentWindow.storage;return i.get(D)}catch(aH){return false}}function ar(D,aH){try{var i=document.getElementById("sudaDataFrame").contentWindow.storage;i.set(D,aH);return true}catch(aI){return false}}function L(){var aJ=15;var D=window.SUDA.etag;if(!B){return"-"}if(u==0){O();q()}if(D&&D!=undefined){w=true}ls_gid=f(aa);if(ls_gid===false||w==false){return false}else{am=true}if(ls_gid&&ls_gid.length>aJ){at(aa,ls_gid,3650);n=true;return ls_gid}else{if(D&&D.length>aJ){at(aa,D,3650);az=true}var i=0,aI=500;var aH=setInterval((function(){var e=t(aa);if(w){e=D}i+=1;if(i>3){clearInterval(aH)}if(e.length>aJ){clearInterval(aH);ar(aa,e)}}),aI);return w?D:t(aa)}}function U(e,aH,D){var i=e;if(i==null){return false}aH=aH||"click";if((typeof D).toLowerCase()!="function"){return}if(i.attachEvent){i.attachEvent("on"+aH,D)}else{if(i.addEventListener){i.addEventListener(aH,D,false)}else{i["on"+aH]=D}}return true}function af(){if(window.event!=null){return window.event}else{if(window.event){return window.event}var D=arguments.callee.caller;var i;var aH=0;while(D!=null&&aH<40){i=D.arguments[0];if(i&&(i.constructor==Event||i.constructor==MouseEvent||i.constructor==KeyboardEvent)){return i}aH++;D=D.caller}return i}}function g(i){i=i||af();if(!i.target){i.target=i.srcElement;i.pageX=i.x;i.pageY=i.y}if(typeof i.layerX=="undefined"){i.layerX=i.offsetX}if(typeof i.layerY=="undefined"){i.layerY=i.offsetY}return i}function aw(aH){if(typeof aH!=="string"){throw"trim need a string as parameter"}var e=aH.length;var D=0;var i=/(\u3000|\s|\t|\u00A0)/;while(D<e){if(!i.test(aH.charAt(D))){break}D+=1}while(e>D){if(!i.test(aH.charAt(e-1))){break}e-=1}return aH.slice(D,e)}function c(e){return Object.prototype.toString.call(e)==="[object Array]"}function J(aH,aL){var aN=aw(aH).split("&");var aM={};var D=function(i){if(aL){try{return decodeURIComponent(i)}catch(aP){return i}}else{return i}};for(var aJ=0,aK=aN.length;aJ<aK;aJ++){if(aN[aJ]){var aI=aN[aJ].split("=");var e=aI[0];var aO=aI[1];if(aI.length<2){aO=e;e="$nullName"}if(!aM[e]){aM[e]=D(aO)}else{if(c(aM[e])!=true){aM[e]=[aM[e]]}aM[e].push(D(aO))}}}return aM}function ac(D,aI){for(var aH=0,e=D.length;aH<e;aH++){aI(D[aH],aH)}}function ak(i){var e=new RegExp("^http(?:s)?://([^/]+)","im");if(i.match(e)){return i.match(e)[1].toString()}else{return""}}function aj(aO){try{var aL="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";var D="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_=";var aQ=function(e){var aR="",aS=0;for(;aS<e.length;aS++){aR+="%"+aH(e[aS])}return decodeURIComponent(aR)};var aH=function(e){var i="0"+e.toString(16);return i.length<=2?i:i.substr(1)};var aP=function(aY,aV,aR){if(typeof(aY)=="string"){aY=aY.split("")}var aX=function(a7,a9){for(var a8=0;a8<a7.length;a8++){if(a7[a8]==a9){return a8}}return -1};var aS=[];var a6,a4,a1="";var a5,a3,a0,aZ="";if(aY.length%4!=0){}var e=/[^A-Za-z0-9\+\/\=]/g;var a2=aL.split("");if(aV=="urlsafe"){e=/[^A-Za-z0-9\-_\=]/g;a2=D.split("")}var aU=0;if(aV=="binnary"){a2=[];for(aU=0;aU<=64;aU++){a2[aU]=aU+128}}if(aV!="binnary"&&e.exec(aY.join(""))){return aR=="array"?[]:""}aU=0;do{a5=aX(a2,aY[aU++]);a3=aX(a2,aY[aU++]);a0=aX(a2,aY[aU++]);aZ=aX(a2,aY[aU++]);a6=(a5<<2)|(a3>>4);a4=((a3&15)<<4)|(a0>>2);a1=((a0&3)<<6)|aZ;aS.push(a6);if(a0!=64&&a0!=-1){aS.push(a4)}if(aZ!=64&&aZ!=-1){aS.push(a1)}a6=a4=a1="";a5=a3=a0=aZ=""}while(aU<aY.length);if(aR=="INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+ 
+--- END ---
+
+2025-05-26 18:32:07,261 - app - INFO - 财知道API服务正在关闭...
+2025-05-26 18:32:07,261 - app - INFO - 财知道API服务已关闭！
+INFO:     Application shutdown complete.
+INFO:     Finished server process [79342]
+2025-05-26 18:32:07,332 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-2' coro=<SinaService.schedule_news_fetch() done, defined at /Users/bytedance/codes/backend/app/services/sina_service.py:94> exception=AttributeError("'News' object has no attribute 'save'")>
+Traceback (most recent call last):
+  File "/Users/bytedance/codes/backend/app/services/sina_service.py", line 111, in schedule_news_fetch
+    await news_record.save()
+          ^^^^^^^^^^^^^^^^
+AttributeError: 'News' object has no attribute 'save'
