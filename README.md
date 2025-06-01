@@ -1,6 +1,57 @@
 # Finance Knowledge App
 
-一个基于 React Native 和 FastAPI 的金融知识应用。
+一个基于 React Native 和 Python 的财经知识学习应用。
+
+## 功能特点
+
+- 📚 财经知识学习
+- 📰 实时财经新闻
+- 💬 智能问答系统
+- 🤖 AI 助手支持
+
+## 技术栈
+
+### 前端
+- React Native
+- Expo
+- TypeScript
+- React Navigation
+
+### 后端
+- Python
+- FastAPI
+- SQLAlchemy
+- PostgreSQL
+
+## 开发环境设置
+
+### 前端
+```bash
+cd frontend
+npm install
+npm start
+```
+
+### 后端
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
+
+## 贡献指南
+
+1. Fork 本仓库
+2. 创建你的特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交你的更改 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 开启一个 Pull Request
+
+## 许可证
+
+MIT License - 详见 [LICENSE](LICENSE) 文件
 
 ## 系统要求
 
@@ -169,18 +220,6 @@ npm start
    - 本地网络模式：`npm start -- --lan`
    - 仅本地模式：`npm start -- --localhost`
    - 隧道模式：`npm start -- --tunnel`（需要 ngrok）
-
-## 贡献指南
-
-1. Fork 项目
-2. 创建特性分支
-3. 提交更改
-4. 推送到分支
-5. 创建 Pull Request
-
-## 许可证
-
-[MIT License](LICENSE)
 
 ## 项目概述
 
