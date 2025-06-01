@@ -112,6 +112,10 @@ setup_backend() {
         exit 1
     fi
     
+    # 安装 gunicorn
+    log_info "安装 gunicorn..."
+    pip install gunicorn
+    
     cd ..
 }
 
