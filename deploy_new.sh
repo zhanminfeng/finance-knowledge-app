@@ -72,17 +72,24 @@ check_and_install_node() {
     if ! check_command node || ! check_command npm; then
         log_info "正在安装 Node.js..."
         
-        # 检查 nvm
-        if ! check_command nvm; then
-            log_info "正在安装 nvm..."
-            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-            export NVM_DIR="$HOME/.nvm"
-            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+        if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+            # Linux
+            if check_command apt-get; then
+                # Debian/Ubuntu
+                curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+                sudo apt-get install -y nodejs
+            elif check_command yum; then
+                # CentOS/RHEL
+                curl -fsSL https://rpm.nodesource.com/setup_18.x | sudo bash -
+                sudo yum install -y nodejs
+            else
+                log_error "不支持的 Linux 发行版"
+                exit 1
+            fi
+        else
+            log_error "不支持的操作系统"
+            exit 1
         fi
-        
-        # 安装 Node.js 18
-        nvm install 18
-        nvm use 18
         
         # 验证安装
         if ! check_command node || ! check_command npm; then
@@ -154,12 +161,6 @@ setup_backend() {
 setup_frontend() {
     log_info "设置前端环境..."
     cd frontend
-    
-    # 确保使用 Node.js 18
-    log_info "确保使用 Node.js 18..."
-    export NVM_DIR="$HOME/.nvm"
-    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-    nvm use 18
     
     # 清理旧的依赖
     log_info "清理旧的依赖..."
