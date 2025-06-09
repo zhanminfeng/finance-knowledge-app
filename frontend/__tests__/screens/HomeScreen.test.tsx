@@ -1,8 +1,14 @@
 import '@testing-library/jest-native/extend-expect';
 import { describe, it, expect, beforeEach, jest } from '@jest/globals';
 import React from 'react';
-import { render, waitFor } from '@testing-library/react-native';
+import { render, waitFor, act } from '@testing-library/react-native';
 
+// Mock components
+jest.mock('../../src/components/RecommendedLearning', () => 'RecommendedLearning');
+jest.mock('../../src/components/LatestNews', () => 'LatestNews');
+jest.mock('../../src/components/InterestingQuestions', () => 'InterestingQuestions');
+
+// Mock API
 jest.mock('../../src/utils/api', () => {
   const mockApi = {
     learning: { getAll: jest.fn() },
@@ -46,9 +52,14 @@ describe('HomeScreen', () => {
     (api.learning.getAll as any).mockResolvedValue(mockData);
     (api.news.getAll as any).mockResolvedValue(mockData);
     (api.questions.getAll as any).mockResolvedValue(mockData);
-    const { getByTestId } = render(<HomeScreen />);
+    
+    let component: any;
+    await act(async () => {
+      component = render(<HomeScreen />);
+    });
+    
     await waitFor(() => {
-      expect(getByTestId('home-content')).toBeTruthy();
+      expect(component.getByTestId('home-content')).toBeTruthy();
     });
   });
 
@@ -62,11 +73,16 @@ describe('HomeScreen', () => {
     (api.learning.getAll as any).mockResolvedValue(mockData);
     (api.news.getAll as any).mockResolvedValue(mockData);
     (api.questions.getAll as any).mockResolvedValue(mockData);
-    const { getByText } = render(<HomeScreen />);
+    
+    let component: any;
+    await act(async () => {
+      component = render(<HomeScreen />);
+    });
+    
     await waitFor(() => {
-      expect(getByText('今日推荐学习')).toBeTruthy();
-      expect(getByText('最新财经新闻')).toBeTruthy();
-      expect(getByText('你可能感兴趣的问题')).toBeTruthy();
+      expect(component.getByText('今日推荐学习')).toBeTruthy();
+      expect(component.getByText('最新财经新闻')).toBeTruthy();
+      expect(component.getByText('你可能感兴趣的问题')).toBeTruthy();
     });
   });
 
@@ -74,9 +90,14 @@ describe('HomeScreen', () => {
     (api.learning.getAll as any).mockRejectedValue(new Error('Failed to load data'));
     (api.news.getAll as any).mockRejectedValue(new Error('Failed to load data'));
     (api.questions.getAll as any).mockRejectedValue(new Error('Failed to load data'));
-    const { getByText } = render(<HomeScreen />);
+    
+    let component: any;
+    await act(async () => {
+      component = render(<HomeScreen />);
+    });
+    
     await waitFor(() => {
-      expect(getByText('加载数据失败，请重试')).toBeTruthy();
+      expect(component.getByText('加载数据失败，请重试')).toBeTruthy();
     });
   });
-}); 
+});

@@ -1,7 +1,7 @@
 import '@testing-library/jest-native/extend-expect';
 import { describe, it, expect, beforeEach, jest } from '@jest/globals';
 import React from 'react';
-import { render, waitFor, fireEvent } from '@testing-library/react-native';
+import { render, waitFor, fireEvent, act } from '@testing-library/react-native';
 
 jest.mock('../../src/utils/api', () => {
   const mockApi = {
@@ -35,15 +35,20 @@ describe('RecommendedLearning', () => {
       ],
     };
     (api.learning.getAll as any).mockResolvedValue(mockData);
-    const { getByText, getAllByTestId } = render(<RecommendedLearning onPress={() => {}} />);
+    
+    let component: any;
+    await act(async () => {
+      component = render(<RecommendedLearning onPress={() => {}} />);
+    });
+    
     await waitFor(() => {
-      expect(getByText('Test Item 1')).toBeTruthy();
-      expect(getByText('Desc 1')).toBeTruthy();
-      expect(getByText('Test Item 2')).toBeTruthy();
-      expect(getByText('Desc 2')).toBeTruthy();
+      expect(component.getByText('Test Item 1')).toBeTruthy();
+      expect(component.getByText('Desc 1')).toBeTruthy();
+      expect(component.getByText('Test Item 2')).toBeTruthy();
+      expect(component.getByText('Desc 2')).toBeTruthy();
     });
     // 检查 testID
-    const items = getAllByTestId('learning-item');
+    const items = component.getAllByTestId('learning-item');
     expect(items.length).toBe(2);
   });
 
@@ -55,9 +60,14 @@ describe('RecommendedLearning', () => {
     };
     (api.learning.getAll as any).mockResolvedValue(mockData);
     const mockOnPress = jest.fn();
-    const { getAllByTestId } = render(<RecommendedLearning onPress={mockOnPress} />);
+    
+    let component: any;
+    await act(async () => {
+      component = render(<RecommendedLearning onPress={mockOnPress} />);
+    });
+    
     await waitFor(() => {
-      const items = getAllByTestId('learning-item');
+      const items = component.getAllByTestId('learning-item');
       fireEvent.press(items[0]);
       expect(mockOnPress).toHaveBeenCalledWith(mockData.items[0]);
     });
@@ -65,9 +75,14 @@ describe('RecommendedLearning', () => {
 
   it('displays error message when API call fails', async () => {
     (api.learning.getAll as any).mockRejectedValue(new Error('API Error'));
-    const { getByText } = render(<RecommendedLearning onPress={() => {}} />);
+    
+    let component: any;
+    await act(async () => {
+      component = render(<RecommendedLearning onPress={() => {}} />);
+    });
+    
     await waitFor(() => {
-      expect(getByText('加载数据失败，请重试')).toBeTruthy();
+      expect(component.getByText('加载数据失败，请重试')).toBeTruthy();
     });
   });
 
@@ -80,17 +95,26 @@ describe('RecommendedLearning', () => {
     (api.learning.getAll as any)
       .mockRejectedValueOnce(new Error('API Error'))
       .mockResolvedValueOnce(mockData);
-    const { getByText, getAllByTestId } = render(<RecommendedLearning onPress={() => {}} />);
-    await waitFor(() => {
-      expect(getByText('加载数据失败，请重试')).toBeTruthy();
+    
+    let component: any;
+    await act(async () => {
+      component = render(<RecommendedLearning onPress={() => {}} />);
     });
-    const retryButton = getByText('重试');
-    fireEvent.press(retryButton);
+    
     await waitFor(() => {
-      expect(getByText('Test Item 1')).toBeTruthy();
-      expect(getByText('Desc 1')).toBeTruthy();
-      const items = getAllByTestId('learning-item');
+      expect(component.getByText('加载数据失败，请重试')).toBeTruthy();
+    });
+    
+    await act(async () => {
+      const retryButton = component.getByText('重试');
+      fireEvent.press(retryButton);
+    });
+    
+    await waitFor(() => {
+      expect(component.getByText('Test Item 1')).toBeTruthy();
+      expect(component.getByText('Desc 1')).toBeTruthy();
+      const items = component.getAllByTestId('learning-item');
       expect(items.length).toBe(1);
     });
   });
-}); 
+});

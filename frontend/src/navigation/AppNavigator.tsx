@@ -114,15 +114,7 @@ const TabIcon = ({ name, focused }: { name: string; focused: boolean }) => {
   return (
     <View style={{ alignItems: 'center', justifyContent: 'center' }}>
       {icon}
-      <Text style={{ 
-        color: focused ? '#3498db' : '#999',
-        fontSize: 12,
-      }}>
-        {name === 'home' ? '首页' : 
-         name === 'learning' ? '学习' : 
-         name === 'news' ? '资讯' : 
-         name === 'questions' ? '问答' : ''}
-      </Text>
+      {/* 移除这里的Text组件，因为tabBarLabel已经提供了文字 */}
     </View>
   );
 };
@@ -184,4 +176,4 @@ const AppNavigator = () => {
   );
 };
 
-export default AppNavigator; 
+export default AppNavigator;

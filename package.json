@@ -1,0 +1,24 @@
+{
+  "name": "finance-knowledge-app",
+  "version": "1.0.0",
+  "description": "一个基于 React Native 和 Python 的财经知识学习应用。",
+  "main": "api-test-fetch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhanminfeng/finance-knowledge-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhanminfeng/finance-knowledge-app/issues"
+  },
+  "homepage": "https://github.com/zhanminfeng/finance-knowledge-app#readme",
+  "devDependencies": {
+    "@expo/vector-icons": "^14.1.0",
+    "react-native": "^0.79.3"
+  }
+}
