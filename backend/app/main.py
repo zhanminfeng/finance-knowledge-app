@@ -121,7 +121,7 @@ def test_news(db: Session = Depends(get_db)):
     """使用同步方式获取新闻内容"""
     try:
         # 使用原生SQL查询
-        result = db.execute(text("SELECT id, title, summary, source, publish_date, content, image_url, categories FROM news"))
+        result = db.execute(text("SELECT id, title, summary, source, publish_date, content, image_url, category FROM news"))
         rows = result.fetchall()
         
         # 转换为字典列表
@@ -154,7 +154,7 @@ def test_questions(db: Session = Depends(get_db)):
     """使用同步方式获取问题内容"""
     try:
         # 使用原生SQL查询
-        result = db.execute(text("SELECT id, question, answer, difficulty, categories, tags, related_questions FROM questions"))
+        result = db.execute(text("SELECT id, title, content, answer, category, view_count, answer_count, tags, related_questions FROM questions"))
         rows = result.fetchall()
         
         # 转换为字典列表
@@ -162,9 +162,9 @@ def test_questions(db: Session = Depends(get_db)):
         for row in rows:
             item = {
                 "id": row[0],
-                "question": row[1],
-                "answer": row[2],
-                "difficulty": row[3]
+                "question": row[1],  # 这里可以保持question作为API返回字段，但从数据库获取的是title
+                "answer": row[3],
+                # 移除difficulty字段或使用其他可用字段代替
             }
             # 解析JSON字段
             try:
@@ -199,4 +199,4 @@ async def root():
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000) 
+    uvicorn.run(app, host="0.0.0.0", port=8000)

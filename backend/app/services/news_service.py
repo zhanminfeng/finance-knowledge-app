@@ -19,8 +19,8 @@ class NewsService:
         try:
             query = select(News)
             if category:
-                # 查找分类（存储为JSON）中包含该分类的新闻
-                query = query.filter(News.categories.contains(category))
+                # 使用正确的字段名category
+                query = query.filter(News.category == category)
             
             # 按发布日期降序排序
             query = query.order_by(desc(News.publish_date))
@@ -197,4 +197,4 @@ class NewsService:
 
 
 # 创建服务实例
-news_service = NewsService() 
+news_service = NewsService()
