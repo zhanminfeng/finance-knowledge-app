@@ -8,7 +8,7 @@ import {
   TouchableOpacity, 
   SafeAreaView 
 } from 'react-native';
-import { NewsItem } from '../utils/dummyData';
+import { NewsItem } from '../utils/types';
 
 const NewsDetailScreen = ({ route }: any) => {
   const { news } = route.params as { news: NewsItem };
@@ -42,22 +42,26 @@ const NewsDetailScreen = ({ route }: any) => {
           <Text style={styles.title}>{news.title}</Text>
           <Text style={styles.summary}>{news.summary}</Text>
           
-          <View style={styles.tagsContainer}>
-            {news.tags.map((tag, index) => (
-              <View key={index} style={styles.tag}>
-                <Text style={styles.tagText}>{tag}</Text>
-              </View>
-            ))}
-          </View>
+          {news.tags && news.tags.length > 0 && (
+            <View style={styles.tagsContainer}>
+              {news.tags.map((tag, index) => (
+                <View key={index} style={styles.tag}>
+                  <Text style={styles.tagText}>{tag}</Text>
+                </View>
+              ))}
+            </View>
+          )}
 
           <View style={styles.divider} />
           
-          {renderContent()}
+          {news.content && renderContent()}
           
-          <View style={styles.aiExplanationContainer}>
-            <Text style={styles.aiExplanationTitle}>小白解读</Text>
-            <Text style={styles.aiExplanation}>{news.aiExplanation}</Text>
-          </View>
+          {news.aiExplanation && (
+            <View style={styles.aiExplanationContainer}>
+              <Text style={styles.aiExplanationTitle}>小白解读</Text>
+              <Text style={styles.aiExplanation}>{news.aiExplanation}</Text>
+            </View>
+          )}
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -153,4 +157,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default NewsDetailScreen; 
+export default NewsDetailScreen;

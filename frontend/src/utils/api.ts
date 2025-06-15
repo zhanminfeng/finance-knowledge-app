@@ -1,5 +1,5 @@
 // API服务封装模块
-const API_BASE_URL = 'http://192.168.1.100:8000/api'; // 修改为你的实际服务器地址
+const API_BASE_URL = 'https://finance-knowledge-app-1.onrender.com/api'; // 修改为你的实际服务器地址
 
 // 基础请求函数
 const request = async (endpoint: string, options: RequestInit = {}) => {
@@ -92,4 +92,4 @@ export const api = {
   }
 };
 
-export default api; 
+export default api;

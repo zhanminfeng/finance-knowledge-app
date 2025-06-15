@@ -77,7 +77,7 @@ const HomeScreen = ({ navigation }: any) => {
           } />
           <TouchableOpacity 
             style={styles.moreButton}
-            onPress={() => navigation.navigate('Learning')}
+            onPress={() => navigation.navigate('LearningTab')}
           >
             <Text style={styles.moreButtonText}>查看更多</Text>
           </TouchableOpacity>
@@ -90,7 +90,7 @@ const HomeScreen = ({ navigation }: any) => {
           } />
           <TouchableOpacity 
             style={styles.moreButton}
-            onPress={() => navigation.navigate('News')}
+            onPress={() => navigation.navigate('NewsTab')}
           >
             <Text style={styles.moreButtonText}>查看更多</Text>
           </TouchableOpacity>
@@ -103,7 +103,7 @@ const HomeScreen = ({ navigation }: any) => {
           } />
           <TouchableOpacity 
             style={styles.moreButton}
-            onPress={() => navigation.navigate('Questions')}
+            onPress={() => navigation.navigate('QuestionsTab')}
           >
             <Text style={styles.moreButtonText}>查看更多</Text>
           </TouchableOpacity>

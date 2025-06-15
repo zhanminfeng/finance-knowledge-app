@@ -1,15 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, FlatList, Image, ActivityIndicator } from 'react-native';
 import api from '../utils/api';
-
-interface NewsItem {
-  id: string;
-  title: string;
-  summary: string;
-  date: string;
-  source: string;
-  imageUrl: string;
-}
+import { NewsItem } from '../utils/types';
 
 interface LatestNewsProps {
   onPress: (news: NewsItem) => void;
@@ -25,8 +17,15 @@ const LatestNews = ({ onPress }: LatestNewsProps) => {
       try {
         setLoading(true);
         const response = await api.news.getAll();
-        // 只获取前3条新闻
-        setNews(response.items.slice(0, 3));
+        // 添加数据转换，确保所有必要的字段都存在
+        const processedNews = response.items.slice(0, 3).map(item => ({
+          ...item,
+          tags: item.tags || [],
+          content: item.content || '',
+          aiExplanation: item.aiExplanation || '',
+          category: item.category || '未分类'
+        }));
+        setNews(processedNews);
         setError(null);
       } catch (err) {
         console.error('获取新闻失败:', err);
@@ -160,4 +159,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default LatestNews; 
+export default LatestNews;
